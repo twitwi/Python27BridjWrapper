@@ -10,5 +10,6 @@ It is not strictly necessary but it might help in finding problems in automatic 
 
 ## How to build
 
+    mvn clean
     mvn com.nativelibs4java:maven-jnaerator-plugin:generate
     mvn install

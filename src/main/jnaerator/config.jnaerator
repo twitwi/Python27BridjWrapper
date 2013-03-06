@@ -6,25 +6,9 @@
 //-preferJavac
 //-DPY_SSIZE_T_CLEAN=1
 
+-parseChunks
 
 
 -Iinclude-link
 
-include-link/pythonrun.h
-include-link/object.h
-include-link/objimpl.h
-include-link/moduleobject.h
-include-link/modsupport.h
-include-link/import.h
-include-link/abstract.h
-include-link/tupleobject.h
-include-link/dictobject.h
-include-link/floatobject.h
-include-link/intobject.h
-include-link/longobject.h
-include-link/methodobject.h
-include-link/stringobject.h
-include-link/pyerrors.h
-include-link/pystate.h
-include-link/ceval.h
 include-link/Python.h
