@@ -4,10 +4,12 @@
 
 -v
 //-preferJavac
-//-DPY_SSIZE_T_CLEAN=1
+
+
+// help jnaerator a little
+-TPy_ssize_t=size_t
 
 -parseChunks
-
 
 -Iinclude-link
 

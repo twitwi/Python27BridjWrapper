@@ -1,10 +1,10 @@
 package com.heeere.python27;
-import com.heeere.python27.Python27Library.Py_ssize_t;
 import org.bridj.Pointer;
 import org.bridj.StructObject;
 import org.bridj.ann.CLong;
 import org.bridj.ann.Field;
 import org.bridj.ann.Library;
+import org.bridj.ann.Ptr;
 /**
  * PyWeakReference is the base struct for the Python ReferenceType, ProxyType,<br>
  * and CallableProxyType.<br>
@@ -19,14 +19,16 @@ public class PyWeakReference extends StructObject {
 		super();
 	}
 	/// C type : Py_ssize_t
+	@Ptr 
 	@Field(0) 
-	public Pointer<Py_ssize_t > ob_refcnt() {
-		return this.io.getPointerField(this, 0);
+	public long ob_refcnt() {
+		return this.io.getSizeTField(this, 0);
 	}
 	/// C type : Py_ssize_t
+	@Ptr 
 	@Field(0) 
-	public PyWeakReference ob_refcnt(Pointer<Py_ssize_t > ob_refcnt) {
-		this.io.setPointerField(this, 0, ob_refcnt);
+	public PyWeakReference ob_refcnt(long ob_refcnt) {
+		this.io.setSizeTField(this, 0, ob_refcnt);
 		return this;
 	}
 	/// C type : _typeobject*

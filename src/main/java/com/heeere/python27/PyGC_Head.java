@@ -1,9 +1,9 @@
 package com.heeere.python27;
-import com.heeere.python27.Python27Library.Py_ssize_t;
 import org.bridj.Pointer;
 import org.bridj.StructObject;
 import org.bridj.ann.Field;
 import org.bridj.ann.Library;
+import org.bridj.ann.Ptr;
 import org.bridj.ann.Union;
 /**
  * <i>native declaration : objimpl.h:54</i><br>
@@ -68,14 +68,16 @@ public class PyGC_Head extends StructObject {
 			return this;
 		}
 		/// C type : Py_ssize_t
+		@Ptr 
 		@Field(2) 
-		public Pointer<Py_ssize_t > gc_refs() {
-			return this.io.getPointerField(this, 2);
+		public long gc_refs() {
+			return this.io.getSizeTField(this, 2);
 		}
 		/// C type : Py_ssize_t
+		@Ptr 
 		@Field(2) 
-		public gc_struct gc_refs(Pointer<Py_ssize_t > gc_refs) {
-			this.io.setPointerField(this, 2, gc_refs);
+		public gc_struct gc_refs(long gc_refs) {
+			this.io.setSizeTField(this, 2, gc_refs);
 			return this;
 		}
 		public gc_struct(Pointer pointer) {

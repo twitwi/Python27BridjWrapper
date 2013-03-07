@@ -7,6 +7,7 @@ import org.bridj.Callback;
 import org.bridj.FlagSet;
 import org.bridj.IntValuedEnum;
 import org.bridj.Pointer;
+import org.bridj.SizeT;
 import org.bridj.TypedPointer;
 import org.bridj.ann.Array;
 import org.bridj.ann.Library;
@@ -50,33 +51,13 @@ public class Python27Library {
 	/// <i>native declaration : pyport.h</i>
 	public static final int PYLONG_BITS_IN_DIGIT = (int)15;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FSTATVFS = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int SIZEOF_WCHAR_T = (int)4;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_PTHREAD_H = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_RL_COMPLETION_APPEND_CHARACTER = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_MAKEDEV = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int SIZEOF_PTHREAD_T = (int)8;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FPATHCONF = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final String PY_FORMAT_SIZE_T = (String)"z";
-	/// <i>native declaration : descrobject.h</i>
-	public static final int PyWrapperFlag_KEYWORDS = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_MEMMOVE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int DOUBLE_IS_LITTLE_ENDIAN_IEEE754 = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_GETRESGID = (int)1;
-	/// <i>native declaration : patchlevel.h</i>
-	public static final String PY_VERSION = (String)"2.7.3";
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int Py_USING_UNICODE = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int PyBUF_FORMAT = (int)4;
 	/// <i>native declaration : pyconfig.h</i>
@@ -87,204 +68,84 @@ public class Python27Library {
 	public static final int HAVE_TCGETPGRP = (int)1;
 	/// <i>native declaration : abstract.h</i>
 	public static final int PY_ITERSEARCH_CONTAINS = (int)3;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final String SHLIB_EXT = (String)".so";
-	/// <i>native declaration : pyconfig.h</i>
-	public static final String PY_FORMAT_LONG_LONG = (String)"ll";
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_HEAPTYPE = (int)(1 << 9);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_KILL = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_RECORDS = (int)((16 | 8) | 1 | 4);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SETLOCALE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_TMPFILE = (int)1;
-	/// <i>native declaration : patchlevel.h</i>
-	public static final int PY_RELEASE_SERIAL = (int)0;
 	/// <i>native declaration : pyctype.h</i>
 	public static final int PY_CTF_ALPHA = (int)(1 | 2);
-	/// <i>native declaration : compile.h</i>
-	public static final String FUTURE_DIVISION = (String)"division";
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int WANT_SIGFPE_HANDLER = (int)1;
 	/// <i>native declaration : code.h</i>
 	public static final int CO_FUTURE_ABSOLUTE_IMPORT = (int)16384;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_RL_PRE_INPUT_HOOK = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SETGID = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_GT = (int)4;
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_WRITEABLE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_CURSES_H = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SOCKADDR_STORAGE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_TEMPNAM = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_TYPE_SUBCLASS = (int)(1 << 31);
-	/// <i>native declaration : pystate.h</i>
-	public static final int PyTrace_CALL = (int)0;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_STAT_TV_NSEC = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SPAWN_H = (int)1;
-	/// <i>native declaration : setobject.h</i>
-	public static final int PySet_MINSIZE = (int)8;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int SIZEOF_TIME_T = (int)8;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_LIBREADLINE = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int PyBUF_WRITE = (int)512;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SYS_STATVFS_H = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_EQ = (int)2;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SETUID = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int SIZEOF_FPOS_T = (int)16;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SYS_FILE_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SEM_OPEN = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_GE = (int)5;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_HAVE_GC = (int)(1 << 14);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_DYNAMIC_LOADING = (int)1;
 	/// <i>native declaration : dictobject.h</i>
 	public static final int PyDict_MINSIZE = (int)8;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_HAVE_WEAKREFS = (int)(1 << 6);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FTRUNCATE = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_STRING_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FINITE = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SETPGID = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETRESUID = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_LE = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_LT = (int)0;
 	/// <i>native declaration : compile.h</i>
 	public static final String FUTURE_NESTED_SCOPES = (String)"nested_scopes";
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_INITGROUPS = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_INT_SUBCLASS = (int)(1 << 23);
-	/// <i>native declaration : objimpl.h</i>
-	public static final int _PyGC_REFS_REACHABLE = (int)(-3);
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_HAVE_INPLACEOPS = (int)(1 << 3);
-	/// <i>native declaration : pystate.h</i>
-	public static final int PyTrace_LINE = (int)2;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETADDRINFO = (int)1;
-	/// <i>native declaration : code.h</i>
-	public static final int CO_FUTURE_PRINT_FUNCTION = (int)65536;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_EXECV = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_ZLIB_COPY = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_EXPM1 = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_BASE_EXC_SUBCLASS = (int)(1 << 30);
 	/// <i>native declaration : stringobject.h</i>
 	public static final int SSTATE_INTERNED_IMMORTAL = (int)2;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FSEEKO = (int)1;
 	/// <i>native declaration : pythonrun.h</i>
 	public static final int PyCF_DONT_IMPLY_DEDENT = (int)512;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int WITH_PYMALLOC = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int SIZEOF_INT = (int)4;
 	/// <i>native declaration : modsupport.h</i>
 	public static final String PYTHON_API_STRING = (String)"1013";
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_CONTIG = (int)(8 | 1);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SYS_EPOLL_H = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_DEFAULT_CORE = (int)(((1 << 0) | (1 << 1) | (1 << 3) | (1 << 5) | (1 << 6) | (1 << 7) | (1 << 8) | 0 | (1 << 17) | 0) | (1 << 18));
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_EPOLL = (int)1;
-	/// <i>native declaration : pythonrun.h</i>
-	public static final int PyCF_ONLY_AST = (int)1024;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_WAIT3 = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_MKNOD = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_WAIT4 = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SIGACTION = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int PyBUF_SIMPLE = (int)0;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SSIZE_T = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_UNISTD_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int _DARWIN_C_SOURCE = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_NE = (int)3;
 	/// <i>native declaration : compile.h</i>
 	public static final String FUTURE_UNICODE_LITERALS = (String)"unicode_literals";
-	/// <i>native declaration : floatobject.h</i>
-	public static final int PyFloat_STR_PRECISION = (int)12;
 	/// <i>native declaration : object.h</i>
 	public static final int PyBUF_WRITABLE = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SIGINTERRUPT = (int)1;
 	/// <i>native declaration : methodobject.h</i>
 	public static final int METH_O = (int)8;
-	/// <i>native declaration : compile.h</i>
-	public static final String FUTURE_PRINT_FUNCTION = (String)"print_function";
-	/// <i>native declaration : pyport.h</i>
-	public static final int HAVE_PY_SET_53BIT_PRECISION = (int)1;
-	/// <i>native declaration : objimpl.h</i>
-	public static final int _PyGC_REFS_TENTATIVELY_UNREACHABLE = (int)(-4);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETWD = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_STDARG_PROTOTYPES = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int _NETBSD_SOURCE = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_F_CONTIGUOUS = (int)(64 | (16 | 8));
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SIGNAL_H = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_C_CONTIGUOUS = (int)(32 | (16 | 8));
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_DIRENT_H = (int)1;
-	/// <i>native declaration : pyport.h</i>
-	public static final long PY_LLONG_MIN = (long)(-9223372036854775807L - 1L);
 	/// <i>native declaration : code.h</i>
 	public static final int CO_MAXBLOCKS = (int)20;
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_SHADOW = (int)1024;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int SIZEOF__BOOL = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int SIZEOF_OFF_T = (int)8;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETCWD = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int _ALL_SOURCE = (int)1;
 	/// <i>native declaration : patchlevel.h</i>
 	public static final int PY_RELEASE_LEVEL_FINAL = (int)15;
 	/// <i>native declaration : pyconfig.h</i>
@@ -296,73 +157,33 @@ public class Python27Library {
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_STRUCT_STAT_ST_BLKSIZE = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_LINUX_TIPC_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FTELLO = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_CONFSTR = (int)1;
-	/// <i>native declaration : compile.h</i>
-	public static final String FUTURE_GENERATORS = (String)"generators";
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_HAVE_GETCHARBUFFER = (int)(1 << 0);
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETGROUPS = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_BASETYPE = (int)(1 << 10);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_CLOCK = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_HAVE_RICHCOMPARE = (int)(1 << 5);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_BIND_TEXTDOMAIN_CODESET = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_CTERMID = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_ERFC = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_STRDUP = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int PyBUF_ANY_CONTIGUOUS = (int)(128 | (16 | 8));
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_MKFIFO = (int)1;
 	/// <i>native declaration : abstract.h</i>
 	public static final int PY_ITERSEARCH_COUNT = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SYS_STAT_H = (int)1;
 	/// <i>native declaration : pyport.h</i>
 	public static final long PY_SIZE_MAX = (long)(-1);
-	/// <i>native declaration : methodobject.h</i>
-	public static final int METH_CLASS = (int)16;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_TCSETPGRP = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int WITH_THREAD = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int TANH_PRESERVES_ZERO_SIGN = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SYS_TIMES_H = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETPRIORITY = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int SIZEOF_VOID_P = (int)8;
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_STRIDES = (int)(16 | 8);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_COPYSIGN = (int)1;
-	/// <i>native declaration : pyport.h</i>
-	public static final int LONG_BIT = (int)(8 * 8);
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_STRIDED = (int)((16 | 8) | 1);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GAMMA = (int)1;
 	/// <i>native declaration : code.h</i>
 	public static final int CO_VARKEYWORDS = (int)8;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_LGAMMA = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SETREUID = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FTIME = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_ACOSH = (int)1;
 	/// <i>native declaration : pyctype.h</i>
@@ -371,16 +192,10 @@ public class Python27Library {
 	public static final int HAVE_ROUND = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_STATVFS = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_MREMAP = (int)1;
 	/// <i>native declaration : pyctype.h</i>
 	public static final int PY_CTF_XDIGIT = (int)16;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_CHECKTYPES = (int)(1 << 4);
 	/// <i>native declaration : pyport.h</i>
 	public static final int PY_ULLONG_MAX = (int)-1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_RL_COMPLETION_DISPLAY_MATCHES_HOOK = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_UNAME = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
@@ -389,16 +204,12 @@ public class Python27Library {
 	public static final int Py_TPFLAGS_LIST_SUBCLASS = (int)(1 << 25);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_C99_BOOL = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SYS_UN_H = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int PyBUF_STRIDED_RO = (int)(16 | 8);
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_ASINH = (int)1;
-	/// <i>native declaration : pyport.h</i>
-	public static final long PY_LLONG_MAX = (long)9223372036854775807L;
+	public static final int HAVE_SYS_UN_H = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FCHDIR = (int)1;
+	public static final int HAVE_ASINH = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SYMLINK = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
@@ -408,47 +219,23 @@ public class Python27Library {
 	/// <i>native declaration : stringobject.h</i>
 	public static final int SSTATE_INTERNED_MORTAL = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SETRESUID = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_MEMORY_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SYS_PARAM_H = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SYSEXITS_H = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_HAVE_SEQUENCE_IN = (int)(1 << 1);
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_WCSCOLL = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_TMPNAM_R = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_HAVE_CLASS = (int)(1 << 8);
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_WORKING_TZSET = (int)1;
 	/// <i>native declaration : patchlevel.h</i>
 	public static final int PY_RELEASE_LEVEL = (int)15;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_RL_COMPLETION_SUPPRESS_APPEND = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_STRUCT_STAT_ST_RDEV = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_TMPNAM = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_ND = (int)8;
+	public static final int HAVE_SETREGID = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_LANGINFO_H = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SETREGID = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SEM_TIMEDWAIT = (int)1;
-	/// <i>native declaration : bytesobject.h</i>
-	public static final int Py_TPFLAGS_BYTES_SUBCLASS = (int)(1 << 27);
-	/// <i>native declaration : pystrtod.h</i>
-	public static final int Py_DTSF_ALT = (int)4;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_CURSES_IS_TERM_RESIZED = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_NETPACKET_PACKET_H = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int PyBUF_FULL_RO = (int)((256 | (16 | 8)) | 4);
 	/// <i>native declaration : object.h</i>
@@ -461,83 +248,38 @@ public class Python27Library {
 	public static final int Py_TPFLAGS_IS_ABSTRACT = (int)(1 << 20);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int SIZEOF_LONG_LONG = (int)8;
-	/// <i>native declaration : pythonrun.h</i>
-	public static final int PyCF_MASK_OBSOLETE = (int)(16);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SYS_POLL_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SYS_TIME_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_ALARM = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETLOADAVG = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETHOSTBYNAME_R = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_GETPID = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_ERRNO_H = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_DEVICE_MACROS = (int)1;
 	/// <i>native declaration : code.h</i>
 	public static final int CO_OPTIMIZED = (int)1;
-	/**
-	 * define<br>
-	 * Conversion Error : null<br>
-	 * SKIPPED:<br>
-	 * <i>native declaration : floatobject.h</i><br>
-	 * * 0.
-	 */
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SETVBUF = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_CHOWN = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_PATHCONF = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_READ = (int)256;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FCHMOD = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_TGAMMA = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_STDINT_H = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int SIZEOF_PID_T = (int)4;
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_CONTIG_RO = (int)(8);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_MKTIME = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int SIZEOF_FLOAT = (int)4;
 	/// <i>native declaration : pystrtod.h</i>
 	public static final int Py_DTST_INFINITE = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_RECORDS_RO = (int)((16 | 8) | 4);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETSPENT = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int SIZEOF_UINTPTR_T = (int)8;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_DICT_SUBCLASS = (int)(1 << 29);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_GETC_UNLOCKED = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_REALPATH = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_OPENPTY = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int TIME_WITH_SYS_TIME = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SYS_SELECT_H = (int)1;
 	/// <i>native declaration : bufferobject.h</i>
 	public static final int Py_END_OF_BUFFER = (int)(-1);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SETITIMER = (int)1;
-	/// <i>native declaration : pymath.h</i>
-	public static final double Py_MATH_El = (double)2.7182818284590452353602874713526625;
-	/// <i>native declaration : methodobject.h</i>
-	public static final int METH_KEYWORDS = (int)2;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_UTIME_H = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
@@ -545,69 +287,31 @@ public class Python27Library {
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int __BSD_VISIBLE = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int _POSIX_PTHREAD_SEMANTICS = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_DLOPEN = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETITIMER = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETHOSTBYNAME_R_6_ARG = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int SIZEOF_LONG = (int)8;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_FDATASYNC = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_CURSES_RESIZE_TERM = (int)1;
-	/// <i>native declaration : pystate.h</i>
-	public static final int PyTrace_C_CALL = (int)4;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_TIMEGM = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_INET_PTON = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SETRESGID = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SOCKETPAIR = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SNPRINTF = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int VA_LIST_IS_ARRAY = (int)1;
 	/// <i>native declaration : pystrtod.h</i>
 	public static final int Py_DTST_FINITE = (int)0;
-	/// <i>native declaration : abstract.h</i>
-	public static final int PY_ITERSEARCH_INDEX = (int)2;
-	/// <i>native declaration : patchlevel.h</i>
-	public static final int PY_RELEASE_LEVEL_BETA = (int)11;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int SIZEOF_LONG_DOUBLE = (int)16;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_STRUCT_TM_TM_ZONE = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SETGROUPS = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SYS_RESOURCE_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_LONG_DOUBLE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_GAI_STRERROR = (int)1;
-	/// <i>native declaration : pystrtod.h</i>
-	public static final int Py_DTST_NAN = (int)2;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_GCC_ASM_FOR_X87 = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int PyBUF_INDIRECT = (int)(256 | (16 | 8));
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int SIZEOF_DOUBLE = (int)8;
-	/// <i>native declaration : methodobject.h</i>
-	public static final int METH_VARARGS = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SYSCONF = (int)1;
-	/// <i>native declaration : pyctype.h</i>
-	public static final int PY_CTF_SPACE = (int)8;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_PAUSE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_LCHOWN = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_INET_ATON = (int)1;
 	/// <i>native declaration : code.h</i>
@@ -621,23 +325,9 @@ public class Python27Library {
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_UNSETENV = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_GETPWENT = (int)1;
-	/// <i>native declaration : patchlevel.h</i>
-	public static final int PY_RELEASE_LEVEL_ALPHA = (int)10;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int WITH_DOC_STRINGS = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_FORK = (int)1;
 	/// <i>native declaration : patchlevel.h</i>
 	public static final int PY_MINOR_VERSION = (int)7;
-	/// <i>native declaration : pystrtod.h</i>
-	public static final int Py_DTSF_ADD_DOT_0 = (int)2;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int PTHREAD_SYSTEM_SCHED_SUPPORTED = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_PRINT_RAW = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_LINUX_NETLINK_H = (int)1;
 	/// <i>native declaration : fileobject.h</i>
 	public static final String PY_STDIOTEXTMODE = (String)"b";
 	/// <i>native declaration : pyconfig.h</i>
@@ -650,46 +340,26 @@ public class Python27Library {
 	public static final int HAVE_GRP_H = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int SYS_SELECT_WITH_SYS_TIME = (int)1;
-	/// <i>native declaration : pyctype.h</i>
-	public static final int PY_CTF_ALNUM = (int)((1 | 2) | 4);
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_HAVE_INDEX = (int)(1 << 17);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_TRUNCATE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FSYNC = (int)1;
 	/// <i>native declaration : pystate.h</i>
 	public static final int PyTrace_RETURN = (int)3;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_POLL = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_NICE = (int)1;
 	/// <i>native declaration : pyctype.h</i>
 	public static final int PY_CTF_LOWER = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETPEERNAME = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_INTTYPES_H = (int)1;
-	/// <i>native declaration : patchlevel.h</i>
-	public static final int PY_MICRO_VERSION = (int)3;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_LIBDL = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_KILLPG = (int)1;
 	/// <i>native declaration : pyctype.h</i>
 	public static final int PY_CTF_UPPER = (int)2;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_UINTPTR_T = (int)1;
 	/// <i>native declaration : code.h</i>
 	public static final int CO_NESTED = (int)16;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_HAVE_STACKLESS_EXTENSION = (int)0;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_LONG_LONG = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SHADOW_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_WCHAR_H = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_DLFCN_H = (int)1;
 	/// <i>native declaration : patchlevel.h</i>
@@ -700,34 +370,16 @@ public class Python27Library {
 	public static final int HAVE_FCNTL_H = (int)1;
 	/// <i>native declaration : Python.h</i>
 	public static final int WITH_CYCLE_GC = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_HAVE_ITER = (int)(1 << 7);
 	/// <i>native declaration : pystate.h</i>
 	public static final int PyTrace_C_EXCEPTION = (int)5;
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_HAVE_VERSION_TAG = (int)(1 << 18);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int __EXTENSIONS__ = (int)1;
 	/// <i>native declaration : methodobject.h</i>
 	public static final int METH_COEXIST = (int)64;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_GETPGRP = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_PTY_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_READLINK = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_ADDRINFO = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_UNICODE_SUBCLASS = (int)(1 << 28);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_TIMES = (int)1;
 	/// <i>native declaration : pythonrun.h</i>
 	public static final int PYOS_STACK_MARGIN = (int)2048;
-	/// <i>native declaration : pystate.h</i>
-	public static final int PyTrace_C_RETURN = (int)6;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int _GNU_SOURCE = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SYS_TYPES_H = (int)1;
 	/// <i>native declaration : pymath.h</i>
@@ -740,32 +392,18 @@ public class Python27Library {
 	public static final int HAVE_GETSPNAM = (int)1;
 	/// <i>native declaration : objimpl.h</i>
 	public static final int _PyGC_REFS_UNTRACKED = (int)(-2);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_PTHREAD_SIGMASK = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_READY = (int)(1 << 12);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_DECL_ISFINITE = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SYS_SOCKET_H = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_FULL = (int)((256 | (16 | 8)) | 1 | 4);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_LINK = (int)1;
 	/// <i>native declaration : compile.h</i>
 	public static final String FUTURE_ABSOLUTE_IMPORT = (String)"absolute_import";
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_STDLIB_H = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_DEFAULT_EXTERNAL = (int)((1 << 0) | (1 << 1) | (1 << 3) | (1 << 5) | (1 << 6) | (1 << 7) | (1 << 8) | 0 | (1 << 17) | 0);
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_LONG_SUBCLASS = (int)(1 << 24);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_GETPGID = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_GC = (int)0;
-	/// <i>native declaration : code.h</i>
-	public static final int CO_GENERATOR = (int)32;
 	/// <i>native declaration : object.h</i>
 	public static final int PyTrash_UNWIND_LEVEL = (int)50;
 	/// <i>native declaration : pyconfig.h</i>
@@ -778,34 +416,16 @@ public class Python27Library {
 	public static final int HAVE_STRINGS_H = (int)1;
 	/// <i>native declaration : objimpl.h</i>
 	public static final int PyGC_HEAD_SIZE = (int)0;
-	/// <i>native declaration : pythonrun.h</i>
-	public static final int PyCF_MASK = (int)(8192 | 16384 | 32768 | 65536 | 131072);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_LSTAT = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_CURSES_RESIZETERM = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int MVWDELCH_IS_EXPRESSION = (int)1;
 	/// <i>native declaration : patchlevel.h</i>
 	public static final int PY_RELEASE_LEVEL_GAMMA = (int)12;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int _TANDEM_SOURCE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SETEUID = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_LOG1P = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_ATANH = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_GETNAMEINFO = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int SIZEOF_SIZE_T = (int)8;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETLOGIN = (int)1;
-	/// <i>native declaration : compile.h</i>
-	public static final String FUTURE_WITH_STATEMENT = (String)"with_statement";
-	/// <i>native declaration : Python.h</i>
-	public static final int Py_single_input = (int)256;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_DUP2 = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
@@ -815,13 +435,424 @@ public class Python27Library {
 	/// <i>native declaration : code.h</i>
 	public static final int CO_NEWLOCALS = (int)2;
 	/// <i>native declaration : code.h</i>
-	public static final int CO_FUTURE_WITH_STATEMENT = (int)32768;
-	/// <i>native declaration : code.h</i>
 	public static final int CO_FUTURE_DIVISION = (int)8192;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int _BSD_TYPES = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_DECL_ISNAN = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_TERM_H = (int)1;
+	/// <i>native declaration : patchlevel.h</i>
+	public static final String PY_PATCHLEVEL_REVISION = (String)"";
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SEM_GETVALUE = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SEM_UNLINK = (int)1;
+	/// <i>native declaration : patchlevel.h</i>
+	public static final int PY_VERSION_HEX = (int)((2 << 24) | (7 << 16) | (3 << 8) | (15 << 4) | (0 << 0));
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_TM_ZONE = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_READYING = (int)(1 << 13);
+	/// <i>native declaration : code.h</i>
+	public static final int CO_VARARGS = (int)4;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FORKPTY = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int _FILE_OFFSET_BITS = (int)64;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_STRUCT_STAT_ST_BLOCKS = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_CHROOT = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_BLUETOOTH_BLUETOOTH_H = (int)1;
+	/// <i>native declaration : pymath.h</i>
+	public static final double Py_MATH_E = (double)2.7182818284590452354;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_ST_BLOCKS = (int)1;
+	/// <i>native declaration : code.h</i>
+	public static final int CO_FUTURE_UNICODE_LITERALS = (int)131072;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FSTATVFS = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_RL_COMPLETION_APPEND_CHARACTER = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FPATHCONF = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final String PY_FORMAT_SIZE_T = (String)"z";
+	/// <i>native declaration : descrobject.h</i>
+	public static final int PyWrapperFlag_KEYWORDS = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_MEMMOVE = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_GETRESGID = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int DOUBLE_IS_LITTLE_ENDIAN_IEEE754 = (int)1;
+	/// <i>native declaration : patchlevel.h</i>
+	public static final String PY_VERSION = (String)"2.7.3";
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int Py_USING_UNICODE = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final String SHLIB_EXT = (String)".so";
+	/// <i>native declaration : pyconfig.h</i>
+	public static final String PY_FORMAT_LONG_LONG = (String)"ll";
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_RECORDS = (int)((16 | 8) | 1 | 4);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SETLOCALE = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_TMPFILE = (int)1;
+	/// <i>native declaration : patchlevel.h</i>
+	public static final int PY_RELEASE_SERIAL = (int)0;
+	/// <i>native declaration : compile.h</i>
+	public static final String FUTURE_DIVISION = (String)"division";
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int WANT_SIGFPE_HANDLER = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SETGID = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_GT = (int)4;
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_WRITEABLE = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SOCKADDR_STORAGE = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_TEMPNAM = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_TYPE_SUBCLASS = (int)(1 << 31);
+	/// <i>native declaration : pystate.h</i>
+	public static final int PyTrace_CALL = (int)0;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_STAT_TV_NSEC = (int)1;
+	/// <i>native declaration : setobject.h</i>
+	public static final int PySet_MINSIZE = (int)8;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int SIZEOF_TIME_T = (int)8;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_LIBREADLINE = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_EQ = (int)2;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SETUID = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SYS_FILE_H = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SEM_OPEN = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_GE = (int)5;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_HAVE_GC = (int)(1 << 14);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_DYNAMIC_LOADING = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_HAVE_WEAKREFS = (int)(1 << 6);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FTRUNCATE = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FINITE = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_LE = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_LT = (int)0;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_INITGROUPS = (int)1;
+	/// <i>native declaration : objimpl.h</i>
+	public static final int _PyGC_REFS_REACHABLE = (int)(-3);
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_HAVE_INPLACEOPS = (int)(1 << 3);
+	/// <i>native declaration : pystate.h</i>
+	public static final int PyTrace_LINE = (int)2;
+	/// <i>native declaration : code.h</i>
+	public static final int CO_FUTURE_PRINT_FUNCTION = (int)65536;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_EXECV = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_ZLIB_COPY = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FSEEKO = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int WITH_PYMALLOC = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_CONTIG = (int)(8 | 1);
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_DEFAULT_CORE = (int)(((1 << 0) | (1 << 1) | (1 << 3) | (1 << 5) | (1 << 6) | (1 << 7) | (1 << 8) | 0 | (1 << 17) | 0) | (1 << 18));
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_EPOLL = (int)1;
+	/// <i>native declaration : pythonrun.h</i>
+	public static final int PyCF_ONLY_AST = (int)1024;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_MKNOD = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SIGACTION = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_UNISTD_H = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_NE = (int)3;
+	/// <i>native declaration : floatobject.h</i>
+	public static final int PyFloat_STR_PRECISION = (int)12;
+	/// <i>native declaration : compile.h</i>
+	public static final String FUTURE_PRINT_FUNCTION = (String)"print_function";
+	/// <i>native declaration : pyport.h</i>
+	public static final int HAVE_PY_SET_53BIT_PRECISION = (int)1;
+	/// <i>native declaration : objimpl.h</i>
+	public static final int _PyGC_REFS_TENTATIVELY_UNREACHABLE = (int)(-4);
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_F_CONTIGUOUS = (int)(64 | (16 | 8));
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_C_CONTIGUOUS = (int)(32 | (16 | 8));
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_DIRENT_H = (int)1;
+	/// <i>native declaration : pyport.h</i>
+	public static final long PY_LLONG_MIN = (long)(-9223372036854775807L - 1L);
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_SHADOW = (int)1024;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int SIZEOF_OFF_T = (int)8;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int SIZEOF__BOOL = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int _ALL_SOURCE = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_LINUX_TIPC_H = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FTELLO = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_CONFSTR = (int)1;
+	/// <i>native declaration : compile.h</i>
+	public static final String FUTURE_GENERATORS = (String)"generators";
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_HAVE_GETCHARBUFFER = (int)(1 << 0);
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_BASETYPE = (int)(1 << 10);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_CLOCK = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_CTERMID = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_STRDUP = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_MKFIFO = (int)1;
+	/// <i>native declaration : methodobject.h</i>
+	public static final int METH_CLASS = (int)16;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SYS_TIMES_H = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int WITH_THREAD = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_STRIDES = (int)(16 | 8);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_COPYSIGN = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_STRIDED = (int)((16 | 8) | 1);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SETREUID = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_LGAMMA = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FTIME = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_MREMAP = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_CHECKTYPES = (int)(1 << 4);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_RL_COMPLETION_DISPLAY_MATCHES_HOOK = (int)1;
+	/// <i>native declaration : pyport.h</i>
+	public static final long PY_LLONG_MAX = (long)9223372036854775807L;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FCHDIR = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SETRESUID = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_MEMORY_H = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_WCSCOLL = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_TMPNAM_R = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_HAVE_CLASS = (int)(1 << 8);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_RL_COMPLETION_SUPPRESS_APPEND = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_STRUCT_STAT_ST_RDEV = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_TMPNAM = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_ND = (int)8;
+	/// <i>native declaration : bytesobject.h</i>
+	public static final int Py_TPFLAGS_BYTES_SUBCLASS = (int)(1 << 27);
+	/// <i>native declaration : pystrtod.h</i>
+	public static final int Py_DTSF_ALT = (int)4;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_NETPACKET_PACKET_H = (int)1;
+	/// <i>native declaration : pythonrun.h</i>
+	public static final int PyCF_MASK_OBSOLETE = (int)(16);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SYS_POLL_H = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SYS_TIME_H = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_ALARM = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_GETPID = (int)1;
+	/**
+	 * define<br>
+	 * Conversion Error : null<br>
+	 * SKIPPED:<br>
+	 * <i>native declaration : floatobject.h</i><br>
+	 * * 0.
+	 */
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SETVBUF = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_READ = (int)256;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FCHMOD = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_CONTIG_RO = (int)(8);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_MKTIME = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int SIZEOF_FLOAT = (int)4;
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_RECORDS_RO = (int)((16 | 8) | 4);
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_DICT_SUBCLASS = (int)(1 << 29);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_GETC_UNLOCKED = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_OPENPTY = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SYS_SELECT_H = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SETITIMER = (int)1;
+	/// <i>native declaration : pymath.h</i>
+	public static final double Py_MATH_El = (double)2.7182818284590452353602874713526625;
+	/// <i>native declaration : methodobject.h</i>
+	public static final int METH_KEYWORDS = (int)2;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int _POSIX_PTHREAD_SEMANTICS = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int SIZEOF_LONG = (int)8;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_CURSES_RESIZE_TERM = (int)1;
+	/// <i>native declaration : pystate.h</i>
+	public static final int PyTrace_C_CALL = (int)4;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_TIMEGM = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SNPRINTF = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int VA_LIST_IS_ARRAY = (int)1;
+	/// <i>native declaration : abstract.h</i>
+	public static final int PY_ITERSEARCH_INDEX = (int)2;
+	/// <i>native declaration : patchlevel.h</i>
+	public static final int PY_RELEASE_LEVEL_BETA = (int)11;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SETGROUPS = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_LONG_DOUBLE = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_GAI_STRERROR = (int)1;
+	/// <i>native declaration : pystrtod.h</i>
+	public static final int Py_DTST_NAN = (int)2;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_GCC_ASM_FOR_X87 = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int SIZEOF_DOUBLE = (int)8;
+	/// <i>native declaration : methodobject.h</i>
+	public static final int METH_VARARGS = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SYSCONF = (int)1;
+	/// <i>native declaration : pyctype.h</i>
+	public static final int PY_CTF_SPACE = (int)8;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_LCHOWN = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_GETPWENT = (int)1;
+	/// <i>native declaration : patchlevel.h</i>
+	public static final int PY_RELEASE_LEVEL_ALPHA = (int)10;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int WITH_DOC_STRINGS = (int)1;
+	/// <i>native declaration : pystrtod.h</i>
+	public static final int Py_DTSF_ADD_DOT_0 = (int)2;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int PTHREAD_SYSTEM_SCHED_SUPPORTED = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_PRINT_RAW = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_LINUX_NETLINK_H = (int)1;
+	/// <i>native declaration : pyctype.h</i>
+	public static final int PY_CTF_ALNUM = (int)((1 | 2) | 4);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FSYNC = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_NICE = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_INTTYPES_H = (int)1;
+	/// <i>native declaration : patchlevel.h</i>
+	public static final int PY_MICRO_VERSION = (int)3;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_LIBDL = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_UINTPTR_T = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_HAVE_STACKLESS_EXTENSION = (int)0;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SHADOW_H = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_WCHAR_H = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_HAVE_ITER = (int)(1 << 7);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int __EXTENSIONS__ = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_GETPGRP = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_PTY_H = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_ADDRINFO = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_UNICODE_SUBCLASS = (int)(1 << 28);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_TIMES = (int)1;
+	/// <i>native declaration : pystate.h</i>
+	public static final int PyTrace_C_RETURN = (int)6;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int _GNU_SOURCE = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_PTHREAD_SIGMASK = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_FULL = (int)((256 | (16 | 8)) | 1 | 4);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_LINK = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_STDLIB_H = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_GETPGID = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_GC = (int)0;
+	/// <i>native declaration : code.h</i>
+	public static final int CO_GENERATOR = (int)32;
+	/// <i>native declaration : pythonrun.h</i>
+	public static final int PyCF_MASK = (int)(8192 | 16384 | 32768 | 65536 | 131072);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int MVWDELCH_IS_EXPRESSION = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int _TANDEM_SOURCE = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SETEUID = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_LOG1P = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_GETNAMEINFO = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int SIZEOF_SIZE_T = (int)8;
+	/// <i>native declaration : compile.h</i>
+	public static final String FUTURE_WITH_STATEMENT = (String)"with_statement";
+	/// <i>native declaration : Python.h</i>
+	public static final int Py_single_input = (int)256;
+	/// <i>native declaration : code.h</i>
+	public static final int CO_FUTURE_WITH_STATEMENT = (int)32768;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETPAGESIZE = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
@@ -833,11 +864,7 @@ public class Python27Library {
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SIGRELSE = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_TERM_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SYS_UTSNAME_H = (int)1;
-	/// <i>native declaration : patchlevel.h</i>
-	public static final String PY_PATCHLEVEL_REVISION = (String)"";
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SETEGID = (int)1;
 	/// <i>native declaration : object.h</i>
@@ -847,57 +874,29 @@ public class Python27Library {
 	/// <i>native declaration : stringobject.h</i>
 	public static final int SSTATE_NOT_INTERNED = (int)0;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SEM_GETVALUE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_HSTRERROR = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SELECT = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SEM_UNLINK = (int)1;
-	/// <i>native declaration : patchlevel.h</i>
-	public static final int PY_VERSION_HEX = (int)((2 << 24) | (7 << 16) | (3 << 8) | (15 << 4) | (0 << 0));
+	public static final int HAVE_HSTRERROR = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_VALID_VERSION_TAG = (int)(1 << 19);
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_HAVE_NEWBUFFER = (int)(1 << 21);
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_TM_ZONE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_NCURSES_H = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_READYING = (int)(1 << 13);
 	/// <i>native declaration : methodobject.h</i>
 	public static final int METH_OLDARGS = (int)0;
-	/// <i>native declaration : code.h</i>
-	public static final int CO_VARARGS = (int)4;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FORKPTY = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int _FILE_OFFSET_BITS = (int)64;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_STRUCT_STAT_ST_BLOCKS = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_LIBINTL_H = (int)1;
 	/// <i>native declaration : methodobject.h</i>
 	public static final int METH_STATIC = (int)32;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_CHROOT = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_RL_CALLBACK = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_BLUETOOTH_BLUETOOTH_H = (int)1;
-	/// <i>native declaration : pymath.h</i>
-	public static final double Py_MATH_E = (double)2.7182818284590452354;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_ASM_TYPES_H = (int)1;
 	/// <i>native declaration : Python.h</i>
 	public static final int Py_eval_input = (int)258;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_ST_BLOCKS = (int)1;
 	/// <i>native declaration : pystate.h</i>
 	public static final int PyTrace_EXCEPTION = (int)1;
-	/// <i>native declaration : code.h</i>
-	public static final int CO_FUTURE_UNICODE_LITERALS = (int)131072;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_HYPOT = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
@@ -924,8 +923,9 @@ public class Python27Library {
 	};
 	/// <i>native declaration : object.h:20</i>
 	/// <i>native declaration : object.h:20</i>
-	public static abstract class Py_ssize_t extends Callback<Py_ssize_t > {
-		abstract public int apply(Pointer<PyObject > PyObjectPtr1);
+	public static abstract class lenfunc extends Callback<lenfunc > {
+		@Ptr 
+		abstract public long apply(Pointer<PyObject > PyObjectPtr1);
 	};
 	/// <i>native declaration : object.h:21</i>
 	/// <i>native declaration : object.h:21</i>
@@ -945,12 +945,12 @@ public class Python27Library {
 	/// <i>native declaration : object.h:24</i>
 	/// <i>native declaration : object.h:24</i>
 	public static abstract class ssizeargfunc extends Callback<ssizeargfunc > {
-		abstract public Pointer<PyObject > apply(Pointer<PyObject > PyObjectPtr1, Pointer<Python27Library.Py_ssize_t > Py_ssize_t1);
+		abstract public Pointer<PyObject > apply(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1);
 	};
 	/// <i>native declaration : object.h:25</i>
 	/// <i>native declaration : object.h:25</i>
 	public static abstract class ssizessizeargfunc extends Callback<ssizessizeargfunc > {
-		abstract public Pointer<PyObject > apply(Pointer<PyObject > PyObjectPtr1, Pointer<Python27Library.Py_ssize_t > Py_ssize_t1, Pointer<Python27Library.Py_ssize_t > Py_ssize_t2);
+		abstract public Pointer<PyObject > apply(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1, @Ptr long Py_ssize_t2);
 	};
 	/// <i>native declaration : object.h:26</i>
 	/// <i>native declaration : object.h:26</i>
@@ -965,12 +965,12 @@ public class Python27Library {
 	/// <i>native declaration : object.h:28</i>
 	/// <i>native declaration : object.h:28</i>
 	public static abstract class ssizeobjargproc extends Callback<ssizeobjargproc > {
-		abstract public int apply(Pointer<PyObject > PyObjectPtr1, Pointer<Python27Library.Py_ssize_t > Py_ssize_t1, Pointer<PyObject > PyObjectPtr2);
+		abstract public int apply(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1, Pointer<PyObject > PyObjectPtr2);
 	};
 	/// <i>native declaration : object.h:29</i>
 	/// <i>native declaration : object.h:29</i>
 	public static abstract class ssizessizeobjargproc extends Callback<ssizessizeobjargproc > {
-		abstract public int apply(Pointer<PyObject > PyObjectPtr1, Pointer<Python27Library.Py_ssize_t > Py_ssize_t1, Pointer<Python27Library.Py_ssize_t > Py_ssize_t2, Pointer<PyObject > PyObjectPtr2);
+		abstract public int apply(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1, @Ptr long Py_ssize_t2, Pointer<PyObject > PyObjectPtr2);
 	};
 	/// <i>native declaration : object.h:30</i>
 	/// <i>native declaration : object.h:30</i>
@@ -1012,22 +1012,26 @@ public class Python27Library {
 	 * <i>native declaration : object.h:37</i>
 	 */
 	public static abstract class readbufferproc extends Callback<readbufferproc > {
-		abstract public Pointer<Python27Library.Py_ssize_t > apply(Pointer<PyObject > PyObjectPtr1, Pointer<Python27Library.Py_ssize_t > Py_ssize_t1, Pointer<Pointer<? > > voidPtrPtr1);
+		@Ptr 
+		abstract public long apply(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1, Pointer<Pointer<? > > voidPtrPtr1);
 	};
 	/// <i>native declaration : object.h:38</i>
 	/// <i>native declaration : object.h:38</i>
 	public static abstract class writebufferproc extends Callback<writebufferproc > {
-		abstract public Pointer<Python27Library.Py_ssize_t > apply(Pointer<PyObject > PyObjectPtr1, Pointer<Python27Library.Py_ssize_t > Py_ssize_t1, Pointer<Pointer<? > > voidPtrPtr1);
+		@Ptr 
+		abstract public long apply(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1, Pointer<Pointer<? > > voidPtrPtr1);
 	};
 	/// <i>native declaration : object.h:39</i>
 	/// <i>native declaration : object.h:39</i>
 	public static abstract class segcountproc extends Callback<segcountproc > {
-		abstract public Pointer<Python27Library.Py_ssize_t > apply(Pointer<PyObject > PyObjectPtr1, Pointer<Python27Library.Py_ssize_t > Py_ssize_tPtr1);
+		@Ptr 
+		abstract public long apply(Pointer<PyObject > PyObjectPtr1, Pointer<SizeT > Py_ssize_tPtr1);
 	};
 	/// <i>native declaration : object.h:40</i>
 	/// <i>native declaration : object.h:40</i>
 	public static abstract class charbufferproc extends Callback<charbufferproc > {
-		abstract public Pointer<Python27Library.Py_ssize_t > apply(Pointer<PyObject > PyObjectPtr1, Pointer<Python27Library.Py_ssize_t > Py_ssize_t1, Pointer<Pointer<Byte > > charPtrPtr1);
+		@Ptr 
+		abstract public long apply(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1, Pointer<Pointer<Byte > > charPtrPtr1);
 	};
 	/// <i>native declaration : object.h:58</i>
 	/// <i>native declaration : object.h:58</i>
@@ -1067,7 +1071,7 @@ public class Python27Library {
 	/// <i>native declaration : object.h:135</i>
 	/// <i>native declaration : object.h:135</i>
 	public static abstract class printfunc extends Callback<printfunc > {
-		abstract public int apply(Pointer<PyObject > PyObjectPtr1, Pointer<Python27Library.FILE > FILEPtr1, int int1);
+		abstract public int apply(Pointer<PyObject > PyObjectPtr1, Pointer FILEPtr1, int int1);
 	};
 	/// <i>native declaration : object.h:136</i>
 	/// <i>native declaration : object.h:136</i>
@@ -1143,7 +1147,7 @@ public class Python27Library {
 	/// <i>native declaration : object.h:150</i>
 	/// <i>native declaration : object.h:150</i>
 	public static abstract class allocfunc extends Callback<allocfunc > {
-		abstract public Pointer<PyObject > apply(Pointer<PyTypeObject > _typeobjectPtr1, Pointer<Python27Library.Py_ssize_t > Py_ssize_t1);
+		abstract public Pointer<PyObject > apply(Pointer<PyTypeObject > _typeobjectPtr1, @Ptr long Py_ssize_t1);
 	};
 	/// <i>native declaration : methodobject.h:2</i>
 	/// <i>native declaration : methodobject.h:2</i>
@@ -1163,7 +1167,7 @@ public class Python27Library {
 	/// <i>native declaration : fileobject.h:71</i>
 	/// <i>native declaration : fileobject.h:71</i>
 	public static abstract class PyFile_FromFile_arg1_callback extends Callback<PyFile_FromFile_arg1_callback > {
-		abstract public int apply(Pointer<Python27Library.FILE > FILEPtr1);
+		abstract public int apply(Pointer FILEPtr1);
 	};
 	/// <i>native declaration : cobject.h:46</i>
 	/// <i>native declaration : cobject.h:46</i>
@@ -1240,7 +1244,7 @@ public class Python27Library {
 	/// <i>native declaration : pythonrun.h:180</i>
 	/// <i>native declaration : pythonrun.h:180</i>
 	public static abstract class PyOS_ReadlineFunctionPointer_callback extends Callback<PyOS_ReadlineFunctionPointer_callback > {
-		abstract public Pointer<Byte > apply(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Python27Library.FILE > FILEPtr2, Pointer<Byte > charPtr1);
+		abstract public Pointer<Byte > apply(Pointer FILEPtr1, Pointer FILEPtr2, Pointer<Byte > charPtr1);
 	};
 	/// <i>native declaration : ceval.h:80</i>
 	/// <i>native declaration : ceval.h:80</i>
@@ -1310,8 +1314,8 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* PyType_GenericAlloc(PyTypeObject*, Py_ssize_t)</code><br>
 	 * <i>native declaration : object.h:240</i>
 	 */
-	public static Pointer<PyObject > PyType_GenericAlloc(Pointer<PyTypeObject > PyTypeObjectPtr1, Pointer<Python27Library.Py_ssize_t > Py_ssize_t1) {
-		return Pointer.pointerToAddress(PyType_GenericAlloc(Pointer.getPeer(PyTypeObjectPtr1), Pointer.getPeer(Py_ssize_t1)), PyObject.class);
+	public static Pointer<PyObject > PyType_GenericAlloc(Pointer<PyTypeObject > PyTypeObjectPtr1, @Ptr long Py_ssize_t1) {
+		return Pointer.pointerToAddress(PyType_GenericAlloc(Pointer.getPeer(PyTypeObjectPtr1), Py_ssize_t1), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyType_GenericAlloc(@Ptr long PyTypeObjectPtr1, @Ptr long Py_ssize_t1);
@@ -1360,7 +1364,7 @@ public class Python27Library {
 	 * Original signature : <code>int PyObject_Print(PyObject*, FILE*, int)</code><br>
 	 * <i>native declaration : object.h:255</i>
 	 */
-	public static int PyObject_Print(Pointer<PyObject > PyObjectPtr1, Pointer<Python27Library.FILE > FILEPtr1, int int1) {
+	public static int PyObject_Print(Pointer<PyObject > PyObjectPtr1, Pointer FILEPtr1, int int1) {
 		return PyObject_Print(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(FILEPtr1), int1);
 	}
 	protected native static int PyObject_Print(@Ptr long PyObjectPtr1, @Ptr long FILEPtr1, int int1);
@@ -1773,14 +1777,14 @@ public class Python27Library {
 	@Ptr 
 	protected native static long PyObject_Init(@Ptr long PyObjectPtr1, @Ptr long PyTypeObjectPtr1);
 	/**
-	 * Original signature : <code>PyVarObject* PyObject_InitVar(PyVarObject*, PyTypeObject*)</code><br>
+	 * Original signature : <code>PyVarObject* PyObject_InitVar(PyVarObject*, PyTypeObject*, Py_ssize_t)</code><br>
 	 * <i>native declaration : objimpl.h:33</i>
 	 */
-	public static Pointer<PyVarObject > PyObject_InitVar(Pointer<PyVarObject > PyVarObjectPtr1, Pointer<PyTypeObject > PyTypeObjectPtr1) {
-		return Pointer.pointerToAddress(PyObject_InitVar(Pointer.getPeer(PyVarObjectPtr1), Pointer.getPeer(PyTypeObjectPtr1)), PyVarObject.class);
+	public static Pointer<PyVarObject > PyObject_InitVar(Pointer<PyVarObject > PyVarObjectPtr1, Pointer<PyTypeObject > PyTypeObjectPtr1, @Ptr long Py_ssize_t1) {
+		return Pointer.pointerToAddress(PyObject_InitVar(Pointer.getPeer(PyVarObjectPtr1), Pointer.getPeer(PyTypeObjectPtr1), Py_ssize_t1), PyVarObject.class);
 	}
 	@Ptr 
-	protected native static long PyObject_InitVar(@Ptr long PyVarObjectPtr1, @Ptr long PyTypeObjectPtr1);
+	protected native static long PyObject_InitVar(@Ptr long PyVarObjectPtr1, @Ptr long PyTypeObjectPtr1, @Ptr long Py_ssize_t1);
 	/**
 	 * Original signature : <code>PyObject* _PyObject_New(PyTypeObject*)</code><br>
 	 * <i>native declaration : objimpl.h:35</i>
@@ -1791,34 +1795,30 @@ public class Python27Library {
 	@Ptr 
 	protected native static long _PyObject_New(@Ptr long PyTypeObjectPtr1);
 	/**
-	 * Original signature : <code>PyVarObject* _PyObject_NewVar(PyTypeObject*)</code><br>
+	 * Original signature : <code>PyVarObject* _PyObject_NewVar(PyTypeObject*, Py_ssize_t)</code><br>
 	 * <i>native declaration : objimpl.h:37</i>
 	 */
-	public static Pointer<PyVarObject > _PyObject_NewVar(Pointer<PyTypeObject > PyTypeObjectPtr1) {
-		return Pointer.pointerToAddress(_PyObject_NewVar(Pointer.getPeer(PyTypeObjectPtr1)), PyVarObject.class);
+	public static Pointer<PyVarObject > _PyObject_NewVar(Pointer<PyTypeObject > PyTypeObjectPtr1, @Ptr long Py_ssize_t1) {
+		return Pointer.pointerToAddress(_PyObject_NewVar(Pointer.getPeer(PyTypeObjectPtr1), Py_ssize_t1), PyVarObject.class);
 	}
 	@Ptr 
-	protected native static long _PyObject_NewVar(@Ptr long PyTypeObjectPtr1);
+	protected native static long _PyObject_NewVar(@Ptr long PyTypeObjectPtr1, @Ptr long Py_ssize_t1);
 	/**
 	 * C equivalent of gc.collect().<br>
 	 * Original signature : <code>Py_ssize_t PyGC_Collect()</code><br>
 	 * <i>native declaration : objimpl.h:42</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PyGC_Collect() {
-		return Pointer.pointerToAddress(PyGC_Collect$2());
-	}
 	@Ptr 
-	@Name("PyGC_Collect") 
-	protected native static long PyGC_Collect$2();
+	native public static long PyGC_Collect();
 	/**
-	 * Original signature : <code>PyVarObject* _PyObject_GC_Resize(PyVarObject*)</code><br>
+	 * Original signature : <code>PyVarObject* _PyObject_GC_Resize(PyVarObject*, Py_ssize_t)</code><br>
 	 * <i>native declaration : objimpl.h:44</i>
 	 */
-	public static Pointer<PyVarObject > _PyObject_GC_Resize(Pointer<PyVarObject > PyVarObjectPtr1) {
-		return Pointer.pointerToAddress(_PyObject_GC_Resize(Pointer.getPeer(PyVarObjectPtr1)), PyVarObject.class);
+	public static Pointer<PyVarObject > _PyObject_GC_Resize(Pointer<PyVarObject > PyVarObjectPtr1, @Ptr long Py_ssize_t1) {
+		return Pointer.pointerToAddress(_PyObject_GC_Resize(Pointer.getPeer(PyVarObjectPtr1), Py_ssize_t1), PyVarObject.class);
 	}
 	@Ptr 
-	protected native static long _PyObject_GC_Resize(@Ptr long PyVarObjectPtr1);
+	protected native static long _PyObject_GC_Resize(@Ptr long PyVarObjectPtr1, @Ptr long Py_ssize_t1);
 	/**
 	 * Original signature : <code>PyObject* _PyObject_GC_Malloc(size_t)</code><br>
 	 * <i>native declaration : objimpl.h:57</i>
@@ -1839,14 +1839,14 @@ public class Python27Library {
 	@Ptr 
 	protected native static long _PyObject_GC_New(@Ptr long PyTypeObjectPtr1);
 	/**
-	 * Original signature : <code>PyVarObject* _PyObject_GC_NewVar(PyTypeObject*)</code><br>
+	 * Original signature : <code>PyVarObject* _PyObject_GC_NewVar(PyTypeObject*, Py_ssize_t)</code><br>
 	 * <i>native declaration : objimpl.h:61</i>
 	 */
-	public static Pointer<PyVarObject > _PyObject_GC_NewVar(Pointer<PyTypeObject > PyTypeObjectPtr1) {
-		return Pointer.pointerToAddress(_PyObject_GC_NewVar(Pointer.getPeer(PyTypeObjectPtr1)), PyVarObject.class);
+	public static Pointer<PyVarObject > _PyObject_GC_NewVar(Pointer<PyTypeObject > PyTypeObjectPtr1, @Ptr long Py_ssize_t1) {
+		return Pointer.pointerToAddress(_PyObject_GC_NewVar(Pointer.getPeer(PyTypeObjectPtr1), Py_ssize_t1), PyVarObject.class);
 	}
 	@Ptr 
-	protected native static long _PyObject_GC_NewVar(@Ptr long PyTypeObjectPtr1);
+	protected native static long _PyObject_GC_NewVar(@Ptr long PyTypeObjectPtr1, @Ptr long Py_ssize_t1);
 	/**
 	 * Original signature : <code>void PyObject_GC_Track(void*)</code><br>
 	 * <i>native declaration : objimpl.h:63</i>
@@ -1885,8 +1885,8 @@ public class Python27Library {
 	 * @param size size of buffer<br>
 	 * <i>native declaration : unicodeobject.h:19</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_FromUnicode(Pointer<Integer > u, Pointer<Python27Library.Py_ssize_t > size) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_FromUnicode(Pointer.getPeer(u), Pointer.getPeer(size)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_FromUnicode(Pointer<Integer > u, @Ptr long size) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_FromUnicode(Pointer.getPeer(u), size), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_FromUnicode(@Ptr long u, @Ptr long size);
@@ -1897,8 +1897,8 @@ public class Python27Library {
 	 * @param size size of buffer<br>
 	 * <i>native declaration : unicodeobject.h:26</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_FromStringAndSize(Pointer<Byte > u, Pointer<Python27Library.Py_ssize_t > size) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_FromStringAndSize(Pointer.getPeer(u), Pointer.getPeer(size)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_FromStringAndSize(Pointer<Byte > u, @Ptr long size) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_FromStringAndSize(Pointer.getPeer(u), size), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_FromStringAndSize(@Ptr long u, @Ptr long size);
@@ -1929,8 +1929,9 @@ public class Python27Library {
 	 * @param unicode Unicode object<br>
 	 * <i>native declaration : unicodeobject.h:43</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PyUnicodeUCS4_GetSize(Pointer<PyObject > unicode) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_GetSize(Pointer.getPeer(unicode)));
+	@Ptr 
+	public static long PyUnicodeUCS4_GetSize(Pointer<PyObject > unicode) {
+		return PyUnicodeUCS4_GetSize(Pointer.getPeer(unicode));
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_GetSize(@Ptr long unicode);
@@ -1946,8 +1947,8 @@ public class Python27Library {
 	 * @param length New length<br>
 	 * <i>native declaration : unicodeobject.h:54</i>
 	 */
-	public static int PyUnicodeUCS4_Resize(Pointer<Pointer<PyObject > > unicode, Pointer<Python27Library.Py_ssize_t > length) {
-		return PyUnicodeUCS4_Resize(Pointer.getPeer(unicode), Pointer.getPeer(length));
+	public static int PyUnicodeUCS4_Resize(Pointer<Pointer<PyObject > > unicode, @Ptr long length) {
+		return PyUnicodeUCS4_Resize(Pointer.getPeer(unicode), length);
 	}
 	protected native static int PyUnicodeUCS4_Resize(@Ptr long unicode, @Ptr long length);
 	/**
@@ -1996,8 +1997,8 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* _PyUnicode_FormatAdvanced(PyObject*, Py_UNICODE*, Py_ssize_t)</code><br>
 	 * <i>native declaration : unicodeobject.h:76</i>
 	 */
-	public static Pointer<PyObject > _PyUnicode_FormatAdvanced(Pointer<PyObject > obj, Pointer<Integer > format_spec, Pointer<Python27Library.Py_ssize_t > format_spec_len) {
-		return Pointer.pointerToAddress(_PyUnicode_FormatAdvanced(Pointer.getPeer(obj), Pointer.getPeer(format_spec), Pointer.getPeer(format_spec_len)), PyObject.class);
+	public static Pointer<PyObject > _PyUnicode_FormatAdvanced(Pointer<PyObject > obj, Pointer<Integer > format_spec, @Ptr long format_spec_len) {
+		return Pointer.pointerToAddress(_PyUnicode_FormatAdvanced(Pointer.getPeer(obj), Pointer.getPeer(format_spec), format_spec_len), PyObject.class);
 	}
 	@Ptr 
 	protected native static long _PyUnicode_FormatAdvanced(@Ptr long obj, @Ptr long format_spec, @Ptr long format_spec_len);
@@ -2007,8 +2008,8 @@ public class Python27Library {
 	 * @param size size of buffer<br>
 	 * <i>native declaration : unicodeobject.h:82</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_FromWideChar(Pointer<Character > w, Pointer<Python27Library.Py_ssize_t > size) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_FromWideChar(Pointer.getPeer(w), Pointer.getPeer(size)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_FromWideChar(Pointer<Character > w, @Ptr long size) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_FromWideChar(Pointer.getPeer(w), size), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_FromWideChar(@Ptr long w, @Ptr long size);
@@ -2019,8 +2020,9 @@ public class Python27Library {
 	 * @param size size of buffer<br>
 	 * <i>native declaration : unicodeobject.h:89</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PyUnicodeUCS4_AsWideChar(Pointer<PyUnicodeObject > unicode, Pointer<Character > w, Pointer<Python27Library.Py_ssize_t > size) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_AsWideChar(Pointer.getPeer(unicode), Pointer.getPeer(w), Pointer.getPeer(size)));
+	@Ptr 
+	public static long PyUnicodeUCS4_AsWideChar(Pointer<PyUnicodeObject > unicode, Pointer<Character > w, @Ptr long size) {
+		return PyUnicodeUCS4_AsWideChar(Pointer.getPeer(unicode), Pointer.getPeer(w), size);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_AsWideChar(@Ptr long unicode, @Ptr long w, @Ptr long size);
@@ -2075,8 +2077,8 @@ public class Python27Library {
 	 * @param errors error handling<br>
 	 * <i>native declaration : unicodeobject.h:110</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_Decode(Pointer<Byte > s, Pointer<Python27Library.Py_ssize_t > size, Pointer<Byte > encoding, Pointer<Byte > errors) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_Decode(Pointer.getPeer(s), Pointer.getPeer(size), Pointer.getPeer(encoding), Pointer.getPeer(errors)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_Decode(Pointer<Byte > s, @Ptr long size, Pointer<Byte > encoding, Pointer<Byte > errors) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_Decode(Pointer.getPeer(s), size, Pointer.getPeer(encoding), Pointer.getPeer(errors)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_Decode(@Ptr long s, @Ptr long size, @Ptr long encoding, @Ptr long errors);
@@ -2088,8 +2090,8 @@ public class Python27Library {
 	 * @param errors error handling<br>
 	 * <i>native declaration : unicodeobject.h:118</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_Encode(Pointer<Integer > s, Pointer<Python27Library.Py_ssize_t > size, Pointer<Byte > encoding, Pointer<Byte > errors) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_Encode(Pointer.getPeer(s), Pointer.getPeer(size), Pointer.getPeer(encoding), Pointer.getPeer(errors)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_Encode(Pointer<Integer > s, @Ptr long size, Pointer<Byte > encoding, Pointer<Byte > errors) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_Encode(Pointer.getPeer(s), size, Pointer.getPeer(encoding), Pointer.getPeer(errors)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_Encode(@Ptr long s, @Ptr long size, @Ptr long encoding, @Ptr long errors);
@@ -2134,8 +2136,8 @@ public class Python27Library {
 	 * @param errors error handling<br>
 	 * <i>native declaration : unicodeobject.h:144</i>
 	 */
-	public static Pointer<PyObject > PyUnicode_DecodeUTF7(Pointer<Byte > string, Pointer<Python27Library.Py_ssize_t > length, Pointer<Byte > errors) {
-		return Pointer.pointerToAddress(PyUnicode_DecodeUTF7(Pointer.getPeer(string), Pointer.getPeer(length), Pointer.getPeer(errors)), PyObject.class);
+	public static Pointer<PyObject > PyUnicode_DecodeUTF7(Pointer<Byte > string, @Ptr long length, Pointer<Byte > errors) {
+		return Pointer.pointerToAddress(PyUnicode_DecodeUTF7(Pointer.getPeer(string), length, Pointer.getPeer(errors)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicode_DecodeUTF7(@Ptr long string, @Ptr long length, @Ptr long errors);
@@ -2147,8 +2149,8 @@ public class Python27Library {
 	 * @param consumed bytes consumed<br>
 	 * <i>native declaration : unicodeobject.h:152</i>
 	 */
-	public static Pointer<PyObject > PyUnicode_DecodeUTF7Stateful(Pointer<Byte > string, Pointer<Python27Library.Py_ssize_t > length, Pointer<Byte > errors, Pointer<Python27Library.Py_ssize_t > consumed) {
-		return Pointer.pointerToAddress(PyUnicode_DecodeUTF7Stateful(Pointer.getPeer(string), Pointer.getPeer(length), Pointer.getPeer(errors), Pointer.getPeer(consumed)), PyObject.class);
+	public static Pointer<PyObject > PyUnicode_DecodeUTF7Stateful(Pointer<Byte > string, @Ptr long length, Pointer<Byte > errors, Pointer<SizeT > consumed) {
+		return Pointer.pointerToAddress(PyUnicode_DecodeUTF7Stateful(Pointer.getPeer(string), length, Pointer.getPeer(errors), Pointer.getPeer(consumed)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicode_DecodeUTF7Stateful(@Ptr long string, @Ptr long length, @Ptr long errors, @Ptr long consumed);
@@ -2161,8 +2163,8 @@ public class Python27Library {
 	 * @param errors error handling<br>
 	 * <i>native declaration : unicodeobject.h:161</i>
 	 */
-	public static Pointer<PyObject > PyUnicode_EncodeUTF7(Pointer<Integer > data, Pointer<Python27Library.Py_ssize_t > length, int base64SetO, int base64WhiteSpace, Pointer<Byte > errors) {
-		return Pointer.pointerToAddress(PyUnicode_EncodeUTF7(Pointer.getPeer(data), Pointer.getPeer(length), base64SetO, base64WhiteSpace, Pointer.getPeer(errors)), PyObject.class);
+	public static Pointer<PyObject > PyUnicode_EncodeUTF7(Pointer<Integer > data, @Ptr long length, int base64SetO, int base64WhiteSpace, Pointer<Byte > errors) {
+		return Pointer.pointerToAddress(PyUnicode_EncodeUTF7(Pointer.getPeer(data), length, base64SetO, base64WhiteSpace, Pointer.getPeer(errors)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicode_EncodeUTF7(@Ptr long data, @Ptr long length, int base64SetO, int base64WhiteSpace, @Ptr long errors);
@@ -2173,8 +2175,8 @@ public class Python27Library {
 	 * @param errors error handling<br>
 	 * <i>native declaration : unicodeobject.h:168</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_DecodeUTF8(Pointer<Byte > string, Pointer<Python27Library.Py_ssize_t > length, Pointer<Byte > errors) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeUTF8(Pointer.getPeer(string), Pointer.getPeer(length), Pointer.getPeer(errors)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_DecodeUTF8(Pointer<Byte > string, @Ptr long length, Pointer<Byte > errors) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeUTF8(Pointer.getPeer(string), length, Pointer.getPeer(errors)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_DecodeUTF8(@Ptr long string, @Ptr long length, @Ptr long errors);
@@ -2186,8 +2188,8 @@ public class Python27Library {
 	 * @param consumed bytes consumed<br>
 	 * <i>native declaration : unicodeobject.h:176</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_DecodeUTF8Stateful(Pointer<Byte > string, Pointer<Python27Library.Py_ssize_t > length, Pointer<Byte > errors, Pointer<Python27Library.Py_ssize_t > consumed) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeUTF8Stateful(Pointer.getPeer(string), Pointer.getPeer(length), Pointer.getPeer(errors), Pointer.getPeer(consumed)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_DecodeUTF8Stateful(Pointer<Byte > string, @Ptr long length, Pointer<Byte > errors, Pointer<SizeT > consumed) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeUTF8Stateful(Pointer.getPeer(string), length, Pointer.getPeer(errors), Pointer.getPeer(consumed)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_DecodeUTF8Stateful(@Ptr long string, @Ptr long length, @Ptr long errors, @Ptr long consumed);
@@ -2208,8 +2210,8 @@ public class Python27Library {
 	 * @param errors error handling<br>
 	 * <i>native declaration : unicodeobject.h:188</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_EncodeUTF8(Pointer<Integer > data, Pointer<Python27Library.Py_ssize_t > length, Pointer<Byte > errors) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_EncodeUTF8(Pointer.getPeer(data), Pointer.getPeer(length), Pointer.getPeer(errors)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_EncodeUTF8(Pointer<Integer > data, @Ptr long length, Pointer<Byte > errors) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_EncodeUTF8(Pointer.getPeer(data), length, Pointer.getPeer(errors)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_EncodeUTF8(@Ptr long data, @Ptr long length, @Ptr long errors);
@@ -2221,8 +2223,8 @@ public class Python27Library {
 	 * @param byteorder pointer to byteorder to use<br>0=native;-1=LE,1=BE; updated on<br>exit<br>
 	 * <i>native declaration : unicodeobject.h:196</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_DecodeUTF32(Pointer<Byte > string, Pointer<Python27Library.Py_ssize_t > length, Pointer<Byte > errors, Pointer<Integer > byteorder) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeUTF32(Pointer.getPeer(string), Pointer.getPeer(length), Pointer.getPeer(errors), Pointer.getPeer(byteorder)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_DecodeUTF32(Pointer<Byte > string, @Ptr long length, Pointer<Byte > errors, Pointer<Integer > byteorder) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeUTF32(Pointer.getPeer(string), length, Pointer.getPeer(errors), Pointer.getPeer(byteorder)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_DecodeUTF32(@Ptr long string, @Ptr long length, @Ptr long errors, @Ptr long byteorder);
@@ -2235,8 +2237,8 @@ public class Python27Library {
 	 * @param consumed bytes consumed<br>
 	 * <i>native declaration : unicodeobject.h:205</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_DecodeUTF32Stateful(Pointer<Byte > string, Pointer<Python27Library.Py_ssize_t > length, Pointer<Byte > errors, Pointer<Integer > byteorder, Pointer<Python27Library.Py_ssize_t > consumed) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeUTF32Stateful(Pointer.getPeer(string), Pointer.getPeer(length), Pointer.getPeer(errors), Pointer.getPeer(byteorder), Pointer.getPeer(consumed)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_DecodeUTF32Stateful(Pointer<Byte > string, @Ptr long length, Pointer<Byte > errors, Pointer<Integer > byteorder, Pointer<SizeT > consumed) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeUTF32Stateful(Pointer.getPeer(string), length, Pointer.getPeer(errors), Pointer.getPeer(byteorder), Pointer.getPeer(consumed)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_DecodeUTF32Stateful(@Ptr long string, @Ptr long length, @Ptr long errors, @Ptr long byteorder, @Ptr long consumed);
@@ -2258,8 +2260,8 @@ public class Python27Library {
 	 * @param byteorder byteorder to use 0=BOM+native;-1=LE,1=BE<br>
 	 * <i>native declaration : unicodeobject.h:218</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_EncodeUTF32(Pointer<Integer > data, Pointer<Python27Library.Py_ssize_t > length, Pointer<Byte > errors, int byteorder) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_EncodeUTF32(Pointer.getPeer(data), Pointer.getPeer(length), Pointer.getPeer(errors), byteorder), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_EncodeUTF32(Pointer<Integer > data, @Ptr long length, Pointer<Byte > errors, int byteorder) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_EncodeUTF32(Pointer.getPeer(data), length, Pointer.getPeer(errors), byteorder), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_EncodeUTF32(@Ptr long data, @Ptr long length, @Ptr long errors, int byteorder);
@@ -2271,8 +2273,8 @@ public class Python27Library {
 	 * @param byteorder pointer to byteorder to use<br>0=native;-1=LE,1=BE; updated on<br>exit<br>
 	 * <i>native declaration : unicodeobject.h:226</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_DecodeUTF16(Pointer<Byte > string, Pointer<Python27Library.Py_ssize_t > length, Pointer<Byte > errors, Pointer<Integer > byteorder) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeUTF16(Pointer.getPeer(string), Pointer.getPeer(length), Pointer.getPeer(errors), Pointer.getPeer(byteorder)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_DecodeUTF16(Pointer<Byte > string, @Ptr long length, Pointer<Byte > errors, Pointer<Integer > byteorder) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeUTF16(Pointer.getPeer(string), length, Pointer.getPeer(errors), Pointer.getPeer(byteorder)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_DecodeUTF16(@Ptr long string, @Ptr long length, @Ptr long errors, @Ptr long byteorder);
@@ -2285,8 +2287,8 @@ public class Python27Library {
 	 * @param consumed bytes consumed<br>
 	 * <i>native declaration : unicodeobject.h:235</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_DecodeUTF16Stateful(Pointer<Byte > string, Pointer<Python27Library.Py_ssize_t > length, Pointer<Byte > errors, Pointer<Integer > byteorder, Pointer<Python27Library.Py_ssize_t > consumed) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeUTF16Stateful(Pointer.getPeer(string), Pointer.getPeer(length), Pointer.getPeer(errors), Pointer.getPeer(byteorder), Pointer.getPeer(consumed)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_DecodeUTF16Stateful(Pointer<Byte > string, @Ptr long length, Pointer<Byte > errors, Pointer<Integer > byteorder, Pointer<SizeT > consumed) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeUTF16Stateful(Pointer.getPeer(string), length, Pointer.getPeer(errors), Pointer.getPeer(byteorder), Pointer.getPeer(consumed)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_DecodeUTF16Stateful(@Ptr long string, @Ptr long length, @Ptr long errors, @Ptr long byteorder, @Ptr long consumed);
@@ -2308,8 +2310,8 @@ public class Python27Library {
 	 * @param byteorder byteorder to use 0=BOM+native;-1=LE,1=BE<br>
 	 * <i>native declaration : unicodeobject.h:248</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_EncodeUTF16(Pointer<Integer > data, Pointer<Python27Library.Py_ssize_t > length, Pointer<Byte > errors, int byteorder) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_EncodeUTF16(Pointer.getPeer(data), Pointer.getPeer(length), Pointer.getPeer(errors), byteorder), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_EncodeUTF16(Pointer<Integer > data, @Ptr long length, Pointer<Byte > errors, int byteorder) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_EncodeUTF16(Pointer.getPeer(data), length, Pointer.getPeer(errors), byteorder), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_EncodeUTF16(@Ptr long data, @Ptr long length, @Ptr long errors, int byteorder);
@@ -2320,8 +2322,8 @@ public class Python27Library {
 	 * @param errors error handling<br>
 	 * <i>native declaration : unicodeobject.h:255</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_DecodeUnicodeEscape(Pointer<Byte > string, Pointer<Python27Library.Py_ssize_t > length, Pointer<Byte > errors) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeUnicodeEscape(Pointer.getPeer(string), Pointer.getPeer(length), Pointer.getPeer(errors)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_DecodeUnicodeEscape(Pointer<Byte > string, @Ptr long length, Pointer<Byte > errors) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeUnicodeEscape(Pointer.getPeer(string), length, Pointer.getPeer(errors)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_DecodeUnicodeEscape(@Ptr long string, @Ptr long length, @Ptr long errors);
@@ -2341,8 +2343,8 @@ public class Python27Library {
 	 * @param length Number of Py_UNICODE chars to encode<br>
 	 * <i>native declaration : unicodeobject.h:266</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_EncodeUnicodeEscape(Pointer<Integer > data, Pointer<Python27Library.Py_ssize_t > length) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_EncodeUnicodeEscape(Pointer.getPeer(data), Pointer.getPeer(length)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_EncodeUnicodeEscape(Pointer<Integer > data, @Ptr long length) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_EncodeUnicodeEscape(Pointer.getPeer(data), length), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_EncodeUnicodeEscape(@Ptr long data, @Ptr long length);
@@ -2353,8 +2355,8 @@ public class Python27Library {
 	 * @param errors error handling<br>
 	 * <i>native declaration : unicodeobject.h:273</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_DecodeRawUnicodeEscape(Pointer<Byte > string, Pointer<Python27Library.Py_ssize_t > length, Pointer<Byte > errors) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeRawUnicodeEscape(Pointer.getPeer(string), Pointer.getPeer(length), Pointer.getPeer(errors)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_DecodeRawUnicodeEscape(Pointer<Byte > string, @Ptr long length, Pointer<Byte > errors) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeRawUnicodeEscape(Pointer.getPeer(string), length, Pointer.getPeer(errors)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_DecodeRawUnicodeEscape(@Ptr long string, @Ptr long length, @Ptr long errors);
@@ -2374,8 +2376,8 @@ public class Python27Library {
 	 * @param length Number of Py_UNICODE chars to encode<br>
 	 * <i>native declaration : unicodeobject.h:284</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_EncodeRawUnicodeEscape(Pointer<Integer > data, Pointer<Python27Library.Py_ssize_t > length) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_EncodeRawUnicodeEscape(Pointer.getPeer(data), Pointer.getPeer(length)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_EncodeRawUnicodeEscape(Pointer<Integer > data, @Ptr long length) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_EncodeRawUnicodeEscape(Pointer.getPeer(data), length), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_EncodeRawUnicodeEscape(@Ptr long data, @Ptr long length);
@@ -2383,8 +2385,8 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* _PyUnicode_DecodeUnicodeInternal(const char*, Py_ssize_t, const char*)</code><br>
 	 * <i>native declaration : unicodeobject.h:286</i>
 	 */
-	public static Pointer<PyObject > _PyUnicode_DecodeUnicodeInternal(Pointer<Byte > string, Pointer<Python27Library.Py_ssize_t > length, Pointer<Byte > errors) {
-		return Pointer.pointerToAddress(_PyUnicode_DecodeUnicodeInternal(Pointer.getPeer(string), Pointer.getPeer(length), Pointer.getPeer(errors)), PyObject.class);
+	public static Pointer<PyObject > _PyUnicode_DecodeUnicodeInternal(Pointer<Byte > string, @Ptr long length, Pointer<Byte > errors) {
+		return Pointer.pointerToAddress(_PyUnicode_DecodeUnicodeInternal(Pointer.getPeer(string), length, Pointer.getPeer(errors)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long _PyUnicode_DecodeUnicodeInternal(@Ptr long string, @Ptr long length, @Ptr long errors);
@@ -2395,8 +2397,8 @@ public class Python27Library {
 	 * @param errors error handling<br>
 	 * <i>native declaration : unicodeobject.h:293</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_DecodeLatin1(Pointer<Byte > string, Pointer<Python27Library.Py_ssize_t > length, Pointer<Byte > errors) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeLatin1(Pointer.getPeer(string), Pointer.getPeer(length), Pointer.getPeer(errors)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_DecodeLatin1(Pointer<Byte > string, @Ptr long length, Pointer<Byte > errors) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeLatin1(Pointer.getPeer(string), length, Pointer.getPeer(errors)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_DecodeLatin1(@Ptr long string, @Ptr long length, @Ptr long errors);
@@ -2417,8 +2419,8 @@ public class Python27Library {
 	 * @param errors error handling<br>
 	 * <i>native declaration : unicodeobject.h:305</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_EncodeLatin1(Pointer<Integer > data, Pointer<Python27Library.Py_ssize_t > length, Pointer<Byte > errors) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_EncodeLatin1(Pointer.getPeer(data), Pointer.getPeer(length), Pointer.getPeer(errors)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_EncodeLatin1(Pointer<Integer > data, @Ptr long length, Pointer<Byte > errors) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_EncodeLatin1(Pointer.getPeer(data), length, Pointer.getPeer(errors)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_EncodeLatin1(@Ptr long data, @Ptr long length, @Ptr long errors);
@@ -2429,8 +2431,8 @@ public class Python27Library {
 	 * @param errors error handling<br>
 	 * <i>native declaration : unicodeobject.h:312</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_DecodeASCII(Pointer<Byte > string, Pointer<Python27Library.Py_ssize_t > length, Pointer<Byte > errors) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeASCII(Pointer.getPeer(string), Pointer.getPeer(length), Pointer.getPeer(errors)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_DecodeASCII(Pointer<Byte > string, @Ptr long length, Pointer<Byte > errors) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeASCII(Pointer.getPeer(string), length, Pointer.getPeer(errors)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_DecodeASCII(@Ptr long string, @Ptr long length, @Ptr long errors);
@@ -2451,8 +2453,8 @@ public class Python27Library {
 	 * @param errors error handling<br>
 	 * <i>native declaration : unicodeobject.h:324</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_EncodeASCII(Pointer<Integer > data, Pointer<Python27Library.Py_ssize_t > length, Pointer<Byte > errors) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_EncodeASCII(Pointer.getPeer(data), Pointer.getPeer(length), Pointer.getPeer(errors)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_EncodeASCII(Pointer<Integer > data, @Ptr long length, Pointer<Byte > errors) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_EncodeASCII(Pointer.getPeer(data), length, Pointer.getPeer(errors)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_EncodeASCII(@Ptr long data, @Ptr long length, @Ptr long errors);
@@ -2464,8 +2466,8 @@ public class Python27Library {
 	 * @param errors error handling<br>
 	 * <i>native declaration : unicodeobject.h:332</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_DecodeCharmap(Pointer<Byte > string, Pointer<Python27Library.Py_ssize_t > length, Pointer<PyObject > mapping, Pointer<Byte > errors) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeCharmap(Pointer.getPeer(string), Pointer.getPeer(length), Pointer.getPeer(mapping), Pointer.getPeer(errors)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_DecodeCharmap(Pointer<Byte > string, @Ptr long length, Pointer<PyObject > mapping, Pointer<Byte > errors) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_DecodeCharmap(Pointer.getPeer(string), length, Pointer.getPeer(mapping), Pointer.getPeer(errors)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_DecodeCharmap(@Ptr long string, @Ptr long length, @Ptr long mapping, @Ptr long errors);
@@ -2488,8 +2490,8 @@ public class Python27Library {
 	 * @param errors error handling<br>
 	 * <i>native declaration : unicodeobject.h:346</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_EncodeCharmap(Pointer<Integer > data, Pointer<Python27Library.Py_ssize_t > length, Pointer<PyObject > mapping, Pointer<Byte > errors) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_EncodeCharmap(Pointer.getPeer(data), Pointer.getPeer(length), Pointer.getPeer(mapping), Pointer.getPeer(errors)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_EncodeCharmap(Pointer<Integer > data, @Ptr long length, Pointer<PyObject > mapping, Pointer<Byte > errors) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_EncodeCharmap(Pointer.getPeer(data), length, Pointer.getPeer(mapping), Pointer.getPeer(errors)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_EncodeCharmap(@Ptr long data, @Ptr long length, @Ptr long mapping, @Ptr long errors);
@@ -2501,8 +2503,8 @@ public class Python27Library {
 	 * @param errors error handling<br>
 	 * <i>native declaration : unicodeobject.h:354</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_TranslateCharmap(Pointer<Integer > data, Pointer<Python27Library.Py_ssize_t > length, Pointer<PyObject > table, Pointer<Byte > errors) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_TranslateCharmap(Pointer.getPeer(data), Pointer.getPeer(length), Pointer.getPeer(table), Pointer.getPeer(errors)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_TranslateCharmap(Pointer<Integer > data, @Ptr long length, Pointer<PyObject > table, Pointer<Byte > errors) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_TranslateCharmap(Pointer.getPeer(data), length, Pointer.getPeer(table), Pointer.getPeer(errors)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_TranslateCharmap(@Ptr long data, @Ptr long length, @Ptr long table, @Ptr long errors);
@@ -2514,8 +2516,8 @@ public class Python27Library {
 	 * @param errors error handling<br>
 	 * <i>native declaration : unicodeobject.h:362</i>
 	 */
-	public static int PyUnicodeUCS4_EncodeDecimal(Pointer<Integer > s, Pointer<Python27Library.Py_ssize_t > length, Pointer<Byte > output, Pointer<Byte > errors) {
-		return PyUnicodeUCS4_EncodeDecimal(Pointer.getPeer(s), Pointer.getPeer(length), Pointer.getPeer(output), Pointer.getPeer(errors));
+	public static int PyUnicodeUCS4_EncodeDecimal(Pointer<Integer > s, @Ptr long length, Pointer<Byte > output, Pointer<Byte > errors) {
+		return PyUnicodeUCS4_EncodeDecimal(Pointer.getPeer(s), length, Pointer.getPeer(output), Pointer.getPeer(errors));
 	}
 	protected native static int PyUnicodeUCS4_EncodeDecimal(@Ptr long s, @Ptr long length, @Ptr long output, @Ptr long errors);
 	/**
@@ -2536,8 +2538,8 @@ public class Python27Library {
 	 * @param maxsplit Maxsplit count<br>
 	 * <i>native declaration : unicodeobject.h:375</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_Split(Pointer<PyObject > s, Pointer<PyObject > sep, Pointer<Python27Library.Py_ssize_t > maxsplit) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_Split(Pointer.getPeer(s), Pointer.getPeer(sep), Pointer.getPeer(maxsplit)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_Split(Pointer<PyObject > s, Pointer<PyObject > sep, @Ptr long maxsplit) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_Split(Pointer.getPeer(s), Pointer.getPeer(sep), maxsplit), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_Split(@Ptr long s, @Ptr long sep, @Ptr long maxsplit);
@@ -2581,8 +2583,8 @@ public class Python27Library {
 	 * @param maxsplit Maxsplit count<br>
 	 * <i>native declaration : unicodeobject.h:400</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_RSplit(Pointer<PyObject > s, Pointer<PyObject > sep, Pointer<Python27Library.Py_ssize_t > maxsplit) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_RSplit(Pointer.getPeer(s), Pointer.getPeer(sep), Pointer.getPeer(maxsplit)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_RSplit(Pointer<PyObject > s, Pointer<PyObject > sep, @Ptr long maxsplit) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_RSplit(Pointer.getPeer(s), Pointer.getPeer(sep), maxsplit), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_RSplit(@Ptr long s, @Ptr long sep, @Ptr long maxsplit);
@@ -2618,8 +2620,9 @@ public class Python27Library {
 	 * @param direction Tail end: -1 prefix, +1 suffix<br>
 	 * <i>native declaration : unicodeobject.h:422</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PyUnicodeUCS4_Tailmatch(Pointer<PyObject > str, Pointer<PyObject > substr, Pointer<Python27Library.Py_ssize_t > start, Pointer<Python27Library.Py_ssize_t > end, int direction) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_Tailmatch(Pointer.getPeer(str), Pointer.getPeer(substr), Pointer.getPeer(start), Pointer.getPeer(end), direction));
+	@Ptr 
+	public static long PyUnicodeUCS4_Tailmatch(Pointer<PyObject > str, Pointer<PyObject > substr, @Ptr long start, @Ptr long end, int direction) {
+		return PyUnicodeUCS4_Tailmatch(Pointer.getPeer(str), Pointer.getPeer(substr), start, end, direction);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_Tailmatch(@Ptr long str, @Ptr long substr, @Ptr long start, @Ptr long end, int direction);
@@ -2632,8 +2635,9 @@ public class Python27Library {
 	 * @param direction Find direction: +1 forward, -1 backward<br>
 	 * <i>native declaration : unicodeobject.h:431</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PyUnicodeUCS4_Find(Pointer<PyObject > str, Pointer<PyObject > substr, Pointer<Python27Library.Py_ssize_t > start, Pointer<Python27Library.Py_ssize_t > end, int direction) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_Find(Pointer.getPeer(str), Pointer.getPeer(substr), Pointer.getPeer(start), Pointer.getPeer(end), direction));
+	@Ptr 
+	public static long PyUnicodeUCS4_Find(Pointer<PyObject > str, Pointer<PyObject > substr, @Ptr long start, @Ptr long end, int direction) {
+		return PyUnicodeUCS4_Find(Pointer.getPeer(str), Pointer.getPeer(substr), start, end, direction);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_Find(@Ptr long str, @Ptr long substr, @Ptr long start, @Ptr long end, int direction);
@@ -2645,8 +2649,9 @@ public class Python27Library {
 	 * @param end Stop index<br>
 	 * <i>native declaration : unicodeobject.h:439</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PyUnicodeUCS4_Count(Pointer<PyObject > str, Pointer<PyObject > substr, Pointer<Python27Library.Py_ssize_t > start, Pointer<Python27Library.Py_ssize_t > end) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_Count(Pointer.getPeer(str), Pointer.getPeer(substr), Pointer.getPeer(start), Pointer.getPeer(end)));
+	@Ptr 
+	public static long PyUnicodeUCS4_Count(Pointer<PyObject > str, Pointer<PyObject > substr, @Ptr long start, @Ptr long end) {
+		return PyUnicodeUCS4_Count(Pointer.getPeer(str), Pointer.getPeer(substr), start, end);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_Count(@Ptr long str, @Ptr long substr, @Ptr long start, @Ptr long end);
@@ -2658,8 +2663,8 @@ public class Python27Library {
 	 * @param maxcount Max. number of replacements to apply;<br>-1 = all<br>
 	 * <i>native declaration : unicodeobject.h:447</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeUCS4_Replace(Pointer<PyObject > str, Pointer<PyObject > substr, Pointer<PyObject > replstr, Pointer<Python27Library.Py_ssize_t > maxcount) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_Replace(Pointer.getPeer(str), Pointer.getPeer(substr), Pointer.getPeer(replstr), Pointer.getPeer(maxcount)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeUCS4_Replace(Pointer<PyObject > str, Pointer<PyObject > substr, Pointer<PyObject > replstr, @Ptr long maxcount) {
+		return Pointer.pointerToAddress(PyUnicodeUCS4_Replace(Pointer.getPeer(str), Pointer.getPeer(substr), Pointer.getPeer(replstr), maxcount), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_Replace(@Ptr long str, @Ptr long substr, @Ptr long replstr, @Ptr long maxcount);
@@ -2816,14 +2821,14 @@ public class Python27Library {
 	@Ptr 
 	protected native static long PyInt_FromString(@Ptr long charPtr1, @Ptr long charPtrPtr1, int int1);
 	/**
-	 * Original signature : <code>PyObject* PyInt_FromUnicode(Py_UNICODE*, int)</code><br>
+	 * Original signature : <code>PyObject* PyInt_FromUnicode(Py_UNICODE*, Py_ssize_t, int)</code><br>
 	 * <i>native declaration : intobject.h:10</i>
 	 */
-	public static Pointer<PyObject > PyInt_FromUnicode(Pointer<Integer > Py_UNICODEPtr1, int int1) {
-		return Pointer.pointerToAddress(PyInt_FromUnicode(Pointer.getPeer(Py_UNICODEPtr1), int1), PyObject.class);
+	public static Pointer<PyObject > PyInt_FromUnicode(Pointer<Integer > Py_UNICODEPtr1, @Ptr long Py_ssize_t1, int int1) {
+		return Pointer.pointerToAddress(PyInt_FromUnicode(Pointer.getPeer(Py_UNICODEPtr1), Py_ssize_t1, int1), PyObject.class);
 	}
 	@Ptr 
-	protected native static long PyInt_FromUnicode(@Ptr long Py_UNICODEPtr1, int int1);
+	protected native static long PyInt_FromUnicode(@Ptr long Py_UNICODEPtr1, @Ptr long Py_ssize_t1, int int1);
 	/**
 	 * Original signature : <code>PyObject* PyInt_FromLong(long)</code><br>
 	 * <i>native declaration : intobject.h:12</i>
@@ -2845,15 +2850,15 @@ public class Python27Library {
 	@Name("PyInt_FromSize_t") 
 	protected native static long PyInt_FromSize_t$2(@Ptr long size_t1);
 	/**
-	 * Original signature : <code>PyObject* PyInt_FromSsize_t()</code><br>
+	 * Original signature : <code>PyObject* PyInt_FromSsize_t(Py_ssize_t)</code><br>
 	 * <i>native declaration : intobject.h:16</i>
 	 */
-	public static Pointer<PyObject > PyInt_FromSsize_t() {
-		return Pointer.pointerToAddress(PyInt_FromSsize_t$2(), PyObject.class);
+	public static Pointer<PyObject > PyInt_FromSsize_t(@Ptr long Py_ssize_t1) {
+		return Pointer.pointerToAddress(PyInt_FromSsize_t$2(Py_ssize_t1), PyObject.class);
 	}
 	@Ptr 
 	@Name("PyInt_FromSsize_t") 
-	protected native static long PyInt_FromSsize_t$2();
+	protected native static long PyInt_FromSsize_t$2(@Ptr long Py_ssize_t1);
 	/**
 	 * Original signature : <code>long PyInt_AsLong(PyObject*)</code><br>
 	 * <i>native declaration : intobject.h:18</i>
@@ -2868,8 +2873,9 @@ public class Python27Library {
 	 * Original signature : <code>Py_ssize_t PyInt_AsSsize_t(PyObject*)</code><br>
 	 * <i>native declaration : intobject.h:20</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PyInt_AsSsize_t(Pointer<PyObject > PyObjectPtr1) {
-		return Pointer.pointerToAddress(PyInt_AsSsize_t(Pointer.getPeer(PyObjectPtr1)));
+	@Ptr 
+	public static long PyInt_AsSsize_t(Pointer<PyObject > PyObjectPtr1) {
+		return PyInt_AsSsize_t(Pointer.getPeer(PyObjectPtr1));
 	}
 	@Ptr 
 	protected native static long PyInt_AsSsize_t(@Ptr long PyObjectPtr1);
@@ -2947,8 +2953,8 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* _PyInt_FormatAdvanced(PyObject*, char*, Py_ssize_t)</code><br>
 	 * <i>native declaration : intobject.h:56</i>
 	 */
-	public static Pointer<PyObject > _PyInt_FormatAdvanced(Pointer<PyObject > obj, Pointer<Byte > format_spec, Pointer<Python27Library.Py_ssize_t > format_spec_len) {
-		return Pointer.pointerToAddress(_PyInt_FormatAdvanced(Pointer.getPeer(obj), Pointer.getPeer(format_spec), Pointer.getPeer(format_spec_len)), PyObject.class);
+	public static Pointer<PyObject > _PyInt_FormatAdvanced(Pointer<PyObject > obj, Pointer<Byte > format_spec, @Ptr long format_spec_len) {
+		return Pointer.pointerToAddress(_PyInt_FormatAdvanced(Pointer.getPeer(obj), Pointer.getPeer(format_spec), format_spec_len), PyObject.class);
 	}
 	@Ptr 
 	protected native static long _PyInt_FormatAdvanced(@Ptr long obj, @Ptr long format_spec, @Ptr long format_spec_len);
@@ -3004,15 +3010,15 @@ public class Python27Library {
 	@Name("PyLong_FromSize_t") 
 	protected native static long PyLong_FromSize_t$2(@Ptr long size_t1);
 	/**
-	 * Original signature : <code>PyObject* PyLong_FromSsize_t()</code><br>
+	 * Original signature : <code>PyObject* PyLong_FromSsize_t(Py_ssize_t)</code><br>
 	 * <i>native declaration : longobject.h:12</i>
 	 */
-	public static Pointer<PyObject > PyLong_FromSsize_t() {
-		return Pointer.pointerToAddress(PyLong_FromSsize_t$2(), PyObject.class);
+	public static Pointer<PyObject > PyLong_FromSsize_t(@Ptr long Py_ssize_t1) {
+		return Pointer.pointerToAddress(PyLong_FromSsize_t$2(Py_ssize_t1), PyObject.class);
 	}
 	@Ptr 
 	@Name("PyLong_FromSsize_t") 
-	protected native static long PyLong_FromSsize_t$2();
+	protected native static long PyLong_FromSsize_t$2(@Ptr long Py_ssize_t1);
 	/**
 	 * Original signature : <code>long PyLong_AsLong(PyObject*)</code><br>
 	 * <i>native declaration : longobject.h:14</i>
@@ -3057,8 +3063,9 @@ public class Python27Library {
 	 * Original signature : <code>Py_ssize_t PyLong_AsSsize_t(PyObject*)</code><br>
 	 * <i>native declaration : longobject.h:22</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PyLong_AsSsize_t(Pointer<PyObject > PyObjectPtr1) {
-		return Pointer.pointerToAddress(PyLong_AsSsize_t(Pointer.getPeer(PyObjectPtr1)));
+	@Ptr 
+	public static long PyLong_AsSsize_t(Pointer<PyObject > PyObjectPtr1) {
+		return PyLong_AsSsize_t(Pointer.getPeer(PyObjectPtr1));
 	}
 	@Ptr 
 	protected native static long PyLong_AsSsize_t(@Ptr long PyObjectPtr1);
@@ -3082,7 +3089,7 @@ public class Python27Library {
 	 * Original signature : <code>double _PyLong_Frexp(PyLongObject*, Py_ssize_t*)</code><br>
 	 * <i>native declaration : longobject.h:35</i>
 	 */
-	public static double _PyLong_Frexp(Pointer<Python27Library._longobject > a, Pointer<Python27Library.Py_ssize_t > e) {
+	public static double _PyLong_Frexp(Pointer<Python27Library._longobject > a, Pointer<SizeT > e) {
 		return _PyLong_Frexp(Pointer.getPeer(a), Pointer.getPeer(e));
 	}
 	protected native static double _PyLong_Frexp(@Ptr long a, @Ptr long e);
@@ -3174,14 +3181,14 @@ public class Python27Library {
 	@Ptr 
 	protected native static long PyLong_FromString(@Ptr long charPtr1, @Ptr long charPtrPtr1, int int1);
 	/**
-	 * Original signature : <code>PyObject* PyLong_FromUnicode(Py_UNICODE*, int)</code><br>
+	 * Original signature : <code>PyObject* PyLong_FromUnicode(Py_UNICODE*, Py_ssize_t, int)</code><br>
 	 * <i>native declaration : longobject.h:57</i>
 	 */
-	public static Pointer<PyObject > PyLong_FromUnicode(Pointer<Integer > Py_UNICODEPtr1, int int1) {
-		return Pointer.pointerToAddress(PyLong_FromUnicode(Pointer.getPeer(Py_UNICODEPtr1), int1), PyObject.class);
+	public static Pointer<PyObject > PyLong_FromUnicode(Pointer<Integer > Py_UNICODEPtr1, @Ptr long Py_ssize_t1, int int1) {
+		return Pointer.pointerToAddress(PyLong_FromUnicode(Pointer.getPeer(Py_UNICODEPtr1), Py_ssize_t1, int1), PyObject.class);
 	}
 	@Ptr 
-	protected native static long PyLong_FromUnicode(@Ptr long Py_UNICODEPtr1, int int1);
+	protected native static long PyLong_FromUnicode(@Ptr long Py_UNICODEPtr1, @Ptr long Py_ssize_t1, int int1);
 	/**
 	 * _PyLong_Sign.  Return 0 if v is 0, -1 if v < 0, +1 if v > 0.<br>
 	 * v must not be NULL, and must be a normalized long.<br>
@@ -3276,8 +3283,8 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* _PyLong_FormatAdvanced(PyObject*, char*, Py_ssize_t)</code><br>
 	 * <i>native declaration : longobject.h:127</i>
 	 */
-	public static Pointer<PyObject > _PyLong_FormatAdvanced(Pointer<PyObject > obj, Pointer<Byte > format_spec, Pointer<Python27Library.Py_ssize_t > format_spec_len) {
-		return Pointer.pointerToAddress(_PyLong_FormatAdvanced(Pointer.getPeer(obj), Pointer.getPeer(format_spec), Pointer.getPeer(format_spec_len)), PyObject.class);
+	public static Pointer<PyObject > _PyLong_FormatAdvanced(Pointer<PyObject > obj, Pointer<Byte > format_spec, @Ptr long format_spec_len) {
+		return Pointer.pointerToAddress(_PyLong_FormatAdvanced(Pointer.getPeer(obj), Pointer.getPeer(format_spec), format_spec_len), PyObject.class);
 	}
 	@Ptr 
 	protected native static long _PyLong_FormatAdvanced(@Ptr long obj, @Ptr long format_spec, @Ptr long format_spec_len);
@@ -3433,8 +3440,8 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* _PyFloat_FormatAdvanced(PyObject*, char*, Py_ssize_t)</code><br>
 	 * <i>native declaration : floatobject.h:93</i>
 	 */
-	public static Pointer<PyObject > _PyFloat_FormatAdvanced(Pointer<PyObject > obj, Pointer<Byte > format_spec, Pointer<Python27Library.Py_ssize_t > format_spec_len) {
-		return Pointer.pointerToAddress(_PyFloat_FormatAdvanced(Pointer.getPeer(obj), Pointer.getPeer(format_spec), Pointer.getPeer(format_spec_len)), PyObject.class);
+	public static Pointer<PyObject > _PyFloat_FormatAdvanced(Pointer<PyObject > obj, Pointer<Byte > format_spec, @Ptr long format_spec_len) {
+		return Pointer.pointerToAddress(_PyFloat_FormatAdvanced(Pointer.getPeer(obj), Pointer.getPeer(format_spec), format_spec_len), PyObject.class);
 	}
 	@Ptr 
 	protected native static long _PyFloat_FormatAdvanced(@Ptr long obj, @Ptr long format_spec, @Ptr long format_spec_len);
@@ -3536,20 +3543,20 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* _PyComplex_FormatAdvanced(PyObject*, char*, Py_ssize_t)</code><br>
 	 * <i>native declaration : complexobject.h:40</i>
 	 */
-	public static Pointer<PyObject > _PyComplex_FormatAdvanced(Pointer<PyObject > obj, Pointer<Byte > format_spec, Pointer<Python27Library.Py_ssize_t > format_spec_len) {
-		return Pointer.pointerToAddress(_PyComplex_FormatAdvanced(Pointer.getPeer(obj), Pointer.getPeer(format_spec), Pointer.getPeer(format_spec_len)), PyObject.class);
+	public static Pointer<PyObject > _PyComplex_FormatAdvanced(Pointer<PyObject > obj, Pointer<Byte > format_spec, @Ptr long format_spec_len) {
+		return Pointer.pointerToAddress(_PyComplex_FormatAdvanced(Pointer.getPeer(obj), Pointer.getPeer(format_spec), format_spec_len), PyObject.class);
 	}
 	@Ptr 
 	protected native static long _PyComplex_FormatAdvanced(@Ptr long obj, @Ptr long format_spec, @Ptr long format_spec_len);
 	/**
-	 * Original signature : <code>PyObject* PyString_FromStringAndSize(const char*)</code><br>
+	 * Original signature : <code>PyObject* PyString_FromStringAndSize(const char*, Py_ssize_t)</code><br>
 	 * <i>native declaration : stringobject.h:11</i>
 	 */
-	public static Pointer<PyObject > PyString_FromStringAndSize(Pointer<Byte > charPtr1) {
-		return Pointer.pointerToAddress(PyString_FromStringAndSize(Pointer.getPeer(charPtr1)), PyObject.class);
+	public static Pointer<PyObject > PyString_FromStringAndSize(Pointer<Byte > charPtr1, @Ptr long Py_ssize_t1) {
+		return Pointer.pointerToAddress(PyString_FromStringAndSize(Pointer.getPeer(charPtr1), Py_ssize_t1), PyObject.class);
 	}
 	@Ptr 
-	protected native static long PyString_FromStringAndSize(@Ptr long charPtr1);
+	protected native static long PyString_FromStringAndSize(@Ptr long charPtr1, @Ptr long Py_ssize_t1);
 	/**
 	 * Original signature : <code>PyObject* PyString_FromString(const char*)</code><br>
 	 * <i>native declaration : stringobject.h:13</i>
@@ -3581,8 +3588,9 @@ public class Python27Library {
 	 * Original signature : <code>Py_ssize_t PyString_Size(PyObject*)</code><br>
 	 * <i>native declaration : stringobject.h:19</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PyString_Size(Pointer<PyObject > PyObjectPtr1) {
-		return Pointer.pointerToAddress(PyString_Size(Pointer.getPeer(PyObjectPtr1)));
+	@Ptr 
+	public static long PyString_Size(Pointer<PyObject > PyObjectPtr1) {
+		return PyString_Size(Pointer.getPeer(PyObjectPtr1));
 	}
 	@Ptr 
 	protected native static long PyString_Size(@Ptr long PyObjectPtr1);
@@ -3621,13 +3629,13 @@ public class Python27Library {
 	}
 	protected native static void PyString_ConcatAndDel(@Ptr long PyObjectPtrPtr1, @Ptr long PyObjectPtr1);
 	/**
-	 * Original signature : <code>int _PyString_Resize(PyObject**)</code><br>
+	 * Original signature : <code>int _PyString_Resize(PyObject**, Py_ssize_t)</code><br>
 	 * <i>native declaration : stringobject.h:29</i>
 	 */
-	public static int _PyString_Resize(Pointer<Pointer<PyObject > > PyObjectPtrPtr1) {
-		return _PyString_Resize(Pointer.getPeer(PyObjectPtrPtr1));
+	public static int _PyString_Resize(Pointer<Pointer<PyObject > > PyObjectPtrPtr1, @Ptr long Py_ssize_t1) {
+		return _PyString_Resize(Pointer.getPeer(PyObjectPtrPtr1), Py_ssize_t1);
 	}
-	protected native static int _PyString_Resize(@Ptr long PyObjectPtrPtr1);
+	protected native static int _PyString_Resize(@Ptr long PyObjectPtrPtr1, @Ptr long Py_ssize_t1);
 	/**
 	 * Original signature : <code>int _PyString_Eq(PyObject*, PyObject*)</code><br>
 	 * <i>native declaration : stringobject.h:31</i>
@@ -3655,14 +3663,14 @@ public class Python27Library {
 	@Ptr 
 	protected native static long _PyString_FormatLong(@Ptr long PyObjectPtr1, int int1, int int2, int int3, @Ptr long charPtrPtr1, @Ptr long intPtr1);
 	/**
-	 * Original signature : <code>PyObject* PyString_DecodeEscape(const char*, const char*, const char*)</code><br>
+	 * Original signature : <code>PyObject* PyString_DecodeEscape(const char*, Py_ssize_t, const char*, Py_ssize_t, const char*)</code><br>
 	 * <i>native declaration : stringobject.h:37</i>
 	 */
-	public static Pointer<PyObject > PyString_DecodeEscape(Pointer<Byte > charPtr1, Pointer<Byte > charPtr2, Pointer<Byte > charPtr3) {
-		return Pointer.pointerToAddress(PyString_DecodeEscape(Pointer.getPeer(charPtr1), Pointer.getPeer(charPtr2), Pointer.getPeer(charPtr3)), PyObject.class);
+	public static Pointer<PyObject > PyString_DecodeEscape(Pointer<Byte > charPtr1, @Ptr long Py_ssize_t1, Pointer<Byte > charPtr2, @Ptr long Py_ssize_t2, Pointer<Byte > charPtr3) {
+		return Pointer.pointerToAddress(PyString_DecodeEscape(Pointer.getPeer(charPtr1), Py_ssize_t1, Pointer.getPeer(charPtr2), Py_ssize_t2, Pointer.getPeer(charPtr3)), PyObject.class);
 	}
 	@Ptr 
-	protected native static long PyString_DecodeEscape(@Ptr long charPtr1, @Ptr long charPtr2, @Ptr long charPtr3);
+	protected native static long PyString_DecodeEscape(@Ptr long charPtr1, @Ptr long Py_ssize_t1, @Ptr long charPtr2, @Ptr long Py_ssize_t2, @Ptr long charPtr3);
 	/**
 	 * Original signature : <code>void PyString_InternInPlace(PyObject**)</code><br>
 	 * <i>native declaration : stringobject.h:39</i>
@@ -3712,8 +3720,8 @@ public class Python27Library {
 	 * @param errors error handling<br>
 	 * <i>native declaration : stringobject.h:59</i>
 	 */
-	public static Pointer<PyObject > PyString_Decode(Pointer<Byte > s, Pointer<Python27Library.Py_ssize_t > size, Pointer<Byte > encoding, Pointer<Byte > errors) {
-		return Pointer.pointerToAddress(PyString_Decode(Pointer.getPeer(s), Pointer.getPeer(size), Pointer.getPeer(encoding), Pointer.getPeer(errors)), PyObject.class);
+	public static Pointer<PyObject > PyString_Decode(Pointer<Byte > s, @Ptr long size, Pointer<Byte > encoding, Pointer<Byte > errors) {
+		return Pointer.pointerToAddress(PyString_Decode(Pointer.getPeer(s), size, Pointer.getPeer(encoding), Pointer.getPeer(errors)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyString_Decode(@Ptr long s, @Ptr long size, @Ptr long encoding, @Ptr long errors);
@@ -3725,8 +3733,8 @@ public class Python27Library {
 	 * @param errors error handling<br>
 	 * <i>native declaration : stringobject.h:67</i>
 	 */
-	public static Pointer<PyObject > PyString_Encode(Pointer<Byte > s, Pointer<Python27Library.Py_ssize_t > size, Pointer<Byte > encoding, Pointer<Byte > errors) {
-		return Pointer.pointerToAddress(PyString_Encode(Pointer.getPeer(s), Pointer.getPeer(size), Pointer.getPeer(encoding), Pointer.getPeer(errors)), PyObject.class);
+	public static Pointer<PyObject > PyString_Encode(Pointer<Byte > s, @Ptr long size, Pointer<Byte > encoding, Pointer<Byte > errors) {
+		return Pointer.pointerToAddress(PyString_Encode(Pointer.getPeer(s), size, Pointer.getPeer(encoding), Pointer.getPeer(errors)), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyString_Encode(@Ptr long s, @Ptr long size, @Ptr long encoding, @Ptr long errors);
@@ -3785,7 +3793,7 @@ public class Python27Library {
 	 * @param len pointer to length variable or NULL<br>(only possible for 0-terminated<br>strings)<br>
 	 * <i>native declaration : stringobject.h:102</i>
 	 */
-	public static int PyString_AsStringAndSize(Pointer<PyObject > obj, Pointer<Pointer<Byte > > s, Pointer<Python27Library.Py_ssize_t > len) {
+	public static int PyString_AsStringAndSize(Pointer<PyObject > obj, Pointer<Pointer<Byte > > s, Pointer<SizeT > len) {
 		return PyString_AsStringAndSize(Pointer.getPeer(obj), Pointer.getPeer(s), Pointer.getPeer(len));
 	}
 	protected native static int PyString_AsStringAndSize(@Ptr long obj, @Ptr long s, @Ptr long len);
@@ -3796,8 +3804,9 @@ public class Python27Library {
 	 * Original signature : <code>Py_ssize_t _PyString_InsertThousandsGroupingLocale(char*, Py_ssize_t, char*, Py_ssize_t, Py_ssize_t)</code><br>
 	 * <i>native declaration : stringobject.h:109</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > _PyString_InsertThousandsGroupingLocale(Pointer<Byte > buffer, Pointer<Python27Library.Py_ssize_t > n_buffer, Pointer<Byte > digits, Pointer<Python27Library.Py_ssize_t > n_digits, Pointer<Python27Library.Py_ssize_t > min_width) {
-		return Pointer.pointerToAddress(_PyString_InsertThousandsGroupingLocale(Pointer.getPeer(buffer), Pointer.getPeer(n_buffer), Pointer.getPeer(digits), Pointer.getPeer(n_digits), Pointer.getPeer(min_width)));
+	@Ptr 
+	public static long _PyString_InsertThousandsGroupingLocale(Pointer<Byte > buffer, @Ptr long n_buffer, Pointer<Byte > digits, @Ptr long n_digits, @Ptr long min_width) {
+		return _PyString_InsertThousandsGroupingLocale(Pointer.getPeer(buffer), n_buffer, Pointer.getPeer(digits), n_digits, min_width);
 	}
 	@Ptr 
 	protected native static long _PyString_InsertThousandsGroupingLocale(@Ptr long buffer, @Ptr long n_buffer, @Ptr long digits, @Ptr long n_digits, @Ptr long min_width);
@@ -3808,8 +3817,9 @@ public class Python27Library {
 	 * Original signature : <code>Py_ssize_t _PyString_InsertThousandsGrouping(char*, Py_ssize_t, char*, Py_ssize_t, Py_ssize_t, const char*, const char*)</code><br>
 	 * <i>native declaration : stringobject.h:116</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > _PyString_InsertThousandsGrouping(Pointer<Byte > buffer, Pointer<Python27Library.Py_ssize_t > n_buffer, Pointer<Byte > digits, Pointer<Python27Library.Py_ssize_t > n_digits, Pointer<Python27Library.Py_ssize_t > min_width, Pointer<Byte > grouping, Pointer<Byte > thousands_sep) {
-		return Pointer.pointerToAddress(_PyString_InsertThousandsGrouping(Pointer.getPeer(buffer), Pointer.getPeer(n_buffer), Pointer.getPeer(digits), Pointer.getPeer(n_digits), Pointer.getPeer(min_width), Pointer.getPeer(grouping), Pointer.getPeer(thousands_sep)));
+	@Ptr 
+	public static long _PyString_InsertThousandsGrouping(Pointer<Byte > buffer, @Ptr long n_buffer, Pointer<Byte > digits, @Ptr long n_digits, @Ptr long min_width, Pointer<Byte > grouping, Pointer<Byte > thousands_sep) {
+		return _PyString_InsertThousandsGrouping(Pointer.getPeer(buffer), n_buffer, Pointer.getPeer(digits), n_digits, min_width, Pointer.getPeer(grouping), Pointer.getPeer(thousands_sep));
 	}
 	@Ptr 
 	protected native static long _PyString_InsertThousandsGrouping(@Ptr long buffer, @Ptr long n_buffer, @Ptr long digits, @Ptr long n_digits, @Ptr long min_width, @Ptr long grouping, @Ptr long thousands_sep);
@@ -3819,8 +3829,8 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* _PyBytes_FormatAdvanced(PyObject*, char*, Py_ssize_t)</code><br>
 	 * <i>native declaration : stringobject.h:122</i>
 	 */
-	public static Pointer<PyObject > _PyBytes_FormatAdvanced(Pointer<PyObject > obj, Pointer<Byte > format_spec, Pointer<Python27Library.Py_ssize_t > format_spec_len) {
-		return Pointer.pointerToAddress(_PyBytes_FormatAdvanced(Pointer.getPeer(obj), Pointer.getPeer(format_spec), Pointer.getPeer(format_spec_len)), PyObject.class);
+	public static Pointer<PyObject > _PyBytes_FormatAdvanced(Pointer<PyObject > obj, Pointer<Byte > format_spec, @Ptr long format_spec_len) {
+		return Pointer.pointerToAddress(_PyBytes_FormatAdvanced(Pointer.getPeer(obj), Pointer.getPeer(format_spec), format_spec_len), PyObject.class);
 	}
 	@Ptr 
 	protected native static long _PyBytes_FormatAdvanced(@Ptr long obj, @Ptr long format_spec, @Ptr long format_spec_len);
@@ -3855,8 +3865,8 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* PyBuffer_FromObject(PyObject*, Py_ssize_t, Py_ssize_t)</code><br>
 	 * <i>native declaration : bufferobject.h:3</i>
 	 */
-	public static Pointer<PyObject > PyBuffer_FromObject(Pointer<PyObject > base, Pointer<Python27Library.Py_ssize_t > offset, Pointer<Python27Library.Py_ssize_t > size) {
-		return Pointer.pointerToAddress(PyBuffer_FromObject(Pointer.getPeer(base), Pointer.getPeer(offset), Pointer.getPeer(size)), PyObject.class);
+	public static Pointer<PyObject > PyBuffer_FromObject(Pointer<PyObject > base, @Ptr long offset, @Ptr long size) {
+		return Pointer.pointerToAddress(PyBuffer_FromObject(Pointer.getPeer(base), offset, size), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyBuffer_FromObject(@Ptr long base, @Ptr long offset, @Ptr long size);
@@ -3864,8 +3874,8 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* PyBuffer_FromReadWriteObject(PyObject*, Py_ssize_t, Py_ssize_t)</code><br>
 	 * <i>native declaration : bufferobject.h:5</i>
 	 */
-	public static Pointer<PyObject > PyBuffer_FromReadWriteObject(Pointer<PyObject > base, Pointer<Python27Library.Py_ssize_t > offset, Pointer<Python27Library.Py_ssize_t > size) {
-		return Pointer.pointerToAddress(PyBuffer_FromReadWriteObject(Pointer.getPeer(base), Pointer.getPeer(offset), Pointer.getPeer(size)), PyObject.class);
+	public static Pointer<PyObject > PyBuffer_FromReadWriteObject(Pointer<PyObject > base, @Ptr long offset, @Ptr long size) {
+		return Pointer.pointerToAddress(PyBuffer_FromReadWriteObject(Pointer.getPeer(base), offset, size), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyBuffer_FromReadWriteObject(@Ptr long base, @Ptr long offset, @Ptr long size);
@@ -3873,8 +3883,8 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* PyBuffer_FromMemory(void*, Py_ssize_t)</code><br>
 	 * <i>native declaration : bufferobject.h:7</i>
 	 */
-	public static Pointer<PyObject > PyBuffer_FromMemory(Pointer<? > ptr, Pointer<Python27Library.Py_ssize_t > size) {
-		return Pointer.pointerToAddress(PyBuffer_FromMemory(Pointer.getPeer(ptr), Pointer.getPeer(size)), PyObject.class);
+	public static Pointer<PyObject > PyBuffer_FromMemory(Pointer<? > ptr, @Ptr long size) {
+		return Pointer.pointerToAddress(PyBuffer_FromMemory(Pointer.getPeer(ptr), size), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyBuffer_FromMemory(@Ptr long ptr, @Ptr long size);
@@ -3882,8 +3892,8 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* PyBuffer_FromReadWriteMemory(void*, Py_ssize_t)</code><br>
 	 * <i>native declaration : bufferobject.h:9</i>
 	 */
-	public static Pointer<PyObject > PyBuffer_FromReadWriteMemory(Pointer<? > ptr, Pointer<Python27Library.Py_ssize_t > size) {
-		return Pointer.pointerToAddress(PyBuffer_FromReadWriteMemory(Pointer.getPeer(ptr), Pointer.getPeer(size)), PyObject.class);
+	public static Pointer<PyObject > PyBuffer_FromReadWriteMemory(Pointer<? > ptr, @Ptr long size) {
+		return Pointer.pointerToAddress(PyBuffer_FromReadWriteMemory(Pointer.getPeer(ptr), size), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyBuffer_FromReadWriteMemory(@Ptr long ptr, @Ptr long size);
@@ -3891,11 +3901,12 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* PyBuffer_New(Py_ssize_t)</code><br>
 	 * <i>native declaration : bufferobject.h:11</i>
 	 */
-	public static Pointer<PyObject > PyBuffer_New(Pointer<Python27Library.Py_ssize_t > size) {
-		return Pointer.pointerToAddress(PyBuffer_New(Pointer.getPeer(size)), PyObject.class);
+	public static Pointer<PyObject > PyBuffer_New(@Ptr long size) {
+		return Pointer.pointerToAddress(PyBuffer_New$2(size), PyObject.class);
 	}
 	@Ptr 
-	protected native static long PyBuffer_New(@Ptr long size);
+	@Name("PyBuffer_New") 
+	protected native static long PyBuffer_New$2(@Ptr long size);
 	/**
 	 * Direct API functions<br>
 	 * Original signature : <code>PyObject* PyByteArray_FromObject(PyObject*)</code><br>
@@ -3916,20 +3927,21 @@ public class Python27Library {
 	@Ptr 
 	protected native static long PyByteArray_Concat(@Ptr long PyObjectPtr1, @Ptr long PyObjectPtr2);
 	/**
-	 * Original signature : <code>PyObject* PyByteArray_FromStringAndSize(const char*)</code><br>
+	 * Original signature : <code>PyObject* PyByteArray_FromStringAndSize(const char*, Py_ssize_t)</code><br>
 	 * <i>native declaration : bytearrayobject.h:21</i>
 	 */
-	public static Pointer<PyObject > PyByteArray_FromStringAndSize(Pointer<Byte > charPtr1) {
-		return Pointer.pointerToAddress(PyByteArray_FromStringAndSize(Pointer.getPeer(charPtr1)), PyObject.class);
+	public static Pointer<PyObject > PyByteArray_FromStringAndSize(Pointer<Byte > charPtr1, @Ptr long Py_ssize_t1) {
+		return Pointer.pointerToAddress(PyByteArray_FromStringAndSize(Pointer.getPeer(charPtr1), Py_ssize_t1), PyObject.class);
 	}
 	@Ptr 
-	protected native static long PyByteArray_FromStringAndSize(@Ptr long charPtr1);
+	protected native static long PyByteArray_FromStringAndSize(@Ptr long charPtr1, @Ptr long Py_ssize_t1);
 	/**
 	 * Original signature : <code>Py_ssize_t PyByteArray_Size(PyObject*)</code><br>
 	 * <i>native declaration : bytearrayobject.h:23</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PyByteArray_Size(Pointer<PyObject > PyObjectPtr1) {
-		return Pointer.pointerToAddress(PyByteArray_Size(Pointer.getPeer(PyObjectPtr1)));
+	@Ptr 
+	public static long PyByteArray_Size(Pointer<PyObject > PyObjectPtr1) {
+		return PyByteArray_Size(Pointer.getPeer(PyObjectPtr1));
 	}
 	@Ptr 
 	protected native static long PyByteArray_Size(@Ptr long PyObjectPtr1);
@@ -3943,75 +3955,77 @@ public class Python27Library {
 	@Ptr 
 	protected native static long PyByteArray_AsString(@Ptr long PyObjectPtr1);
 	/**
-	 * Original signature : <code>int PyByteArray_Resize(PyObject*)</code><br>
+	 * Original signature : <code>int PyByteArray_Resize(PyObject*, Py_ssize_t)</code><br>
 	 * <i>native declaration : bytearrayobject.h:27</i>
 	 */
-	public static int PyByteArray_Resize(Pointer<PyObject > PyObjectPtr1) {
-		return PyByteArray_Resize(Pointer.getPeer(PyObjectPtr1));
+	public static int PyByteArray_Resize(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1) {
+		return PyByteArray_Resize(Pointer.getPeer(PyObjectPtr1), Py_ssize_t1);
 	}
-	protected native static int PyByteArray_Resize(@Ptr long PyObjectPtr1);
+	protected native static int PyByteArray_Resize(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_t1);
 	/**
 	 * Original signature : <code>PyObject* PyTuple_New(Py_ssize_t)</code><br>
 	 * <i>native declaration : tupleobject.h:9</i>
 	 */
-	public static Pointer<PyObject > PyTuple_New(Pointer<Python27Library.Py_ssize_t > size) {
-		return Pointer.pointerToAddress(PyTuple_New(Pointer.getPeer(size)), PyObject.class);
+	public static Pointer<PyObject > PyTuple_New(@Ptr long size) {
+		return Pointer.pointerToAddress(PyTuple_New$2(size), PyObject.class);
 	}
 	@Ptr 
-	protected native static long PyTuple_New(@Ptr long size);
+	@Name("PyTuple_New") 
+	protected native static long PyTuple_New$2(@Ptr long size);
 	/**
 	 * Original signature : <code>Py_ssize_t PyTuple_Size(PyObject*)</code><br>
 	 * <i>native declaration : tupleobject.h:11</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PyTuple_Size(Pointer<PyObject > PyObjectPtr1) {
-		return Pointer.pointerToAddress(PyTuple_Size(Pointer.getPeer(PyObjectPtr1)));
+	@Ptr 
+	public static long PyTuple_Size(Pointer<PyObject > PyObjectPtr1) {
+		return PyTuple_Size(Pointer.getPeer(PyObjectPtr1));
 	}
 	@Ptr 
 	protected native static long PyTuple_Size(@Ptr long PyObjectPtr1);
 	/**
-	 * Original signature : <code>PyObject* PyTuple_GetItem(PyObject*)</code><br>
+	 * Original signature : <code>PyObject* PyTuple_GetItem(PyObject*, Py_ssize_t)</code><br>
 	 * <i>native declaration : tupleobject.h:13</i>
 	 */
-	public static Pointer<PyObject > PyTuple_GetItem(Pointer<PyObject > PyObjectPtr1) {
-		return Pointer.pointerToAddress(PyTuple_GetItem(Pointer.getPeer(PyObjectPtr1)), PyObject.class);
+	public static Pointer<PyObject > PyTuple_GetItem(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1) {
+		return Pointer.pointerToAddress(PyTuple_GetItem(Pointer.getPeer(PyObjectPtr1), Py_ssize_t1), PyObject.class);
 	}
 	@Ptr 
-	protected native static long PyTuple_GetItem(@Ptr long PyObjectPtr1);
+	protected native static long PyTuple_GetItem(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_t1);
 	/**
-	 * Original signature : <code>int PyTuple_SetItem(PyObject*, PyObject*)</code><br>
+	 * Original signature : <code>int PyTuple_SetItem(PyObject*, Py_ssize_t, PyObject*)</code><br>
 	 * <i>native declaration : tupleobject.h:15</i>
 	 */
-	public static int PyTuple_SetItem(Pointer<PyObject > PyObjectPtr1, Pointer<PyObject > PyObjectPtr2) {
-		return PyTuple_SetItem(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(PyObjectPtr2));
+	public static int PyTuple_SetItem(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1, Pointer<PyObject > PyObjectPtr2) {
+		return PyTuple_SetItem(Pointer.getPeer(PyObjectPtr1), Py_ssize_t1, Pointer.getPeer(PyObjectPtr2));
 	}
-	protected native static int PyTuple_SetItem(@Ptr long PyObjectPtr1, @Ptr long PyObjectPtr2);
+	protected native static int PyTuple_SetItem(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_t1, @Ptr long PyObjectPtr2);
 	/**
-	 * Original signature : <code>PyObject* PyTuple_GetSlice(PyObject*)</code><br>
+	 * Original signature : <code>PyObject* PyTuple_GetSlice(PyObject*, Py_ssize_t, Py_ssize_t)</code><br>
 	 * <i>native declaration : tupleobject.h:17</i>
 	 */
-	public static Pointer<PyObject > PyTuple_GetSlice(Pointer<PyObject > PyObjectPtr1) {
-		return Pointer.pointerToAddress(PyTuple_GetSlice(Pointer.getPeer(PyObjectPtr1)), PyObject.class);
+	public static Pointer<PyObject > PyTuple_GetSlice(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1, @Ptr long Py_ssize_t2) {
+		return Pointer.pointerToAddress(PyTuple_GetSlice(Pointer.getPeer(PyObjectPtr1), Py_ssize_t1, Py_ssize_t2), PyObject.class);
 	}
 	@Ptr 
-	protected native static long PyTuple_GetSlice(@Ptr long PyObjectPtr1);
+	protected native static long PyTuple_GetSlice(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_t1, @Ptr long Py_ssize_t2);
 	/**
-	 * Original signature : <code>int _PyTuple_Resize(PyObject**)</code><br>
+	 * Original signature : <code>int _PyTuple_Resize(PyObject**, Py_ssize_t)</code><br>
 	 * <i>native declaration : tupleobject.h:19</i>
 	 */
-	public static int _PyTuple_Resize(Pointer<Pointer<PyObject > > PyObjectPtrPtr1) {
-		return _PyTuple_Resize(Pointer.getPeer(PyObjectPtrPtr1));
+	public static int _PyTuple_Resize(Pointer<Pointer<PyObject > > PyObjectPtrPtr1, @Ptr long Py_ssize_t1) {
+		return _PyTuple_Resize(Pointer.getPeer(PyObjectPtrPtr1), Py_ssize_t1);
 	}
-	protected native static int _PyTuple_Resize(@Ptr long PyObjectPtrPtr1);
+	protected native static int _PyTuple_Resize(@Ptr long PyObjectPtrPtr1, @Ptr long Py_ssize_t1);
 	/**
-	 * Original signature : <code>PyObject* PyTuple_Pack(null)</code><br>
+	 * Original signature : <code>PyObject* PyTuple_Pack(Py_ssize_t, null)</code><br>
 	 * <i>native declaration : tupleobject.h:21</i>
 	 */
-	public static Pointer<PyObject > PyTuple_Pack(Object... varargs) {
-		return Pointer.pointerToAddress(PyTuple_Pack$2(), PyObject.class);
+	public static Pointer<PyObject > PyTuple_Pack(@Ptr long Py_ssize_t1, Object... varargs) {
+		return Pointer.pointerToAddress(PyTuple_Pack$2(Py_ssize_t1), PyObject.class);
 	}
 	@Ptr 
 	@Name("PyTuple_Pack") 
-	protected native static long PyTuple_Pack$2(Object... varargs);
+	protected native static long PyTuple_Pack$2(@Ptr long Py_ssize_t1, Object... varargs);
 	/**
 	 * Original signature : <code>void _PyTuple_MaybeUntrack(PyObject*)</code><br>
 	 * <i>native declaration : tupleobject.h:23</i>
@@ -4029,45 +4043,47 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* PyList_New(Py_ssize_t)</code><br>
 	 * <i>native declaration : listobject.h:22</i>
 	 */
-	public static Pointer<PyObject > PyList_New(Pointer<Python27Library.Py_ssize_t > size) {
-		return Pointer.pointerToAddress(PyList_New(Pointer.getPeer(size)), PyObject.class);
+	public static Pointer<PyObject > PyList_New(@Ptr long size) {
+		return Pointer.pointerToAddress(PyList_New$2(size), PyObject.class);
 	}
 	@Ptr 
-	protected native static long PyList_New(@Ptr long size);
+	@Name("PyList_New") 
+	protected native static long PyList_New$2(@Ptr long size);
 	/**
 	 * Original signature : <code>Py_ssize_t PyList_Size(PyObject*)</code><br>
 	 * <i>native declaration : listobject.h:24</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PyList_Size(Pointer<PyObject > PyObjectPtr1) {
-		return Pointer.pointerToAddress(PyList_Size(Pointer.getPeer(PyObjectPtr1)));
+	@Ptr 
+	public static long PyList_Size(Pointer<PyObject > PyObjectPtr1) {
+		return PyList_Size(Pointer.getPeer(PyObjectPtr1));
 	}
 	@Ptr 
 	protected native static long PyList_Size(@Ptr long PyObjectPtr1);
 	/**
-	 * Original signature : <code>PyObject* PyList_GetItem(PyObject*)</code><br>
+	 * Original signature : <code>PyObject* PyList_GetItem(PyObject*, Py_ssize_t)</code><br>
 	 * <i>native declaration : listobject.h:26</i>
 	 */
-	public static Pointer<PyObject > PyList_GetItem(Pointer<PyObject > PyObjectPtr1) {
-		return Pointer.pointerToAddress(PyList_GetItem(Pointer.getPeer(PyObjectPtr1)), PyObject.class);
+	public static Pointer<PyObject > PyList_GetItem(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1) {
+		return Pointer.pointerToAddress(PyList_GetItem(Pointer.getPeer(PyObjectPtr1), Py_ssize_t1), PyObject.class);
 	}
 	@Ptr 
-	protected native static long PyList_GetItem(@Ptr long PyObjectPtr1);
+	protected native static long PyList_GetItem(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_t1);
 	/**
-	 * Original signature : <code>int PyList_SetItem(PyObject*, PyObject*)</code><br>
+	 * Original signature : <code>int PyList_SetItem(PyObject*, Py_ssize_t, PyObject*)</code><br>
 	 * <i>native declaration : listobject.h:28</i>
 	 */
-	public static int PyList_SetItem(Pointer<PyObject > PyObjectPtr1, Pointer<PyObject > PyObjectPtr2) {
-		return PyList_SetItem(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(PyObjectPtr2));
+	public static int PyList_SetItem(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1, Pointer<PyObject > PyObjectPtr2) {
+		return PyList_SetItem(Pointer.getPeer(PyObjectPtr1), Py_ssize_t1, Pointer.getPeer(PyObjectPtr2));
 	}
-	protected native static int PyList_SetItem(@Ptr long PyObjectPtr1, @Ptr long PyObjectPtr2);
+	protected native static int PyList_SetItem(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_t1, @Ptr long PyObjectPtr2);
 	/**
-	 * Original signature : <code>int PyList_Insert(PyObject*, PyObject*)</code><br>
+	 * Original signature : <code>int PyList_Insert(PyObject*, Py_ssize_t, PyObject*)</code><br>
 	 * <i>native declaration : listobject.h:30</i>
 	 */
-	public static int PyList_Insert(Pointer<PyObject > PyObjectPtr1, Pointer<PyObject > PyObjectPtr2) {
-		return PyList_Insert(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(PyObjectPtr2));
+	public static int PyList_Insert(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1, Pointer<PyObject > PyObjectPtr2) {
+		return PyList_Insert(Pointer.getPeer(PyObjectPtr1), Py_ssize_t1, Pointer.getPeer(PyObjectPtr2));
 	}
-	protected native static int PyList_Insert(@Ptr long PyObjectPtr1, @Ptr long PyObjectPtr2);
+	protected native static int PyList_Insert(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_t1, @Ptr long PyObjectPtr2);
 	/**
 	 * Original signature : <code>int PyList_Append(PyObject*, PyObject*)</code><br>
 	 * <i>native declaration : listobject.h:32</i>
@@ -4077,22 +4093,22 @@ public class Python27Library {
 	}
 	protected native static int PyList_Append(@Ptr long PyObjectPtr1, @Ptr long PyObjectPtr2);
 	/**
-	 * Original signature : <code>PyObject* PyList_GetSlice(PyObject*)</code><br>
+	 * Original signature : <code>PyObject* PyList_GetSlice(PyObject*, Py_ssize_t, Py_ssize_t)</code><br>
 	 * <i>native declaration : listobject.h:34</i>
 	 */
-	public static Pointer<PyObject > PyList_GetSlice(Pointer<PyObject > PyObjectPtr1) {
-		return Pointer.pointerToAddress(PyList_GetSlice(Pointer.getPeer(PyObjectPtr1)), PyObject.class);
+	public static Pointer<PyObject > PyList_GetSlice(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1, @Ptr long Py_ssize_t2) {
+		return Pointer.pointerToAddress(PyList_GetSlice(Pointer.getPeer(PyObjectPtr1), Py_ssize_t1, Py_ssize_t2), PyObject.class);
 	}
 	@Ptr 
-	protected native static long PyList_GetSlice(@Ptr long PyObjectPtr1);
+	protected native static long PyList_GetSlice(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_t1, @Ptr long Py_ssize_t2);
 	/**
-	 * Original signature : <code>int PyList_SetSlice(PyObject*, PyObject*)</code><br>
+	 * Original signature : <code>int PyList_SetSlice(PyObject*, Py_ssize_t, Py_ssize_t, PyObject*)</code><br>
 	 * <i>native declaration : listobject.h:36</i>
 	 */
-	public static int PyList_SetSlice(Pointer<PyObject > PyObjectPtr1, Pointer<PyObject > PyObjectPtr2) {
-		return PyList_SetSlice(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(PyObjectPtr2));
+	public static int PyList_SetSlice(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1, @Ptr long Py_ssize_t2, Pointer<PyObject > PyObjectPtr2) {
+		return PyList_SetSlice(Pointer.getPeer(PyObjectPtr1), Py_ssize_t1, Py_ssize_t2, Pointer.getPeer(PyObjectPtr2));
 	}
-	protected native static int PyList_SetSlice(@Ptr long PyObjectPtr1, @Ptr long PyObjectPtr2);
+	protected native static int PyList_SetSlice(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_t1, @Ptr long Py_ssize_t2, @Ptr long PyObjectPtr2);
 	/**
 	 * Original signature : <code>int PyList_Sort(PyObject*)</code><br>
 	 * <i>native declaration : listobject.h:38</i>
@@ -4174,7 +4190,7 @@ public class Python27Library {
 	 * Original signature : <code>int PyDict_Next(PyObject*, Py_ssize_t*, PyObject**, PyObject**)</code><br>
 	 * <i>native declaration : dictobject.h:61</i>
 	 */
-	public static int PyDict_Next(Pointer<PyObject > mp, Pointer<Python27Library.Py_ssize_t > pos, Pointer<Pointer<PyObject > > key, Pointer<Pointer<PyObject > > value) {
+	public static int PyDict_Next(Pointer<PyObject > mp, Pointer<SizeT > pos, Pointer<Pointer<PyObject > > key, Pointer<Pointer<PyObject > > value) {
 		return PyDict_Next(Pointer.getPeer(mp), Pointer.getPeer(pos), Pointer.getPeer(key), Pointer.getPeer(value));
 	}
 	protected native static int PyDict_Next(@Ptr long mp, @Ptr long pos, @Ptr long key, @Ptr long value);
@@ -4182,7 +4198,7 @@ public class Python27Library {
 	 * Original signature : <code>int _PyDict_Next(PyObject*, Py_ssize_t*, PyObject**, PyObject**, long*)</code><br>
 	 * <i>native declaration : dictobject.h:63</i>
 	 */
-	public static int _PyDict_Next(Pointer<PyObject > mp, Pointer<Python27Library.Py_ssize_t > pos, Pointer<Pointer<PyObject > > key, Pointer<Pointer<PyObject > > value, Pointer<org.bridj.CLong > hash) {
+	public static int _PyDict_Next(Pointer<PyObject > mp, Pointer<SizeT > pos, Pointer<Pointer<PyObject > > key, Pointer<Pointer<PyObject > > value, Pointer<org.bridj.CLong > hash) {
 		return _PyDict_Next(Pointer.getPeer(mp), Pointer.getPeer(pos), Pointer.getPeer(key), Pointer.getPeer(value), Pointer.getPeer(hash));
 	}
 	protected native static int _PyDict_Next(@Ptr long mp, @Ptr long pos, @Ptr long key, @Ptr long value, @Ptr long hash);
@@ -4217,8 +4233,9 @@ public class Python27Library {
 	 * Original signature : <code>Py_ssize_t PyDict_Size(PyObject*)</code><br>
 	 * <i>native declaration : dictobject.h:71</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PyDict_Size(Pointer<PyObject > mp) {
-		return Pointer.pointerToAddress(PyDict_Size(Pointer.getPeer(mp)));
+	@Ptr 
+	public static long PyDict_Size(Pointer<PyObject > mp) {
+		return PyDict_Size(Pointer.getPeer(mp));
 	}
 	@Ptr 
 	protected native static long PyDict_Size(@Ptr long mp);
@@ -4251,11 +4268,12 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* _PyDict_NewPresized(Py_ssize_t)</code><br>
 	 * <i>native declaration : dictobject.h:79</i>
 	 */
-	public static Pointer<PyObject > _PyDict_NewPresized(Pointer<Python27Library.Py_ssize_t > minused) {
-		return Pointer.pointerToAddress(_PyDict_NewPresized(Pointer.getPeer(minused)), PyObject.class);
+	public static Pointer<PyObject > _PyDict_NewPresized(@Ptr long minused) {
+		return Pointer.pointerToAddress(_PyDict_NewPresized$2(minused), PyObject.class);
 	}
 	@Ptr 
-	protected native static long _PyDict_NewPresized(@Ptr long minused);
+	@Name("_PyDict_NewPresized") 
+	protected native static long _PyDict_NewPresized$2(@Ptr long minused);
 	/**
 	 * Original signature : <code>void _PyDict_MaybeUntrack(PyObject*)</code><br>
 	 * <i>native declaration : dictobject.h:81</i>
@@ -4344,8 +4362,9 @@ public class Python27Library {
 	 * Original signature : <code>Py_ssize_t PySet_Size(PyObject*)</code><br>
 	 * <i>native declaration : setobject.h:36</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PySet_Size(Pointer<PyObject > anyset) {
-		return Pointer.pointerToAddress(PySet_Size(Pointer.getPeer(anyset)));
+	@Ptr 
+	public static long PySet_Size(Pointer<PyObject > anyset) {
+		return PySet_Size(Pointer.getPeer(anyset));
 	}
 	@Ptr 
 	protected native static long PySet_Size(@Ptr long anyset);
@@ -4385,7 +4404,7 @@ public class Python27Library {
 	 * Original signature : <code>int _PySet_Next(PyObject*, Py_ssize_t*, PyObject**)</code><br>
 	 * <i>native declaration : setobject.h:46</i>
 	 */
-	public static int _PySet_Next(Pointer<PyObject > set, Pointer<Python27Library.Py_ssize_t > pos, Pointer<Pointer<PyObject > > key) {
+	public static int _PySet_Next(Pointer<PyObject > set, Pointer<SizeT > pos, Pointer<Pointer<PyObject > > key) {
 		return _PySet_Next(Pointer.getPeer(set), Pointer.getPeer(pos), Pointer.getPeer(key));
 	}
 	protected native static int _PySet_Next(@Ptr long set, @Ptr long pos, @Ptr long key);
@@ -4393,7 +4412,7 @@ public class Python27Library {
 	 * Original signature : <code>int _PySet_NextEntry(PyObject*, Py_ssize_t*, PyObject**, long*)</code><br>
 	 * <i>native declaration : setobject.h:48</i>
 	 */
-	public static int _PySet_NextEntry(Pointer<PyObject > set, Pointer<Python27Library.Py_ssize_t > pos, Pointer<Pointer<PyObject > > key, Pointer<org.bridj.CLong > hash) {
+	public static int _PySet_NextEntry(Pointer<PyObject > set, Pointer<SizeT > pos, Pointer<Pointer<PyObject > > key, Pointer<org.bridj.CLong > hash) {
 		return _PySet_NextEntry(Pointer.getPeer(set), Pointer.getPeer(pos), Pointer.getPeer(key), Pointer.getPeer(hash));
 	}
 	protected native static int _PySet_NextEntry(@Ptr long set, @Ptr long pos, @Ptr long key, @Ptr long hash);
@@ -4744,7 +4763,7 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* PyFile_FromFile(FILE*, char*, char*, PyFile_FromFile_arg1_callback)</code><br>
 	 * <i>native declaration : fileobject.h:37</i>
 	 */
-	public static Pointer<PyObject > PyFile_FromFile(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Byte > charPtr1, Pointer<Byte > charPtr2, Pointer<Python27Library.PyFile_FromFile_arg1_callback > arg1) {
+	public static Pointer<PyObject > PyFile_FromFile(Pointer FILEPtr1, Pointer<Byte > charPtr1, Pointer<Byte > charPtr2, Pointer<Python27Library.PyFile_FromFile_arg1_callback > arg1) {
 		return Pointer.pointerToAddress(PyFile_FromFile(Pointer.getPeer(FILEPtr1), Pointer.getPeer(charPtr1), Pointer.getPeer(charPtr2), Pointer.getPeer(arg1)), PyObject.class);
 	}
 	@Ptr 
@@ -4753,8 +4772,8 @@ public class Python27Library {
 	 * Original signature : <code>FILE* PyFile_AsFile(PyObject*)</code><br>
 	 * <i>native declaration : fileobject.h:39</i>
 	 */
-	public static Pointer<Python27Library.FILE > PyFile_AsFile(Pointer<PyObject > PyObjectPtr1) {
-		return Pointer.pointerToAddress(PyFile_AsFile(Pointer.getPeer(PyObjectPtr1)), Python27Library.FILE.class);
+	public static Pointer PyFile_AsFile(Pointer<PyObject > PyObjectPtr1) {
+		return Pointer.pointerToAddress(PyFile_AsFile(Pointer.getPeer(PyObjectPtr1)));
 	}
 	@Ptr 
 	protected native static long PyFile_AsFile(@Ptr long PyObjectPtr1);
@@ -4828,7 +4847,7 @@ public class Python27Library {
 	 * Original signature : <code>char* Py_UniversalNewlineFgets(char*, int, FILE*, PyObject*)</code><br>
 	 * <i>native declaration : fileobject.h:62</i>
 	 */
-	public static Pointer<Byte > Py_UniversalNewlineFgets(Pointer<Byte > charPtr1, int int1, Pointer<Python27Library.FILE > FILEPtr1, Pointer<PyObject > PyObjectPtr1) {
+	public static Pointer<Byte > Py_UniversalNewlineFgets(Pointer<Byte > charPtr1, int int1, Pointer FILEPtr1, Pointer<PyObject > PyObjectPtr1) {
 		return Pointer.pointerToAddress(Py_UniversalNewlineFgets(Pointer.getPeer(charPtr1), int1, Pointer.getPeer(FILEPtr1), Pointer.getPeer(PyObjectPtr1)), Byte.class);
 	}
 	@Ptr 
@@ -4838,7 +4857,7 @@ public class Python27Library {
 	 * <i>native declaration : fileobject.h:64</i>
 	 */
 	@Ptr 
-	public static long Py_UniversalNewlineFread(Pointer<Byte > charPtr1, @Ptr long size_t1, Pointer<Python27Library.FILE > FILEPtr1, Pointer<PyObject > PyObjectPtr1) {
+	public static long Py_UniversalNewlineFread(Pointer<Byte > charPtr1, @Ptr long size_t1, Pointer FILEPtr1, Pointer<PyObject > PyObjectPtr1) {
 		return Py_UniversalNewlineFread(Pointer.getPeer(charPtr1), size_t1, Pointer.getPeer(FILEPtr1), Pointer.getPeer(PyObjectPtr1));
 	}
 	@Ptr 
@@ -5049,25 +5068,26 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* _PySlice_FromIndices(Py_ssize_t, Py_ssize_t)</code><br>
 	 * <i>native declaration : sliceobject.h:14</i>
 	 */
-	public static Pointer<PyObject > _PySlice_FromIndices(Pointer<Python27Library.Py_ssize_t > start, Pointer<Python27Library.Py_ssize_t > stop) {
-		return Pointer.pointerToAddress(_PySlice_FromIndices(Pointer.getPeer(start), Pointer.getPeer(stop)), PyObject.class);
+	public static Pointer<PyObject > _PySlice_FromIndices(@Ptr long start, @Ptr long stop) {
+		return Pointer.pointerToAddress(_PySlice_FromIndices$2(start, stop), PyObject.class);
 	}
 	@Ptr 
-	protected native static long _PySlice_FromIndices(@Ptr long start, @Ptr long stop);
+	@Name("_PySlice_FromIndices") 
+	protected native static long _PySlice_FromIndices$2(@Ptr long start, @Ptr long stop);
 	/**
 	 * Original signature : <code>int PySlice_GetIndices(PySliceObject*, Py_ssize_t, Py_ssize_t*, Py_ssize_t*, Py_ssize_t*)</code><br>
 	 * <i>native declaration : sliceobject.h:16</i>
 	 */
-	public static int PySlice_GetIndices(Pointer<PySliceObject > r, Pointer<Python27Library.Py_ssize_t > length, Pointer<Python27Library.Py_ssize_t > start, Pointer<Python27Library.Py_ssize_t > stop, Pointer<Python27Library.Py_ssize_t > step) {
-		return PySlice_GetIndices(Pointer.getPeer(r), Pointer.getPeer(length), Pointer.getPeer(start), Pointer.getPeer(stop), Pointer.getPeer(step));
+	public static int PySlice_GetIndices(Pointer<PySliceObject > r, @Ptr long length, Pointer<SizeT > start, Pointer<SizeT > stop, Pointer<SizeT > step) {
+		return PySlice_GetIndices(Pointer.getPeer(r), length, Pointer.getPeer(start), Pointer.getPeer(stop), Pointer.getPeer(step));
 	}
 	protected native static int PySlice_GetIndices(@Ptr long r, @Ptr long length, @Ptr long start, @Ptr long stop, @Ptr long step);
 	/**
 	 * Original signature : <code>int PySlice_GetIndicesEx(PySliceObject*, Py_ssize_t, Py_ssize_t*, Py_ssize_t*, Py_ssize_t*, Py_ssize_t*)</code><br>
 	 * <i>native declaration : sliceobject.h:18</i>
 	 */
-	public static int PySlice_GetIndicesEx(Pointer<PySliceObject > r, Pointer<Python27Library.Py_ssize_t > length, Pointer<Python27Library.Py_ssize_t > start, Pointer<Python27Library.Py_ssize_t > stop, Pointer<Python27Library.Py_ssize_t > step, Pointer<Python27Library.Py_ssize_t > slicelength) {
-		return PySlice_GetIndicesEx(Pointer.getPeer(r), Pointer.getPeer(length), Pointer.getPeer(start), Pointer.getPeer(stop), Pointer.getPeer(step), Pointer.getPeer(slicelength));
+	public static int PySlice_GetIndicesEx(Pointer<PySliceObject > r, @Ptr long length, Pointer<SizeT > start, Pointer<SizeT > stop, Pointer<SizeT > step, Pointer<SizeT > slicelength) {
+		return PySlice_GetIndicesEx(Pointer.getPeer(r), length, Pointer.getPeer(start), Pointer.getPeer(stop), Pointer.getPeer(step), Pointer.getPeer(slicelength));
 	}
 	protected native static int PySlice_GetIndicesEx(@Ptr long r, @Ptr long length, @Ptr long start, @Ptr long stop, @Ptr long step, @Ptr long slicelength);
 	/**
@@ -5200,13 +5220,13 @@ public class Python27Library {
 	 */
 	native public static void _PyWarnings_Init();
 	/**
-	 * Original signature : <code>int PyErr_WarnEx(PyObject*, const char*)</code><br>
+	 * Original signature : <code>int PyErr_WarnEx(PyObject*, const char*, Py_ssize_t)</code><br>
 	 * <i>native declaration : warnings.h:4</i>
 	 */
-	public static int PyErr_WarnEx(Pointer<PyObject > PyObjectPtr1, Pointer<Byte > charPtr1) {
-		return PyErr_WarnEx(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(charPtr1));
+	public static int PyErr_WarnEx(Pointer<PyObject > PyObjectPtr1, Pointer<Byte > charPtr1, @Ptr long Py_ssize_t1) {
+		return PyErr_WarnEx(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(charPtr1), Py_ssize_t1);
 	}
-	protected native static int PyErr_WarnEx(@Ptr long PyObjectPtr1, @Ptr long charPtr1);
+	protected native static int PyErr_WarnEx(@Ptr long PyObjectPtr1, @Ptr long charPtr1, @Ptr long Py_ssize_t1);
 	/**
 	 * Original signature : <code>int PyErr_WarnExplicit(PyObject*, const char*, const char*, int, const char*, PyObject*)</code><br>
 	 * <i>native declaration : warnings.h:6</i>
@@ -5246,8 +5266,9 @@ public class Python27Library {
 	 * Original signature : <code>Py_ssize_t _PyWeakref_GetWeakrefCount(PyWeakReference*)</code><br>
 	 * <i>native declaration : weakrefobject.h:45</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > _PyWeakref_GetWeakrefCount(Pointer<PyWeakReference > head) {
-		return Pointer.pointerToAddress(_PyWeakref_GetWeakrefCount(Pointer.getPeer(head)));
+	@Ptr 
+	public static long _PyWeakref_GetWeakrefCount(Pointer<PyWeakReference > head) {
+		return _PyWeakref_GetWeakrefCount(Pointer.getPeer(head));
 	}
 	@Ptr 
 	protected native static long _PyWeakref_GetWeakrefCount(@Ptr long head);
@@ -5633,34 +5654,34 @@ public class Python27Library {
 	protected native static long PyErr_ProgramText(@Ptr long charPtr1, int int1);
 	/**
 	 * create a UnicodeDecodeError object<br>
-	 * Original signature : <code>PyObject* PyUnicodeDecodeError_Create(const char*, const char*, const char*)</code><br>
+	 * Original signature : <code>PyObject* PyUnicodeDecodeError_Create(const char*, const char*, Py_ssize_t, Py_ssize_t, Py_ssize_t, const char*)</code><br>
 	 * <i>native declaration : pyerrors.h:175</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeDecodeError_Create(Pointer<Byte > charPtr1, Pointer<Byte > charPtr2, Pointer<Byte > charPtr3) {
-		return Pointer.pointerToAddress(PyUnicodeDecodeError_Create(Pointer.getPeer(charPtr1), Pointer.getPeer(charPtr2), Pointer.getPeer(charPtr3)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeDecodeError_Create(Pointer<Byte > charPtr1, Pointer<Byte > charPtr2, @Ptr long Py_ssize_t1, @Ptr long Py_ssize_t2, @Ptr long Py_ssize_t3, Pointer<Byte > charPtr3) {
+		return Pointer.pointerToAddress(PyUnicodeDecodeError_Create(Pointer.getPeer(charPtr1), Pointer.getPeer(charPtr2), Py_ssize_t1, Py_ssize_t2, Py_ssize_t3, Pointer.getPeer(charPtr3)), PyObject.class);
 	}
 	@Ptr 
-	protected native static long PyUnicodeDecodeError_Create(@Ptr long charPtr1, @Ptr long charPtr2, @Ptr long charPtr3);
+	protected native static long PyUnicodeDecodeError_Create(@Ptr long charPtr1, @Ptr long charPtr2, @Ptr long Py_ssize_t1, @Ptr long Py_ssize_t2, @Ptr long Py_ssize_t3, @Ptr long charPtr3);
 	/**
 	 * create a UnicodeEncodeError object<br>
-	 * Original signature : <code>PyObject* PyUnicodeEncodeError_Create(const char*, const Py_UNICODE*, const char*)</code><br>
+	 * Original signature : <code>PyObject* PyUnicodeEncodeError_Create(const char*, const Py_UNICODE*, Py_ssize_t, Py_ssize_t, Py_ssize_t, const char*)</code><br>
 	 * <i>native declaration : pyerrors.h:180</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeEncodeError_Create(Pointer<Byte > charPtr1, Pointer<Integer > Py_UNICODEPtr1, Pointer<Byte > charPtr2) {
-		return Pointer.pointerToAddress(PyUnicodeEncodeError_Create(Pointer.getPeer(charPtr1), Pointer.getPeer(Py_UNICODEPtr1), Pointer.getPeer(charPtr2)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeEncodeError_Create(Pointer<Byte > charPtr1, Pointer<Integer > Py_UNICODEPtr1, @Ptr long Py_ssize_t1, @Ptr long Py_ssize_t2, @Ptr long Py_ssize_t3, Pointer<Byte > charPtr2) {
+		return Pointer.pointerToAddress(PyUnicodeEncodeError_Create(Pointer.getPeer(charPtr1), Pointer.getPeer(Py_UNICODEPtr1), Py_ssize_t1, Py_ssize_t2, Py_ssize_t3, Pointer.getPeer(charPtr2)), PyObject.class);
 	}
 	@Ptr 
-	protected native static long PyUnicodeEncodeError_Create(@Ptr long charPtr1, @Ptr long Py_UNICODEPtr1, @Ptr long charPtr2);
+	protected native static long PyUnicodeEncodeError_Create(@Ptr long charPtr1, @Ptr long Py_UNICODEPtr1, @Ptr long Py_ssize_t1, @Ptr long Py_ssize_t2, @Ptr long Py_ssize_t3, @Ptr long charPtr2);
 	/**
 	 * create a UnicodeTranslateError object<br>
-	 * Original signature : <code>PyObject* PyUnicodeTranslateError_Create(const Py_UNICODE*, const char*)</code><br>
+	 * Original signature : <code>PyObject* PyUnicodeTranslateError_Create(const Py_UNICODE*, Py_ssize_t, Py_ssize_t, Py_ssize_t, const char*)</code><br>
 	 * <i>native declaration : pyerrors.h:185</i>
 	 */
-	public static Pointer<PyObject > PyUnicodeTranslateError_Create(Pointer<Integer > Py_UNICODEPtr1, Pointer<Byte > charPtr1) {
-		return Pointer.pointerToAddress(PyUnicodeTranslateError_Create(Pointer.getPeer(Py_UNICODEPtr1), Pointer.getPeer(charPtr1)), PyObject.class);
+	public static Pointer<PyObject > PyUnicodeTranslateError_Create(Pointer<Integer > Py_UNICODEPtr1, @Ptr long Py_ssize_t1, @Ptr long Py_ssize_t2, @Ptr long Py_ssize_t3, Pointer<Byte > charPtr1) {
+		return Pointer.pointerToAddress(PyUnicodeTranslateError_Create(Pointer.getPeer(Py_UNICODEPtr1), Py_ssize_t1, Py_ssize_t2, Py_ssize_t3, Pointer.getPeer(charPtr1)), PyObject.class);
 	}
 	@Ptr 
-	protected native static long PyUnicodeTranslateError_Create(@Ptr long Py_UNICODEPtr1, @Ptr long charPtr1);
+	protected native static long PyUnicodeTranslateError_Create(@Ptr long Py_UNICODEPtr1, @Ptr long Py_ssize_t1, @Ptr long Py_ssize_t2, @Ptr long Py_ssize_t3, @Ptr long charPtr1);
 	/**
 	 * get the encoding attribute<br>
 	 * Original signature : <code>PyObject* PyUnicodeEncodeError_GetEncoding(PyObject*)</code><br>
@@ -5714,7 +5735,7 @@ public class Python27Library {
 	 * Original signature : <code>int PyUnicodeEncodeError_GetStart(PyObject*, Py_ssize_t*)</code><br>
 	 * <i>native declaration : pyerrors.h:207</i>
 	 */
-	public static int PyUnicodeEncodeError_GetStart(Pointer<PyObject > PyObjectPtr1, Pointer<Python27Library.Py_ssize_t > Py_ssize_tPtr1) {
+	public static int PyUnicodeEncodeError_GetStart(Pointer<PyObject > PyObjectPtr1, Pointer<SizeT > Py_ssize_tPtr1) {
 		return PyUnicodeEncodeError_GetStart(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(Py_ssize_tPtr1));
 	}
 	protected native static int PyUnicodeEncodeError_GetStart(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_tPtr1);
@@ -5722,7 +5743,7 @@ public class Python27Library {
 	 * Original signature : <code>int PyUnicodeDecodeError_GetStart(PyObject*, Py_ssize_t*)</code><br>
 	 * <i>native declaration : pyerrors.h:209</i>
 	 */
-	public static int PyUnicodeDecodeError_GetStart(Pointer<PyObject > PyObjectPtr1, Pointer<Python27Library.Py_ssize_t > Py_ssize_tPtr1) {
+	public static int PyUnicodeDecodeError_GetStart(Pointer<PyObject > PyObjectPtr1, Pointer<SizeT > Py_ssize_tPtr1) {
 		return PyUnicodeDecodeError_GetStart(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(Py_ssize_tPtr1));
 	}
 	protected native static int PyUnicodeDecodeError_GetStart(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_tPtr1);
@@ -5730,43 +5751,43 @@ public class Python27Library {
 	 * Original signature : <code>int PyUnicodeTranslateError_GetStart(PyObject*, Py_ssize_t*)</code><br>
 	 * <i>native declaration : pyerrors.h:211</i>
 	 */
-	public static int PyUnicodeTranslateError_GetStart(Pointer<PyObject > PyObjectPtr1, Pointer<Python27Library.Py_ssize_t > Py_ssize_tPtr1) {
+	public static int PyUnicodeTranslateError_GetStart(Pointer<PyObject > PyObjectPtr1, Pointer<SizeT > Py_ssize_tPtr1) {
 		return PyUnicodeTranslateError_GetStart(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(Py_ssize_tPtr1));
 	}
 	protected native static int PyUnicodeTranslateError_GetStart(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_tPtr1);
 	/**
 	 * assign a new value to the start attribute<br>
 	 * return 0 on success, -1 on failure<br>
-	 * Original signature : <code>int PyUnicodeEncodeError_SetStart(PyObject*)</code><br>
+	 * Original signature : <code>int PyUnicodeEncodeError_SetStart(PyObject*, Py_ssize_t)</code><br>
 	 * <i>native declaration : pyerrors.h:217</i>
 	 */
-	public static int PyUnicodeEncodeError_SetStart(Pointer<PyObject > PyObjectPtr1) {
-		return PyUnicodeEncodeError_SetStart(Pointer.getPeer(PyObjectPtr1));
+	public static int PyUnicodeEncodeError_SetStart(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1) {
+		return PyUnicodeEncodeError_SetStart(Pointer.getPeer(PyObjectPtr1), Py_ssize_t1);
 	}
-	protected native static int PyUnicodeEncodeError_SetStart(@Ptr long PyObjectPtr1);
+	protected native static int PyUnicodeEncodeError_SetStart(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_t1);
 	/**
-	 * Original signature : <code>int PyUnicodeDecodeError_SetStart(PyObject*)</code><br>
+	 * Original signature : <code>int PyUnicodeDecodeError_SetStart(PyObject*, Py_ssize_t)</code><br>
 	 * <i>native declaration : pyerrors.h:219</i>
 	 */
-	public static int PyUnicodeDecodeError_SetStart(Pointer<PyObject > PyObjectPtr1) {
-		return PyUnicodeDecodeError_SetStart(Pointer.getPeer(PyObjectPtr1));
+	public static int PyUnicodeDecodeError_SetStart(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1) {
+		return PyUnicodeDecodeError_SetStart(Pointer.getPeer(PyObjectPtr1), Py_ssize_t1);
 	}
-	protected native static int PyUnicodeDecodeError_SetStart(@Ptr long PyObjectPtr1);
+	protected native static int PyUnicodeDecodeError_SetStart(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_t1);
 	/**
-	 * Original signature : <code>int PyUnicodeTranslateError_SetStart(PyObject*)</code><br>
+	 * Original signature : <code>int PyUnicodeTranslateError_SetStart(PyObject*, Py_ssize_t)</code><br>
 	 * <i>native declaration : pyerrors.h:221</i>
 	 */
-	public static int PyUnicodeTranslateError_SetStart(Pointer<PyObject > PyObjectPtr1) {
-		return PyUnicodeTranslateError_SetStart(Pointer.getPeer(PyObjectPtr1));
+	public static int PyUnicodeTranslateError_SetStart(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1) {
+		return PyUnicodeTranslateError_SetStart(Pointer.getPeer(PyObjectPtr1), Py_ssize_t1);
 	}
-	protected native static int PyUnicodeTranslateError_SetStart(@Ptr long PyObjectPtr1);
+	protected native static int PyUnicodeTranslateError_SetStart(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_t1);
 	/**
 	 * get the value of the end attribute (the int *may not be NULL)<br>
 	 * return 0 on success, -1 on failure<br>
 	 * Original signature : <code>int PyUnicodeEncodeError_GetEnd(PyObject*, Py_ssize_t*)</code><br>
 	 * <i>native declaration : pyerrors.h:227</i>
 	 */
-	public static int PyUnicodeEncodeError_GetEnd(Pointer<PyObject > PyObjectPtr1, Pointer<Python27Library.Py_ssize_t > Py_ssize_tPtr1) {
+	public static int PyUnicodeEncodeError_GetEnd(Pointer<PyObject > PyObjectPtr1, Pointer<SizeT > Py_ssize_tPtr1) {
 		return PyUnicodeEncodeError_GetEnd(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(Py_ssize_tPtr1));
 	}
 	protected native static int PyUnicodeEncodeError_GetEnd(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_tPtr1);
@@ -5774,7 +5795,7 @@ public class Python27Library {
 	 * Original signature : <code>int PyUnicodeDecodeError_GetEnd(PyObject*, Py_ssize_t*)</code><br>
 	 * <i>native declaration : pyerrors.h:229</i>
 	 */
-	public static int PyUnicodeDecodeError_GetEnd(Pointer<PyObject > PyObjectPtr1, Pointer<Python27Library.Py_ssize_t > Py_ssize_tPtr1) {
+	public static int PyUnicodeDecodeError_GetEnd(Pointer<PyObject > PyObjectPtr1, Pointer<SizeT > Py_ssize_tPtr1) {
 		return PyUnicodeDecodeError_GetEnd(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(Py_ssize_tPtr1));
 	}
 	protected native static int PyUnicodeDecodeError_GetEnd(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_tPtr1);
@@ -5782,36 +5803,36 @@ public class Python27Library {
 	 * Original signature : <code>int PyUnicodeTranslateError_GetEnd(PyObject*, Py_ssize_t*)</code><br>
 	 * <i>native declaration : pyerrors.h:231</i>
 	 */
-	public static int PyUnicodeTranslateError_GetEnd(Pointer<PyObject > PyObjectPtr1, Pointer<Python27Library.Py_ssize_t > Py_ssize_tPtr1) {
+	public static int PyUnicodeTranslateError_GetEnd(Pointer<PyObject > PyObjectPtr1, Pointer<SizeT > Py_ssize_tPtr1) {
 		return PyUnicodeTranslateError_GetEnd(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(Py_ssize_tPtr1));
 	}
 	protected native static int PyUnicodeTranslateError_GetEnd(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_tPtr1);
 	/**
 	 * assign a new value to the end attribute<br>
 	 * return 0 on success, -1 on failure<br>
-	 * Original signature : <code>int PyUnicodeEncodeError_SetEnd(PyObject*)</code><br>
+	 * Original signature : <code>int PyUnicodeEncodeError_SetEnd(PyObject*, Py_ssize_t)</code><br>
 	 * <i>native declaration : pyerrors.h:237</i>
 	 */
-	public static int PyUnicodeEncodeError_SetEnd(Pointer<PyObject > PyObjectPtr1) {
-		return PyUnicodeEncodeError_SetEnd(Pointer.getPeer(PyObjectPtr1));
+	public static int PyUnicodeEncodeError_SetEnd(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1) {
+		return PyUnicodeEncodeError_SetEnd(Pointer.getPeer(PyObjectPtr1), Py_ssize_t1);
 	}
-	protected native static int PyUnicodeEncodeError_SetEnd(@Ptr long PyObjectPtr1);
+	protected native static int PyUnicodeEncodeError_SetEnd(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_t1);
 	/**
-	 * Original signature : <code>int PyUnicodeDecodeError_SetEnd(PyObject*)</code><br>
+	 * Original signature : <code>int PyUnicodeDecodeError_SetEnd(PyObject*, Py_ssize_t)</code><br>
 	 * <i>native declaration : pyerrors.h:239</i>
 	 */
-	public static int PyUnicodeDecodeError_SetEnd(Pointer<PyObject > PyObjectPtr1) {
-		return PyUnicodeDecodeError_SetEnd(Pointer.getPeer(PyObjectPtr1));
+	public static int PyUnicodeDecodeError_SetEnd(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1) {
+		return PyUnicodeDecodeError_SetEnd(Pointer.getPeer(PyObjectPtr1), Py_ssize_t1);
 	}
-	protected native static int PyUnicodeDecodeError_SetEnd(@Ptr long PyObjectPtr1);
+	protected native static int PyUnicodeDecodeError_SetEnd(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_t1);
 	/**
-	 * Original signature : <code>int PyUnicodeTranslateError_SetEnd(PyObject*)</code><br>
+	 * Original signature : <code>int PyUnicodeTranslateError_SetEnd(PyObject*, Py_ssize_t)</code><br>
 	 * <i>native declaration : pyerrors.h:241</i>
 	 */
-	public static int PyUnicodeTranslateError_SetEnd(Pointer<PyObject > PyObjectPtr1) {
-		return PyUnicodeTranslateError_SetEnd(Pointer.getPeer(PyObjectPtr1));
+	public static int PyUnicodeTranslateError_SetEnd(Pointer<PyObject > PyObjectPtr1, @Ptr long Py_ssize_t1) {
+		return PyUnicodeTranslateError_SetEnd(Pointer.getPeer(PyObjectPtr1), Py_ssize_t1);
 	}
-	protected native static int PyUnicodeTranslateError_SetEnd(@Ptr long PyObjectPtr1);
+	protected native static int PyUnicodeTranslateError_SetEnd(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_t1);
 	/**
 	 * get the value of the reason attribute<br>
 	 * Original signature : <code>PyObject* PyUnicodeEncodeError_GetReason(PyObject*)</code><br>
@@ -6201,13 +6222,13 @@ public class Python27Library {
 	}
 	protected native static int PyArg_ParseTupleAndKeywords(@Ptr long PyObjectPtr1, @Ptr long PyObjectPtr2, @Ptr long charPtr1, @Ptr long charPtrPtr1, Object... varargs);
 	/**
-	 * Original signature : <code>int PyArg_UnpackTuple(PyObject*, const char*, null)</code><br>
+	 * Original signature : <code>int PyArg_UnpackTuple(PyObject*, const char*, Py_ssize_t, Py_ssize_t, null)</code><br>
 	 * <i>native declaration : modsupport.h:9</i>
 	 */
-	public static int PyArg_UnpackTuple(Pointer<PyObject > PyObjectPtr1, Pointer<Byte > charPtr1, Object... varargs) {
-		return PyArg_UnpackTuple(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(charPtr1));
+	public static int PyArg_UnpackTuple(Pointer<PyObject > PyObjectPtr1, Pointer<Byte > charPtr1, @Ptr long Py_ssize_t1, @Ptr long Py_ssize_t2, Object... varargs) {
+		return PyArg_UnpackTuple(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(charPtr1), Py_ssize_t1, Py_ssize_t2);
 	}
-	protected native static int PyArg_UnpackTuple(@Ptr long PyObjectPtr1, @Ptr long charPtr1, Object... varargs);
+	protected native static int PyArg_UnpackTuple(@Ptr long PyObjectPtr1, @Ptr long charPtr1, @Ptr long Py_ssize_t1, @Ptr long Py_ssize_t2, Object... varargs);
 	/**
 	 * Original signature : <code>PyObject* Py_BuildValue(const char*, null)</code><br>
 	 * <i>native declaration : modsupport.h:11</i>
@@ -6370,7 +6391,7 @@ public class Python27Library {
 	 * Original signature : <code>int PyRun_AnyFileFlags(FILE*, const char*, PyCompilerFlags*)</code><br>
 	 * <i>native declaration : pythonrun.h:25</i>
 	 */
-	public static int PyRun_AnyFileFlags(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Byte > charPtr1, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
+	public static int PyRun_AnyFileFlags(Pointer FILEPtr1, Pointer<Byte > charPtr1, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
 		return PyRun_AnyFileFlags(Pointer.getPeer(FILEPtr1), Pointer.getPeer(charPtr1), Pointer.getPeer(PyCompilerFlagsPtr1));
 	}
 	protected native static int PyRun_AnyFileFlags(@Ptr long FILEPtr1, @Ptr long charPtr1, @Ptr long PyCompilerFlagsPtr1);
@@ -6378,7 +6399,7 @@ public class Python27Library {
 	 * Original signature : <code>int PyRun_AnyFileExFlags(FILE*, const char*, int, PyCompilerFlags*)</code><br>
 	 * <i>native declaration : pythonrun.h:27</i>
 	 */
-	public static int PyRun_AnyFileExFlags(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Byte > charPtr1, int int1, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
+	public static int PyRun_AnyFileExFlags(Pointer FILEPtr1, Pointer<Byte > charPtr1, int int1, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
 		return PyRun_AnyFileExFlags(Pointer.getPeer(FILEPtr1), Pointer.getPeer(charPtr1), int1, Pointer.getPeer(PyCompilerFlagsPtr1));
 	}
 	protected native static int PyRun_AnyFileExFlags(@Ptr long FILEPtr1, @Ptr long charPtr1, int int1, @Ptr long PyCompilerFlagsPtr1);
@@ -6394,7 +6415,7 @@ public class Python27Library {
 	 * Original signature : <code>int PyRun_SimpleFileExFlags(FILE*, const char*, int, PyCompilerFlags*)</code><br>
 	 * <i>native declaration : pythonrun.h:31</i>
 	 */
-	public static int PyRun_SimpleFileExFlags(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Byte > charPtr1, int int1, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
+	public static int PyRun_SimpleFileExFlags(Pointer FILEPtr1, Pointer<Byte > charPtr1, int int1, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
 		return PyRun_SimpleFileExFlags(Pointer.getPeer(FILEPtr1), Pointer.getPeer(charPtr1), int1, Pointer.getPeer(PyCompilerFlagsPtr1));
 	}
 	protected native static int PyRun_SimpleFileExFlags(@Ptr long FILEPtr1, @Ptr long charPtr1, int int1, @Ptr long PyCompilerFlagsPtr1);
@@ -6402,7 +6423,7 @@ public class Python27Library {
 	 * Original signature : <code>int PyRun_InteractiveOneFlags(FILE*, const char*, PyCompilerFlags*)</code><br>
 	 * <i>native declaration : pythonrun.h:33</i>
 	 */
-	public static int PyRun_InteractiveOneFlags(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Byte > charPtr1, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
+	public static int PyRun_InteractiveOneFlags(Pointer FILEPtr1, Pointer<Byte > charPtr1, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
 		return PyRun_InteractiveOneFlags(Pointer.getPeer(FILEPtr1), Pointer.getPeer(charPtr1), Pointer.getPeer(PyCompilerFlagsPtr1));
 	}
 	protected native static int PyRun_InteractiveOneFlags(@Ptr long FILEPtr1, @Ptr long charPtr1, @Ptr long PyCompilerFlagsPtr1);
@@ -6410,7 +6431,7 @@ public class Python27Library {
 	 * Original signature : <code>int PyRun_InteractiveLoopFlags(FILE*, const char*, PyCompilerFlags*)</code><br>
 	 * <i>native declaration : pythonrun.h:35</i>
 	 */
-	public static int PyRun_InteractiveLoopFlags(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Byte > charPtr1, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
+	public static int PyRun_InteractiveLoopFlags(Pointer FILEPtr1, Pointer<Byte > charPtr1, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
 		return PyRun_InteractiveLoopFlags(Pointer.getPeer(FILEPtr1), Pointer.getPeer(charPtr1), Pointer.getPeer(PyCompilerFlagsPtr1));
 	}
 	protected native static int PyRun_InteractiveLoopFlags(@Ptr long FILEPtr1, @Ptr long charPtr1, @Ptr long PyCompilerFlagsPtr1);
@@ -6427,7 +6448,7 @@ public class Python27Library {
 	 * Original signature : <code>_mod* PyParser_ASTFromFile(FILE*, const char*, int, char*, char*, PyCompilerFlags*, int*, PyArena*)</code><br>
 	 * <i>native declaration : pythonrun.h:39</i>
 	 */
-	public static Pointer<Python27Library._mod > PyParser_ASTFromFile(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Byte > charPtr1, int int1, Pointer<Byte > charPtr2, Pointer<Byte > charPtr3, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1, Pointer<Integer > intPtr1, Pointer<Python27Library._arena > PyArenaPtr1) {
+	public static Pointer<Python27Library._mod > PyParser_ASTFromFile(Pointer FILEPtr1, Pointer<Byte > charPtr1, int int1, Pointer<Byte > charPtr2, Pointer<Byte > charPtr3, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1, Pointer<Integer > intPtr1, Pointer<Python27Library._arena > PyArenaPtr1) {
 		return Pointer.pointerToAddress(PyParser_ASTFromFile(Pointer.getPeer(FILEPtr1), Pointer.getPeer(charPtr1), int1, Pointer.getPeer(charPtr2), Pointer.getPeer(charPtr3), Pointer.getPeer(PyCompilerFlagsPtr1), Pointer.getPeer(intPtr1), Pointer.getPeer(PyArenaPtr1)), Python27Library._mod.class);
 	}
 	@Ptr 
@@ -6445,7 +6466,7 @@ public class Python27Library {
 	 * Original signature : <code>_node* PyParser_SimpleParseFileFlags(FILE*, const char*, int, int)</code><br>
 	 * <i>native declaration : pythonrun.h:43</i>
 	 */
-	public static Pointer<Python27Library._node > PyParser_SimpleParseFileFlags(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Byte > charPtr1, int int1, int int2) {
+	public static Pointer<Python27Library._node > PyParser_SimpleParseFileFlags(Pointer FILEPtr1, Pointer<Byte > charPtr1, int int1, int int2) {
 		return Pointer.pointerToAddress(PyParser_SimpleParseFileFlags(Pointer.getPeer(FILEPtr1), Pointer.getPeer(charPtr1), int1, int2), Python27Library._node.class);
 	}
 	@Ptr 
@@ -6463,7 +6484,7 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* PyRun_FileExFlags(FILE*, const char*, int, PyObject*, PyObject*, int, PyCompilerFlags*)</code><br>
 	 * <i>native declaration : pythonrun.h:47</i>
 	 */
-	public static Pointer<PyObject > PyRun_FileExFlags(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Byte > charPtr1, int int1, Pointer<PyObject > PyObjectPtr1, Pointer<PyObject > PyObjectPtr2, int int2, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
+	public static Pointer<PyObject > PyRun_FileExFlags(Pointer FILEPtr1, Pointer<Byte > charPtr1, int int1, Pointer<PyObject > PyObjectPtr1, Pointer<PyObject > PyObjectPtr2, int int2, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
 		return Pointer.pointerToAddress(PyRun_FileExFlags(Pointer.getPeer(FILEPtr1), Pointer.getPeer(charPtr1), int1, Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(PyObjectPtr2), int2, Pointer.getPeer(PyCompilerFlagsPtr1)), PyObject.class);
 	}
 	@Ptr 
@@ -6521,7 +6542,7 @@ public class Python27Library {
 	 * Original signature : <code>int Py_FdIsInteractive(FILE*, const char*)</code><br>
 	 * <i>native declaration : pythonrun.h:63</i>
 	 */
-	public static int Py_FdIsInteractive(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Byte > charPtr1) {
+	public static int Py_FdIsInteractive(Pointer FILEPtr1, Pointer<Byte > charPtr1) {
 		return Py_FdIsInteractive(Pointer.getPeer(FILEPtr1), Pointer.getPeer(charPtr1));
 	}
 	protected native static int Py_FdIsInteractive(@Ptr long FILEPtr1, @Ptr long charPtr1);
@@ -6818,7 +6839,7 @@ public class Python27Library {
 	 * Original signature : <code>char* PyOS_Readline(FILE*, FILE*, char*)</code><br>
 	 * <i>native declaration : pythonrun.h:163</i>
 	 */
-	public static Pointer<Byte > PyOS_Readline(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Python27Library.FILE > FILEPtr2, Pointer<Byte > charPtr1) {
+	public static Pointer<Byte > PyOS_Readline(Pointer FILEPtr1, Pointer FILEPtr2, Pointer<Byte > charPtr1) {
 		return Pointer.pointerToAddress(PyOS_Readline(Pointer.getPeer(FILEPtr1), Pointer.getPeer(FILEPtr2), Pointer.getPeer(charPtr1)), Byte.class);
 	}
 	@Ptr 
@@ -6847,8 +6868,8 @@ public class Python27Library {
 	 * Original signature : <code>int _PyOS_URandom(void*, Py_ssize_t)</code><br>
 	 * <i>native declaration : pythonrun.h:177</i>
 	 */
-	public static int _PyOS_URandom(Pointer<? > buffer, Pointer<Python27Library.Py_ssize_t > size) {
-		return _PyOS_URandom(Pointer.getPeer(buffer), Pointer.getPeer(size));
+	public static int _PyOS_URandom(Pointer<? > buffer, @Ptr long size) {
+		return _PyOS_URandom(Pointer.getPeer(buffer), size);
 	}
 	protected native static int _PyOS_URandom(@Ptr long buffer, @Ptr long size);
 	/**
@@ -7095,7 +7116,7 @@ public class Python27Library {
 	 * Original signature : <code>int _PyEval_SliceIndex(PyObject*, Py_ssize_t*)</code><br>
 	 * <i>native declaration : ceval.h:79</i>
 	 */
-	public static int _PyEval_SliceIndex(Pointer<PyObject > PyObjectPtr1, Pointer<Python27Library.Py_ssize_t > Py_ssize_tPtr1) {
+	public static int _PyEval_SliceIndex(Pointer<PyObject > PyObjectPtr1, Pointer<SizeT > Py_ssize_tPtr1) {
 		return _PyEval_SliceIndex(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(Py_ssize_tPtr1));
 	}
 	protected native static int _PyEval_SliceIndex(@Ptr long PyObjectPtr1, @Ptr long Py_ssize_tPtr1);
@@ -7120,8 +7141,8 @@ public class Python27Library {
 	 * Original signature : <code>FILE* PySys_GetFile(char*, FILE*)</code><br>
 	 * <i>native declaration : sysmodule.h:6</i>
 	 */
-	public static Pointer<Python27Library.FILE > PySys_GetFile(Pointer<Byte > charPtr1, Pointer<Python27Library.FILE > FILEPtr1) {
-		return Pointer.pointerToAddress(PySys_GetFile(Pointer.getPeer(charPtr1), Pointer.getPeer(FILEPtr1)), Python27Library.FILE.class);
+	public static Pointer PySys_GetFile(Pointer<Byte > charPtr1, Pointer FILEPtr1) {
+		return Pointer.pointerToAddress(PySys_GetFile(Pointer.getPeer(charPtr1), Pointer.getPeer(FILEPtr1)));
 	}
 	@Ptr 
 	protected native static long PySys_GetFile(@Ptr long charPtr1, @Ptr long FILEPtr1);
@@ -7322,7 +7343,7 @@ public class Python27Library {
 	 * Original signature : <code>filedescr* _PyImport_FindModule(const char*, PyObject*, char*, size_t, FILE**, PyObject**)</code><br>
 	 * <i>native declaration : import.h:32</i>
 	 */
-	public static Pointer<Python27Library.filedescr > _PyImport_FindModule(Pointer<Byte > charPtr1, Pointer<PyObject > PyObjectPtr1, Pointer<Byte > charPtr2, @Ptr long size_t1, Pointer<Pointer<Python27Library.FILE > > FILEPtrPtr1, Pointer<Pointer<PyObject > > PyObjectPtrPtr1) {
+	public static Pointer<Python27Library.filedescr > _PyImport_FindModule(Pointer<Byte > charPtr1, Pointer<PyObject > PyObjectPtr1, Pointer<Byte > charPtr2, @Ptr long size_t1, Pointer<Pointer > FILEPtrPtr1, Pointer<Pointer<PyObject > > PyObjectPtrPtr1) {
 		return Pointer.pointerToAddress(_PyImport_FindModule(Pointer.getPeer(charPtr1), Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(charPtr2), size_t1, Pointer.getPeer(FILEPtrPtr1), Pointer.getPeer(PyObjectPtrPtr1)), Python27Library.filedescr.class);
 	}
 	@Ptr 
@@ -7467,8 +7488,9 @@ public class Python27Library {
 	 * Original signature : <code>Py_ssize_t PyObject_Size(PyObject*)</code><br>
 	 * <i>native declaration : abstract.h:22</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PyObject_Size(Pointer<PyObject > o) {
-		return Pointer.pointerToAddress(PyObject_Size(Pointer.getPeer(o)));
+	@Ptr 
+	public static long PyObject_Size(Pointer<PyObject > o) {
+		return PyObject_Size(Pointer.getPeer(o));
 	}
 	@Ptr 
 	protected native static long PyObject_Size(@Ptr long o);
@@ -7476,8 +7498,9 @@ public class Python27Library {
 	 * Original signature : <code>Py_ssize_t PyObject_Length(PyObject*)</code><br>
 	 * <i>native declaration : abstract.h:24</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PyObject_Length(Pointer<PyObject > o) {
-		return Pointer.pointerToAddress(PyObject_Length(Pointer.getPeer(o)));
+	@Ptr 
+	public static long PyObject_Length(Pointer<PyObject > o) {
+		return PyObject_Length(Pointer.getPeer(o));
 	}
 	@Ptr 
 	protected native static long PyObject_Length(@Ptr long o);
@@ -7485,8 +7508,9 @@ public class Python27Library {
 	 * Original signature : <code>Py_ssize_t _PyObject_LengthHint(PyObject*, Py_ssize_t)</code><br>
 	 * <i>native declaration : abstract.h:26</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > _PyObject_LengthHint(Pointer<PyObject > o, Pointer<Python27Library.Py_ssize_t > Py_ssize_t1) {
-		return Pointer.pointerToAddress(_PyObject_LengthHint(Pointer.getPeer(o), Pointer.getPeer(Py_ssize_t1)));
+	@Ptr 
+	public static long _PyObject_LengthHint(Pointer<PyObject > o, @Ptr long Py_ssize_t1) {
+		return _PyObject_LengthHint(Pointer.getPeer(o), Py_ssize_t1);
 	}
 	@Ptr 
 	protected native static long _PyObject_LengthHint(@Ptr long o, @Ptr long Py_ssize_t1);
@@ -7527,7 +7551,7 @@ public class Python27Library {
 	 * Original signature : <code>int PyObject_AsCharBuffer(PyObject*, const char**, Py_ssize_t*)</code><br>
 	 * <i>native declaration : abstract.h:36</i>
 	 */
-	public static int PyObject_AsCharBuffer(Pointer<PyObject > obj, Pointer<Pointer<Byte > > buffer, Pointer<Python27Library.Py_ssize_t > buffer_len) {
+	public static int PyObject_AsCharBuffer(Pointer<PyObject > obj, Pointer<Pointer<Byte > > buffer, Pointer<SizeT > buffer_len) {
 		return PyObject_AsCharBuffer(Pointer.getPeer(obj), Pointer.getPeer(buffer), Pointer.getPeer(buffer_len));
 	}
 	protected native static int PyObject_AsCharBuffer(@Ptr long obj, @Ptr long buffer, @Ptr long buffer_len);
@@ -7543,7 +7567,7 @@ public class Python27Library {
 	 * Original signature : <code>int PyObject_AsReadBuffer(PyObject*, const void**, Py_ssize_t*)</code><br>
 	 * <i>native declaration : abstract.h:40</i>
 	 */
-	public static int PyObject_AsReadBuffer(Pointer<PyObject > obj, Pointer<Pointer<? > > buffer, Pointer<Python27Library.Py_ssize_t > buffer_len) {
+	public static int PyObject_AsReadBuffer(Pointer<PyObject > obj, Pointer<Pointer<? > > buffer, Pointer<SizeT > buffer_len) {
 		return PyObject_AsReadBuffer(Pointer.getPeer(obj), Pointer.getPeer(buffer), Pointer.getPeer(buffer_len));
 	}
 	protected native static int PyObject_AsReadBuffer(@Ptr long obj, @Ptr long buffer, @Ptr long buffer_len);
@@ -7551,7 +7575,7 @@ public class Python27Library {
 	 * Original signature : <code>int PyObject_AsWriteBuffer(PyObject*, void**, Py_ssize_t*)</code><br>
 	 * <i>native declaration : abstract.h:42</i>
 	 */
-	public static int PyObject_AsWriteBuffer(Pointer<PyObject > obj, Pointer<Pointer<? > > buffer, Pointer<Python27Library.Py_ssize_t > buffer_len) {
+	public static int PyObject_AsWriteBuffer(Pointer<PyObject > obj, Pointer<Pointer<? > > buffer, Pointer<SizeT > buffer_len) {
 		return PyObject_AsWriteBuffer(Pointer.getPeer(obj), Pointer.getPeer(buffer), Pointer.getPeer(buffer_len));
 	}
 	protected native static int PyObject_AsWriteBuffer(@Ptr long obj, @Ptr long buffer, @Ptr long buffer_len);
@@ -7567,7 +7591,7 @@ public class Python27Library {
 	 * Original signature : <code>void* PyBuffer_GetPointer(Py_buffer*, Py_ssize_t*)</code><br>
 	 * <i>native declaration : abstract.h:46</i>
 	 */
-	public static Pointer<? > PyBuffer_GetPointer(Pointer<Py_buffer > view, Pointer<Python27Library.Py_ssize_t > indices) {
+	public static Pointer<? > PyBuffer_GetPointer(Pointer<Py_buffer > view, Pointer<SizeT > indices) {
 		return Pointer.pointerToAddress(PyBuffer_GetPointer(Pointer.getPeer(view), Pointer.getPeer(indices)));
 	}
 	@Ptr 
@@ -7584,16 +7608,16 @@ public class Python27Library {
 	 * Original signature : <code>int PyBuffer_ToContiguous(void*, Py_buffer*, Py_ssize_t, char)</code><br>
 	 * <i>native declaration : abstract.h:50</i>
 	 */
-	public static int PyBuffer_ToContiguous(Pointer<? > buf, Pointer<Py_buffer > view, Pointer<Python27Library.Py_ssize_t > len, byte fort) {
-		return PyBuffer_ToContiguous(Pointer.getPeer(buf), Pointer.getPeer(view), Pointer.getPeer(len), fort);
+	public static int PyBuffer_ToContiguous(Pointer<? > buf, Pointer<Py_buffer > view, @Ptr long len, byte fort) {
+		return PyBuffer_ToContiguous(Pointer.getPeer(buf), Pointer.getPeer(view), len, fort);
 	}
 	protected native static int PyBuffer_ToContiguous(@Ptr long buf, @Ptr long view, @Ptr long len, byte fort);
 	/**
 	 * Original signature : <code>int PyBuffer_FromContiguous(Py_buffer*, void*, Py_ssize_t, char)</code><br>
 	 * <i>native declaration : abstract.h:52</i>
 	 */
-	public static int PyBuffer_FromContiguous(Pointer<Py_buffer > view, Pointer<? > buf, Pointer<Python27Library.Py_ssize_t > len, byte fort) {
-		return PyBuffer_FromContiguous(Pointer.getPeer(view), Pointer.getPeer(buf), Pointer.getPeer(len), fort);
+	public static int PyBuffer_FromContiguous(Pointer<Py_buffer > view, Pointer<? > buf, @Ptr long len, byte fort) {
+		return PyBuffer_FromContiguous(Pointer.getPeer(view), Pointer.getPeer(buf), len, fort);
 	}
 	protected native static int PyBuffer_FromContiguous(@Ptr long view, @Ptr long buf, @Ptr long len, byte fort);
 	/**
@@ -7616,7 +7640,7 @@ public class Python27Library {
 	 * Original signature : <code>void PyBuffer_FillContiguousStrides(int, Py_ssize_t*, Py_ssize_t*, int, char)</code><br>
 	 * <i>native declaration : abstract.h:58</i>
 	 */
-	public static void PyBuffer_FillContiguousStrides(int ndims, Pointer<Python27Library.Py_ssize_t > shape, Pointer<Python27Library.Py_ssize_t > strides, int itemsize, byte fort) {
+	public static void PyBuffer_FillContiguousStrides(int ndims, Pointer<SizeT > shape, Pointer<SizeT > strides, int itemsize, byte fort) {
 		PyBuffer_FillContiguousStrides(ndims, Pointer.getPeer(shape), Pointer.getPeer(strides), itemsize, fort);
 	}
 	protected native static void PyBuffer_FillContiguousStrides(int ndims, @Ptr long shape, @Ptr long strides, int itemsize, byte fort);
@@ -7624,8 +7648,8 @@ public class Python27Library {
 	 * Original signature : <code>int PyBuffer_FillInfo(Py_buffer*, PyObject*, void*, Py_ssize_t, int, int)</code><br>
 	 * <i>native declaration : abstract.h:60</i>
 	 */
-	public static int PyBuffer_FillInfo(Pointer<Py_buffer > view, Pointer<PyObject > o, Pointer<? > buf, Pointer<Python27Library.Py_ssize_t > len, int readonly, int flags) {
-		return PyBuffer_FillInfo(Pointer.getPeer(view), Pointer.getPeer(o), Pointer.getPeer(buf), Pointer.getPeer(len), readonly, flags);
+	public static int PyBuffer_FillInfo(Pointer<Py_buffer > view, Pointer<PyObject > o, Pointer<? > buf, @Ptr long len, int readonly, int flags) {
+		return PyBuffer_FillInfo(Pointer.getPeer(view), Pointer.getPeer(o), Pointer.getPeer(buf), len, readonly, flags);
 	}
 	protected native static int PyBuffer_FillInfo(@Ptr long view, @Ptr long o, @Ptr long buf, @Ptr long len, int readonly, int flags);
 	/**
@@ -7846,8 +7870,9 @@ public class Python27Library {
 	 * Original signature : <code>Py_ssize_t PyNumber_AsSsize_t(PyObject*, PyObject*)</code><br>
 	 * <i>native declaration : abstract.h:110</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PyNumber_AsSsize_t(Pointer<PyObject > o, Pointer<PyObject > exc) {
-		return Pointer.pointerToAddress(PyNumber_AsSsize_t(Pointer.getPeer(o), Pointer.getPeer(exc)));
+	@Ptr 
+	public static long PyNumber_AsSsize_t(Pointer<PyObject > o, Pointer<PyObject > exc) {
+		return PyNumber_AsSsize_t(Pointer.getPeer(o), Pointer.getPeer(exc));
 	}
 	@Ptr 
 	protected native static long PyNumber_AsSsize_t(@Ptr long o, @Ptr long exc);
@@ -8025,8 +8050,9 @@ public class Python27Library {
 	 * Original signature : <code>Py_ssize_t PySequence_Size(PyObject*)</code><br>
 	 * <i>native declaration : abstract.h:150</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PySequence_Size(Pointer<PyObject > o) {
-		return Pointer.pointerToAddress(PySequence_Size(Pointer.getPeer(o)));
+	@Ptr 
+	public static long PySequence_Size(Pointer<PyObject > o) {
+		return PySequence_Size(Pointer.getPeer(o));
 	}
 	@Ptr 
 	protected native static long PySequence_Size(@Ptr long o);
@@ -8034,8 +8060,9 @@ public class Python27Library {
 	 * Original signature : <code>Py_ssize_t PySequence_Length(PyObject*)</code><br>
 	 * <i>native declaration : abstract.h:152</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PySequence_Length(Pointer<PyObject > o) {
-		return Pointer.pointerToAddress(PySequence_Length(Pointer.getPeer(o)));
+	@Ptr 
+	public static long PySequence_Length(Pointer<PyObject > o) {
+		return PySequence_Length(Pointer.getPeer(o));
 	}
 	@Ptr 
 	protected native static long PySequence_Length(@Ptr long o);
@@ -8052,8 +8079,8 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* PySequence_Repeat(PyObject*, Py_ssize_t)</code><br>
 	 * <i>native declaration : abstract.h:156</i>
 	 */
-	public static Pointer<PyObject > PySequence_Repeat(Pointer<PyObject > o, Pointer<Python27Library.Py_ssize_t > count) {
-		return Pointer.pointerToAddress(PySequence_Repeat(Pointer.getPeer(o), Pointer.getPeer(count)), PyObject.class);
+	public static Pointer<PyObject > PySequence_Repeat(Pointer<PyObject > o, @Ptr long count) {
+		return Pointer.pointerToAddress(PySequence_Repeat(Pointer.getPeer(o), count), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PySequence_Repeat(@Ptr long o, @Ptr long count);
@@ -8061,8 +8088,8 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* PySequence_GetItem(PyObject*, Py_ssize_t)</code><br>
 	 * <i>native declaration : abstract.h:158</i>
 	 */
-	public static Pointer<PyObject > PySequence_GetItem(Pointer<PyObject > o, Pointer<Python27Library.Py_ssize_t > i) {
-		return Pointer.pointerToAddress(PySequence_GetItem(Pointer.getPeer(o), Pointer.getPeer(i)), PyObject.class);
+	public static Pointer<PyObject > PySequence_GetItem(Pointer<PyObject > o, @Ptr long i) {
+		return Pointer.pointerToAddress(PySequence_GetItem(Pointer.getPeer(o), i), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PySequence_GetItem(@Ptr long o, @Ptr long i);
@@ -8070,8 +8097,8 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* PySequence_GetSlice(PyObject*, Py_ssize_t, Py_ssize_t)</code><br>
 	 * <i>native declaration : abstract.h:160</i>
 	 */
-	public static Pointer<PyObject > PySequence_GetSlice(Pointer<PyObject > o, Pointer<Python27Library.Py_ssize_t > i1, Pointer<Python27Library.Py_ssize_t > i2) {
-		return Pointer.pointerToAddress(PySequence_GetSlice(Pointer.getPeer(o), Pointer.getPeer(i1), Pointer.getPeer(i2)), PyObject.class);
+	public static Pointer<PyObject > PySequence_GetSlice(Pointer<PyObject > o, @Ptr long i1, @Ptr long i2) {
+		return Pointer.pointerToAddress(PySequence_GetSlice(Pointer.getPeer(o), i1, i2), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PySequence_GetSlice(@Ptr long o, @Ptr long i1, @Ptr long i2);
@@ -8079,32 +8106,32 @@ public class Python27Library {
 	 * Original signature : <code>int PySequence_SetItem(PyObject*, Py_ssize_t, PyObject*)</code><br>
 	 * <i>native declaration : abstract.h:162</i>
 	 */
-	public static int PySequence_SetItem(Pointer<PyObject > o, Pointer<Python27Library.Py_ssize_t > i, Pointer<PyObject > v) {
-		return PySequence_SetItem(Pointer.getPeer(o), Pointer.getPeer(i), Pointer.getPeer(v));
+	public static int PySequence_SetItem(Pointer<PyObject > o, @Ptr long i, Pointer<PyObject > v) {
+		return PySequence_SetItem(Pointer.getPeer(o), i, Pointer.getPeer(v));
 	}
 	protected native static int PySequence_SetItem(@Ptr long o, @Ptr long i, @Ptr long v);
 	/**
 	 * Original signature : <code>int PySequence_DelItem(PyObject*, Py_ssize_t)</code><br>
 	 * <i>native declaration : abstract.h:164</i>
 	 */
-	public static int PySequence_DelItem(Pointer<PyObject > o, Pointer<Python27Library.Py_ssize_t > i) {
-		return PySequence_DelItem(Pointer.getPeer(o), Pointer.getPeer(i));
+	public static int PySequence_DelItem(Pointer<PyObject > o, @Ptr long i) {
+		return PySequence_DelItem(Pointer.getPeer(o), i);
 	}
 	protected native static int PySequence_DelItem(@Ptr long o, @Ptr long i);
 	/**
 	 * Original signature : <code>int PySequence_SetSlice(PyObject*, Py_ssize_t, Py_ssize_t, PyObject*)</code><br>
 	 * <i>native declaration : abstract.h:166</i>
 	 */
-	public static int PySequence_SetSlice(Pointer<PyObject > o, Pointer<Python27Library.Py_ssize_t > i1, Pointer<Python27Library.Py_ssize_t > i2, Pointer<PyObject > v) {
-		return PySequence_SetSlice(Pointer.getPeer(o), Pointer.getPeer(i1), Pointer.getPeer(i2), Pointer.getPeer(v));
+	public static int PySequence_SetSlice(Pointer<PyObject > o, @Ptr long i1, @Ptr long i2, Pointer<PyObject > v) {
+		return PySequence_SetSlice(Pointer.getPeer(o), i1, i2, Pointer.getPeer(v));
 	}
 	protected native static int PySequence_SetSlice(@Ptr long o, @Ptr long i1, @Ptr long i2, @Ptr long v);
 	/**
 	 * Original signature : <code>int PySequence_DelSlice(PyObject*, Py_ssize_t, Py_ssize_t)</code><br>
 	 * <i>native declaration : abstract.h:168</i>
 	 */
-	public static int PySequence_DelSlice(Pointer<PyObject > o, Pointer<Python27Library.Py_ssize_t > i1, Pointer<Python27Library.Py_ssize_t > i2) {
-		return PySequence_DelSlice(Pointer.getPeer(o), Pointer.getPeer(i1), Pointer.getPeer(i2));
+	public static int PySequence_DelSlice(Pointer<PyObject > o, @Ptr long i1, @Ptr long i2) {
+		return PySequence_DelSlice(Pointer.getPeer(o), i1, i2);
 	}
 	protected native static int PySequence_DelSlice(@Ptr long o, @Ptr long i1, @Ptr long i2);
 	/**
@@ -8138,8 +8165,9 @@ public class Python27Library {
 	 * Original signature : <code>Py_ssize_t PySequence_Count(PyObject*, PyObject*)</code><br>
 	 * <i>native declaration : abstract.h:176</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PySequence_Count(Pointer<PyObject > o, Pointer<PyObject > value) {
-		return Pointer.pointerToAddress(PySequence_Count(Pointer.getPeer(o), Pointer.getPeer(value)));
+	@Ptr 
+	public static long PySequence_Count(Pointer<PyObject > o, Pointer<PyObject > value) {
+		return PySequence_Count(Pointer.getPeer(o), Pointer.getPeer(value));
 	}
 	@Ptr 
 	protected native static long PySequence_Count(@Ptr long o, @Ptr long value);
@@ -8155,8 +8183,9 @@ public class Python27Library {
 	 * Original signature : <code>Py_ssize_t _PySequence_IterSearch(PyObject*, PyObject*, int)</code><br>
 	 * <i>native declaration : abstract.h:180</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > _PySequence_IterSearch(Pointer<PyObject > seq, Pointer<PyObject > obj, int operation) {
-		return Pointer.pointerToAddress(_PySequence_IterSearch(Pointer.getPeer(seq), Pointer.getPeer(obj), operation));
+	@Ptr 
+	public static long _PySequence_IterSearch(Pointer<PyObject > seq, Pointer<PyObject > obj, int operation) {
+		return _PySequence_IterSearch(Pointer.getPeer(seq), Pointer.getPeer(obj), operation);
 	}
 	@Ptr 
 	protected native static long _PySequence_IterSearch(@Ptr long seq, @Ptr long obj, int operation);
@@ -8172,8 +8201,9 @@ public class Python27Library {
 	 * Original signature : <code>Py_ssize_t PySequence_Index(PyObject*, PyObject*)</code><br>
 	 * <i>native declaration : abstract.h:184</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PySequence_Index(Pointer<PyObject > o, Pointer<PyObject > value) {
-		return Pointer.pointerToAddress(PySequence_Index(Pointer.getPeer(o), Pointer.getPeer(value)));
+	@Ptr 
+	public static long PySequence_Index(Pointer<PyObject > o, Pointer<PyObject > value) {
+		return PySequence_Index(Pointer.getPeer(o), Pointer.getPeer(value));
 	}
 	@Ptr 
 	protected native static long PySequence_Index(@Ptr long o, @Ptr long value);
@@ -8190,8 +8220,8 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* PySequence_InPlaceRepeat(PyObject*, Py_ssize_t)</code><br>
 	 * <i>native declaration : abstract.h:188</i>
 	 */
-	public static Pointer<PyObject > PySequence_InPlaceRepeat(Pointer<PyObject > o, Pointer<Python27Library.Py_ssize_t > count) {
-		return Pointer.pointerToAddress(PySequence_InPlaceRepeat(Pointer.getPeer(o), Pointer.getPeer(count)), PyObject.class);
+	public static Pointer<PyObject > PySequence_InPlaceRepeat(Pointer<PyObject > o, @Ptr long count) {
+		return Pointer.pointerToAddress(PySequence_InPlaceRepeat(Pointer.getPeer(o), count), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PySequence_InPlaceRepeat(@Ptr long o, @Ptr long count);
@@ -8207,8 +8237,9 @@ public class Python27Library {
 	 * Original signature : <code>Py_ssize_t PyMapping_Size(PyObject*)</code><br>
 	 * <i>native declaration : abstract.h:192</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PyMapping_Size(Pointer<PyObject > o) {
-		return Pointer.pointerToAddress(PyMapping_Size(Pointer.getPeer(o)));
+	@Ptr 
+	public static long PyMapping_Size(Pointer<PyObject > o) {
+		return PyMapping_Size(Pointer.getPeer(o));
 	}
 	@Ptr 
 	protected native static long PyMapping_Size(@Ptr long o);
@@ -8216,8 +8247,9 @@ public class Python27Library {
 	 * Original signature : <code>Py_ssize_t PyMapping_Length(PyObject*)</code><br>
 	 * <i>native declaration : abstract.h:194</i>
 	 */
-	public static Pointer<Python27Library.Py_ssize_t > PyMapping_Length(Pointer<PyObject > o) {
-		return Pointer.pointerToAddress(PyMapping_Length(Pointer.getPeer(o)));
+	@Ptr 
+	public static long PyMapping_Length(Pointer<PyObject > o) {
+		return PyMapping_Length(Pointer.getPeer(o));
 	}
 	@Ptr 
 	protected native static long PyMapping_Length(@Ptr long o);
@@ -8291,7 +8323,7 @@ public class Python27Library {
 	 * Original signature : <code>void _Py_add_one_to_index_F(int, Py_ssize_t*, const Py_ssize_t*)</code><br>
 	 * <i>native declaration : abstract.h:215</i>
 	 */
-	public static void _Py_add_one_to_index_F(int nd, Pointer<Python27Library.Py_ssize_t > index, Pointer<Python27Library.Py_ssize_t > shape) {
+	public static void _Py_add_one_to_index_F(int nd, Pointer<SizeT > index, Pointer<SizeT > shape) {
 		_Py_add_one_to_index_F(nd, Pointer.getPeer(index), Pointer.getPeer(shape));
 	}
 	protected native static void _Py_add_one_to_index_F(int nd, @Ptr long index, @Ptr long shape);
@@ -8299,7 +8331,7 @@ public class Python27Library {
 	 * Original signature : <code>void _Py_add_one_to_index_C(int, Py_ssize_t*, const Py_ssize_t*)</code><br>
 	 * <i>native declaration : abstract.h:217</i>
 	 */
-	public static void _Py_add_one_to_index_C(int nd, Pointer<Python27Library.Py_ssize_t > index, Pointer<Python27Library.Py_ssize_t > shape) {
+	public static void _Py_add_one_to_index_C(int nd, Pointer<SizeT > index, Pointer<SizeT > shape) {
 		_Py_add_one_to_index_C(nd, Pointer.getPeer(index), Pointer.getPeer(shape));
 	}
 	protected native static void _Py_add_one_to_index_C(int nd, @Ptr long index, @Ptr long shape);
@@ -8461,13 +8493,13 @@ public class Python27Library {
 	}
 	protected native static double _Py_parse_inf_or_nan(@Ptr long p, @Ptr long endptr);
 	/**
-	 * Original signature : <code>int PyOS_mystrnicmp(const char*, const char*)</code><br>
+	 * Original signature : <code>int PyOS_mystrnicmp(const char*, const char*, Py_ssize_t)</code><br>
 	 * <i>native declaration : pystrcmp.h:2</i>
 	 */
-	public static int PyOS_mystrnicmp(Pointer<Byte > charPtr1, Pointer<Byte > charPtr2) {
-		return PyOS_mystrnicmp(Pointer.getPeer(charPtr1), Pointer.getPeer(charPtr2));
+	public static int PyOS_mystrnicmp(Pointer<Byte > charPtr1, Pointer<Byte > charPtr2, @Ptr long Py_ssize_t1) {
+		return PyOS_mystrnicmp(Pointer.getPeer(charPtr1), Pointer.getPeer(charPtr2), Py_ssize_t1);
 	}
-	protected native static int PyOS_mystrnicmp(@Ptr long charPtr1, @Ptr long charPtr2);
+	protected native static int PyOS_mystrnicmp(@Ptr long charPtr1, @Ptr long charPtr2, @Ptr long Py_ssize_t1);
 	/**
 	 * Original signature : <code>int PyOS_mystricmp(const char*, const char*)</code><br>
 	 * <i>native declaration : pystrcmp.h:4</i>
@@ -11515,6 +11547,15 @@ public class Python27Library {
 			throw new RuntimeException($ex$);
 		}
 	}
+	/// C type : extern jmp_buf
+	@Array({1}) 
+	public Python27Library.jmp_buf PyFPE_jbuf() {
+		try {
+			return (Python27Library.jmp_buf)BridJ.getNativeLibrary("python27").getSymbolPointer("PyFPE_jbuf").as(Python27Library.jmp_buf.class).get();
+		}catch (Throwable $ex$) {
+			throw new RuntimeException($ex$);
+		}
+	}
 	public int PyFPE_counter() {
 		try {
 			return (int)BridJ.getNativeLibrary("python27").getSymbolPointer("PyFPE_counter").as(int.class).get();
@@ -11532,6 +11573,22 @@ public class Python27Library {
 			throw new RuntimeException($ex$);
 		}
 	}
+	public static class jmp_buf extends TypedPointer {
+		public jmp_buf(long address) {
+			super(address);
+		}
+		public jmp_buf(Pointer address) {
+			super(address);
+		}
+	};
+	public static class FILE extends TypedPointer {
+		public FILE(long address) {
+			super(address);
+		}
+		public FILE(Pointer address) {
+			super(address);
+		}
+	};
 	public static class PyLongObject extends TypedPointer {
 		public PyLongObject(long address) {
 			super(address);
@@ -11555,27 +11612,12 @@ public class Python27Library {
 	};
 	/// Undefined type
 	/// Undefined type
-	public static interface jmp_buf {
-		
-	};
-	/// Undefined type
-	/// Undefined type
 	public static interface _node {
 		
 	};
 	/// Undefined type
 	/// Undefined type
-	public static interface lenfunc {
-		
-	};
-	/// Undefined type
-	/// Undefined type
 	public static interface __gnuc_va_list {
-		
-	};
-	/// Undefined type
-	/// Undefined type
-	public static interface FILE {
 		
 	};
 	/// Undefined type

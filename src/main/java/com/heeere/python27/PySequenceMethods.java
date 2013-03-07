@@ -1,5 +1,6 @@
 package com.heeere.python27;
 import com.heeere.python27.Python27Library.binaryfunc;
+import com.heeere.python27.Python27Library.lenfunc;
 import com.heeere.python27.Python27Library.objobjproc;
 import com.heeere.python27.Python27Library.ssizeargfunc;
 import com.heeere.python27.Python27Library.ssizeobjargproc;
@@ -19,6 +20,17 @@ import org.bridj.ann.Library;
 public class PySequenceMethods extends StructObject {
 	public PySequenceMethods() {
 		super();
+	}
+	/// C type : lenfunc
+	@Field(0) 
+	public Pointer<lenfunc > sq_length() {
+		return this.io.getPointerField(this, 0);
+	}
+	/// C type : lenfunc
+	@Field(0) 
+	public PySequenceMethods sq_length(Pointer<lenfunc > sq_length) {
+		this.io.setPointerField(this, 0, sq_length);
+		return this;
 	}
 	/// C type : binaryfunc
 	@Field(1) 

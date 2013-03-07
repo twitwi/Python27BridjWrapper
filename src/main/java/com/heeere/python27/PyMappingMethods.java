@@ -1,5 +1,6 @@
 package com.heeere.python27;
 import com.heeere.python27.Python27Library.binaryfunc;
+import com.heeere.python27.Python27Library.lenfunc;
 import com.heeere.python27.Python27Library.objobjargproc;
 import org.bridj.Pointer;
 import org.bridj.StructObject;
@@ -15,6 +16,17 @@ import org.bridj.ann.Library;
 public class PyMappingMethods extends StructObject {
 	public PyMappingMethods() {
 		super();
+	}
+	/// C type : lenfunc
+	@Field(0) 
+	public Pointer<lenfunc > mp_length() {
+		return this.io.getPointerField(this, 0);
+	}
+	/// C type : lenfunc
+	@Field(0) 
+	public PyMappingMethods mp_length(Pointer<lenfunc > mp_length) {
+		this.io.setPointerField(this, 0, mp_length);
+		return this;
 	}
 	/// C type : binaryfunc
 	@Field(1) 
