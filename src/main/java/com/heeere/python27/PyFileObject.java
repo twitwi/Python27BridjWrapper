@@ -1,4 +1,5 @@
 package com.heeere.python27;
+import com.heeere.python27.Python27Library.FILE;
 import org.bridj.Callback;
 import org.bridj.Pointer;
 import org.bridj.StructObject;
@@ -38,6 +39,17 @@ public class PyFileObject extends StructObject {
 	@Field(1) 
 	public PyFileObject ob_type(Pointer<PyTypeObject > ob_type) {
 		this.io.setPointerField(this, 1, ob_type);
+		return this;
+	}
+	/// C type : FILE*
+	@Field(2) 
+	public Pointer<FILE > f_fp() {
+		return this.io.getPointerField(this, 2);
+	}
+	/// C type : FILE*
+	@Field(2) 
+	public PyFileObject f_fp(Pointer<FILE > f_fp) {
+		this.io.setPointerField(this, 2, f_fp);
 		return this;
 	}
 	/// C type : PyObject*
@@ -279,7 +291,7 @@ public class PyFileObject extends StructObject {
 	/// <i>native declaration : fileobject.h:25</i>
 	/// <i>native declaration : fileobject.h:25</i>
 	public static abstract class f_close_callback extends Callback<f_close_callback > {
-		abstract public int apply(Pointer FILEPtr1);
+		abstract public int apply(Pointer<FILE > FILEPtr1);
 	};
 	public PyFileObject(Pointer pointer) {
 		super(pointer);

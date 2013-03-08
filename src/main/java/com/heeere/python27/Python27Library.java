@@ -51,13 +51,33 @@ public class Python27Library {
 	/// <i>native declaration : pyport.h</i>
 	public static final int PYLONG_BITS_IN_DIGIT = (int)15;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FSTATVFS = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int SIZEOF_WCHAR_T = (int)4;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_PTHREAD_H = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_RL_COMPLETION_APPEND_CHARACTER = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_MAKEDEV = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int SIZEOF_PTHREAD_T = (int)8;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FPATHCONF = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final String PY_FORMAT_SIZE_T = (String)"z";
+	/// <i>native declaration : descrobject.h</i>
+	public static final int PyWrapperFlag_KEYWORDS = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_MEMMOVE = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int DOUBLE_IS_LITTLE_ENDIAN_IEEE754 = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_GETRESGID = (int)1;
+	/// <i>native declaration : patchlevel.h</i>
+	public static final String PY_VERSION = (String)"2.7.3";
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int Py_USING_UNICODE = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int PyBUF_FORMAT = (int)4;
 	/// <i>native declaration : pyconfig.h</i>
@@ -68,84 +88,204 @@ public class Python27Library {
 	public static final int HAVE_TCGETPGRP = (int)1;
 	/// <i>native declaration : abstract.h</i>
 	public static final int PY_ITERSEARCH_CONTAINS = (int)3;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final String SHLIB_EXT = (String)".so";
+	/// <i>native declaration : pyconfig.h</i>
+	public static final String PY_FORMAT_LONG_LONG = (String)"ll";
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_HEAPTYPE = (int)(1 << 9);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_KILL = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_RECORDS = (int)((16 | 8) | 1 | 4);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SETLOCALE = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_TMPFILE = (int)1;
+	/// <i>native declaration : patchlevel.h</i>
+	public static final int PY_RELEASE_SERIAL = (int)0;
 	/// <i>native declaration : pyctype.h</i>
 	public static final int PY_CTF_ALPHA = (int)(1 | 2);
+	/// <i>native declaration : compile.h</i>
+	public static final String FUTURE_DIVISION = (String)"division";
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int WANT_SIGFPE_HANDLER = (int)1;
 	/// <i>native declaration : code.h</i>
 	public static final int CO_FUTURE_ABSOLUTE_IMPORT = (int)16384;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_RL_PRE_INPUT_HOOK = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SETGID = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_GT = (int)4;
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_WRITEABLE = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_CURSES_H = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SOCKADDR_STORAGE = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_TEMPNAM = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_TYPE_SUBCLASS = (int)(1 << 31);
+	/// <i>native declaration : pystate.h</i>
+	public static final int PyTrace_CALL = (int)0;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_STAT_TV_NSEC = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SPAWN_H = (int)1;
+	/// <i>native declaration : setobject.h</i>
+	public static final int PySet_MINSIZE = (int)8;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int SIZEOF_TIME_T = (int)8;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_LIBREADLINE = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int PyBUF_WRITE = (int)512;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SYS_STATVFS_H = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_EQ = (int)2;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SETUID = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int SIZEOF_FPOS_T = (int)16;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SYS_FILE_H = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SEM_OPEN = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_GE = (int)5;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_HAVE_GC = (int)(1 << 14);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_DYNAMIC_LOADING = (int)1;
 	/// <i>native declaration : dictobject.h</i>
 	public static final int PyDict_MINSIZE = (int)8;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_HAVE_WEAKREFS = (int)(1 << 6);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FTRUNCATE = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_STRING_H = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FINITE = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SETPGID = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETRESUID = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_LE = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_LT = (int)0;
 	/// <i>native declaration : compile.h</i>
 	public static final String FUTURE_NESTED_SCOPES = (String)"nested_scopes";
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_INITGROUPS = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_INT_SUBCLASS = (int)(1 << 23);
+	/// <i>native declaration : objimpl.h</i>
+	public static final int _PyGC_REFS_REACHABLE = (int)(-3);
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_HAVE_INPLACEOPS = (int)(1 << 3);
+	/// <i>native declaration : pystate.h</i>
+	public static final int PyTrace_LINE = (int)2;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETADDRINFO = (int)1;
+	/// <i>native declaration : code.h</i>
+	public static final int CO_FUTURE_PRINT_FUNCTION = (int)65536;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_EXECV = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_ZLIB_COPY = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_EXPM1 = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_BASE_EXC_SUBCLASS = (int)(1 << 30);
 	/// <i>native declaration : stringobject.h</i>
 	public static final int SSTATE_INTERNED_IMMORTAL = (int)2;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FSEEKO = (int)1;
 	/// <i>native declaration : pythonrun.h</i>
 	public static final int PyCF_DONT_IMPLY_DEDENT = (int)512;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int WITH_PYMALLOC = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int SIZEOF_INT = (int)4;
 	/// <i>native declaration : modsupport.h</i>
 	public static final String PYTHON_API_STRING = (String)"1013";
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_CONTIG = (int)(8 | 1);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SYS_EPOLL_H = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_DEFAULT_CORE = (int)(((1 << 0) | (1 << 1) | (1 << 3) | (1 << 5) | (1 << 6) | (1 << 7) | (1 << 8) | 0 | (1 << 17) | 0) | (1 << 18));
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_EPOLL = (int)1;
+	/// <i>native declaration : pythonrun.h</i>
+	public static final int PyCF_ONLY_AST = (int)1024;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_WAIT3 = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_MKNOD = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_WAIT4 = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SIGACTION = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int PyBUF_SIMPLE = (int)0;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SSIZE_T = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_UNISTD_H = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int _DARWIN_C_SOURCE = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_NE = (int)3;
 	/// <i>native declaration : compile.h</i>
 	public static final String FUTURE_UNICODE_LITERALS = (String)"unicode_literals";
+	/// <i>native declaration : floatobject.h</i>
+	public static final int PyFloat_STR_PRECISION = (int)12;
 	/// <i>native declaration : object.h</i>
 	public static final int PyBUF_WRITABLE = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SIGINTERRUPT = (int)1;
 	/// <i>native declaration : methodobject.h</i>
 	public static final int METH_O = (int)8;
+	/// <i>native declaration : compile.h</i>
+	public static final String FUTURE_PRINT_FUNCTION = (String)"print_function";
+	/// <i>native declaration : pyport.h</i>
+	public static final int HAVE_PY_SET_53BIT_PRECISION = (int)1;
+	/// <i>native declaration : objimpl.h</i>
+	public static final int _PyGC_REFS_TENTATIVELY_UNREACHABLE = (int)(-4);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETWD = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_STDARG_PROTOTYPES = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int _NETBSD_SOURCE = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_F_CONTIGUOUS = (int)(64 | (16 | 8));
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SIGNAL_H = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_C_CONTIGUOUS = (int)(32 | (16 | 8));
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_DIRENT_H = (int)1;
+	/// <i>native declaration : pyport.h</i>
+	public static final long PY_LLONG_MIN = (long)(-9223372036854775807L - 1L);
 	/// <i>native declaration : code.h</i>
 	public static final int CO_MAXBLOCKS = (int)20;
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_SHADOW = (int)1024;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int SIZEOF__BOOL = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int SIZEOF_OFF_T = (int)8;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETCWD = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int _ALL_SOURCE = (int)1;
 	/// <i>native declaration : patchlevel.h</i>
 	public static final int PY_RELEASE_LEVEL_FINAL = (int)15;
 	/// <i>native declaration : pyconfig.h</i>
@@ -157,33 +297,73 @@ public class Python27Library {
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_STRUCT_STAT_ST_BLKSIZE = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_LINUX_TIPC_H = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FTELLO = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_CONFSTR = (int)1;
+	/// <i>native declaration : compile.h</i>
+	public static final String FUTURE_GENERATORS = (String)"generators";
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_HAVE_GETCHARBUFFER = (int)(1 << 0);
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETGROUPS = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_BASETYPE = (int)(1 << 10);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_CLOCK = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_HAVE_RICHCOMPARE = (int)(1 << 5);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_BIND_TEXTDOMAIN_CODESET = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_CTERMID = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_ERFC = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_STRDUP = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int PyBUF_ANY_CONTIGUOUS = (int)(128 | (16 | 8));
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_MKFIFO = (int)1;
 	/// <i>native declaration : abstract.h</i>
 	public static final int PY_ITERSEARCH_COUNT = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SYS_STAT_H = (int)1;
 	/// <i>native declaration : pyport.h</i>
 	public static final long PY_SIZE_MAX = (long)(-1);
+	/// <i>native declaration : methodobject.h</i>
+	public static final int METH_CLASS = (int)16;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_TCSETPGRP = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int WITH_THREAD = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int TANH_PRESERVES_ZERO_SIGN = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SYS_TIMES_H = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETPRIORITY = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int SIZEOF_VOID_P = (int)8;
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_STRIDES = (int)(16 | 8);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_COPYSIGN = (int)1;
+	/// <i>native declaration : pyport.h</i>
+	public static final int LONG_BIT = (int)(8 * 8);
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_STRIDED = (int)((16 | 8) | 1);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GAMMA = (int)1;
 	/// <i>native declaration : code.h</i>
 	public static final int CO_VARKEYWORDS = (int)8;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_LGAMMA = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SETREUID = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FTIME = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_ACOSH = (int)1;
 	/// <i>native declaration : pyctype.h</i>
@@ -192,10 +372,16 @@ public class Python27Library {
 	public static final int HAVE_ROUND = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_STATVFS = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_MREMAP = (int)1;
 	/// <i>native declaration : pyctype.h</i>
 	public static final int PY_CTF_XDIGIT = (int)16;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_CHECKTYPES = (int)(1 << 4);
 	/// <i>native declaration : pyport.h</i>
 	public static final int PY_ULLONG_MAX = (int)-1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_RL_COMPLETION_DISPLAY_MATCHES_HOOK = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_UNAME = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
@@ -204,12 +390,16 @@ public class Python27Library {
 	public static final int Py_TPFLAGS_LIST_SUBCLASS = (int)(1 << 25);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_C99_BOOL = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SYS_UN_H = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int PyBUF_STRIDED_RO = (int)(16 | 8);
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SYS_UN_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_ASINH = (int)1;
+	/// <i>native declaration : pyport.h</i>
+	public static final long PY_LLONG_MAX = (long)9223372036854775807L;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FCHDIR = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SYMLINK = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
@@ -219,23 +409,47 @@ public class Python27Library {
 	/// <i>native declaration : stringobject.h</i>
 	public static final int SSTATE_INTERNED_MORTAL = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SETRESUID = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_MEMORY_H = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SYS_PARAM_H = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SYSEXITS_H = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_HAVE_SEQUENCE_IN = (int)(1 << 1);
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_WCSCOLL = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_TMPNAM_R = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_HAVE_CLASS = (int)(1 << 8);
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_WORKING_TZSET = (int)1;
 	/// <i>native declaration : patchlevel.h</i>
 	public static final int PY_RELEASE_LEVEL = (int)15;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SETREGID = (int)1;
+	public static final int HAVE_RL_COMPLETION_SUPPRESS_APPEND = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_STRUCT_STAT_ST_RDEV = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_TMPNAM = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_ND = (int)8;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_LANGINFO_H = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SETREGID = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SEM_TIMEDWAIT = (int)1;
+	/// <i>native declaration : bytesobject.h</i>
+	public static final int Py_TPFLAGS_BYTES_SUBCLASS = (int)(1 << 27);
+	/// <i>native declaration : pystrtod.h</i>
+	public static final int Py_DTSF_ALT = (int)4;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_CURSES_IS_TERM_RESIZED = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_NETPACKET_PACKET_H = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int PyBUF_FULL_RO = (int)((256 | (16 | 8)) | 4);
 	/// <i>native declaration : object.h</i>
@@ -248,38 +462,83 @@ public class Python27Library {
 	public static final int Py_TPFLAGS_IS_ABSTRACT = (int)(1 << 20);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int SIZEOF_LONG_LONG = (int)8;
+	/// <i>native declaration : pythonrun.h</i>
+	public static final int PyCF_MASK_OBSOLETE = (int)(16);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SYS_POLL_H = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SYS_TIME_H = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_ALARM = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETLOADAVG = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETHOSTBYNAME_R = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_GETPID = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_ERRNO_H = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_DEVICE_MACROS = (int)1;
 	/// <i>native declaration : code.h</i>
 	public static final int CO_OPTIMIZED = (int)1;
+	/**
+	 * define<br>
+	 * Conversion Error : null<br>
+	 * SKIPPED:<br>
+	 * <i>native declaration : floatobject.h</i><br>
+	 * * 0.
+	 */
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SETVBUF = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_CHOWN = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_PATHCONF = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_READ = (int)256;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FCHMOD = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_TGAMMA = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_STDINT_H = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int SIZEOF_PID_T = (int)4;
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_CONTIG_RO = (int)(8);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_MKTIME = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int SIZEOF_FLOAT = (int)4;
 	/// <i>native declaration : pystrtod.h</i>
 	public static final int Py_DTST_INFINITE = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_RECORDS_RO = (int)((16 | 8) | 4);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETSPENT = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int SIZEOF_UINTPTR_T = (int)8;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_DICT_SUBCLASS = (int)(1 << 29);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_GETC_UNLOCKED = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_REALPATH = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_OPENPTY = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int TIME_WITH_SYS_TIME = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SYS_SELECT_H = (int)1;
 	/// <i>native declaration : bufferobject.h</i>
 	public static final int Py_END_OF_BUFFER = (int)(-1);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SETITIMER = (int)1;
+	/// <i>native declaration : pymath.h</i>
+	public static final double Py_MATH_El = (double)2.7182818284590452353602874713526625;
+	/// <i>native declaration : methodobject.h</i>
+	public static final int METH_KEYWORDS = (int)2;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_UTIME_H = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
@@ -287,31 +546,69 @@ public class Python27Library {
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int __BSD_VISIBLE = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int _POSIX_PTHREAD_SEMANTICS = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_DLOPEN = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETITIMER = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETHOSTBYNAME_R_6_ARG = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int SIZEOF_LONG = (int)8;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_FDATASYNC = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_CURSES_RESIZE_TERM = (int)1;
+	/// <i>native declaration : pystate.h</i>
+	public static final int PyTrace_C_CALL = (int)4;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_TIMEGM = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_INET_PTON = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SETRESGID = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SOCKETPAIR = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SNPRINTF = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int VA_LIST_IS_ARRAY = (int)1;
 	/// <i>native declaration : pystrtod.h</i>
 	public static final int Py_DTST_FINITE = (int)0;
+	/// <i>native declaration : abstract.h</i>
+	public static final int PY_ITERSEARCH_INDEX = (int)2;
+	/// <i>native declaration : patchlevel.h</i>
+	public static final int PY_RELEASE_LEVEL_BETA = (int)11;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int SIZEOF_LONG_DOUBLE = (int)16;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_STRUCT_TM_TM_ZONE = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SETGROUPS = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SYS_RESOURCE_H = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_LONG_DOUBLE = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_GAI_STRERROR = (int)1;
+	/// <i>native declaration : pystrtod.h</i>
+	public static final int Py_DTST_NAN = (int)2;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_GCC_ASM_FOR_X87 = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int PyBUF_INDIRECT = (int)(256 | (16 | 8));
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int SIZEOF_DOUBLE = (int)8;
+	/// <i>native declaration : methodobject.h</i>
+	public static final int METH_VARARGS = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SYSCONF = (int)1;
+	/// <i>native declaration : pyctype.h</i>
+	public static final int PY_CTF_SPACE = (int)8;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_PAUSE = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_LCHOWN = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_INET_ATON = (int)1;
 	/// <i>native declaration : code.h</i>
@@ -325,9 +622,23 @@ public class Python27Library {
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_UNSETENV = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_GETPWENT = (int)1;
+	/// <i>native declaration : patchlevel.h</i>
+	public static final int PY_RELEASE_LEVEL_ALPHA = (int)10;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int WITH_DOC_STRINGS = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_FORK = (int)1;
 	/// <i>native declaration : patchlevel.h</i>
 	public static final int PY_MINOR_VERSION = (int)7;
+	/// <i>native declaration : pystrtod.h</i>
+	public static final int Py_DTSF_ADD_DOT_0 = (int)2;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int PTHREAD_SYSTEM_SCHED_SUPPORTED = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_PRINT_RAW = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_LINUX_NETLINK_H = (int)1;
 	/// <i>native declaration : fileobject.h</i>
 	public static final String PY_STDIOTEXTMODE = (String)"b";
 	/// <i>native declaration : pyconfig.h</i>
@@ -340,26 +651,46 @@ public class Python27Library {
 	public static final int HAVE_GRP_H = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int SYS_SELECT_WITH_SYS_TIME = (int)1;
+	/// <i>native declaration : pyctype.h</i>
+	public static final int PY_CTF_ALNUM = (int)((1 | 2) | 4);
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_HAVE_INDEX = (int)(1 << 17);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_TRUNCATE = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FSYNC = (int)1;
 	/// <i>native declaration : pystate.h</i>
 	public static final int PyTrace_RETURN = (int)3;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_POLL = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_NICE = (int)1;
 	/// <i>native declaration : pyctype.h</i>
 	public static final int PY_CTF_LOWER = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETPEERNAME = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_INTTYPES_H = (int)1;
+	/// <i>native declaration : patchlevel.h</i>
+	public static final int PY_MICRO_VERSION = (int)3;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_LIBDL = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_KILLPG = (int)1;
 	/// <i>native declaration : pyctype.h</i>
 	public static final int PY_CTF_UPPER = (int)2;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_UINTPTR_T = (int)1;
 	/// <i>native declaration : code.h</i>
 	public static final int CO_NESTED = (int)16;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_HAVE_STACKLESS_EXTENSION = (int)0;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_LONG_LONG = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SHADOW_H = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_WCHAR_H = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_DLFCN_H = (int)1;
 	/// <i>native declaration : patchlevel.h</i>
@@ -370,16 +701,34 @@ public class Python27Library {
 	public static final int HAVE_FCNTL_H = (int)1;
 	/// <i>native declaration : Python.h</i>
 	public static final int WITH_CYCLE_GC = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_HAVE_ITER = (int)(1 << 7);
 	/// <i>native declaration : pystate.h</i>
 	public static final int PyTrace_C_EXCEPTION = (int)5;
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_HAVE_VERSION_TAG = (int)(1 << 18);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int __EXTENSIONS__ = (int)1;
 	/// <i>native declaration : methodobject.h</i>
 	public static final int METH_COEXIST = (int)64;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_GETPGRP = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_PTY_H = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_READLINK = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_ADDRINFO = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_UNICODE_SUBCLASS = (int)(1 << 28);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_TIMES = (int)1;
 	/// <i>native declaration : pythonrun.h</i>
 	public static final int PYOS_STACK_MARGIN = (int)2048;
+	/// <i>native declaration : pystate.h</i>
+	public static final int PyTrace_C_RETURN = (int)6;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int _GNU_SOURCE = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SYS_TYPES_H = (int)1;
 	/// <i>native declaration : pymath.h</i>
@@ -392,18 +741,32 @@ public class Python27Library {
 	public static final int HAVE_GETSPNAM = (int)1;
 	/// <i>native declaration : objimpl.h</i>
 	public static final int _PyGC_REFS_UNTRACKED = (int)(-2);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_PTHREAD_SIGMASK = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_READY = (int)(1 << 12);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_DECL_ISFINITE = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SYS_SOCKET_H = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int PyBUF_FULL = (int)((256 | (16 | 8)) | 1 | 4);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_LINK = (int)1;
 	/// <i>native declaration : compile.h</i>
 	public static final String FUTURE_ABSOLUTE_IMPORT = (String)"absolute_import";
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_STDLIB_H = (int)1;
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_DEFAULT_EXTERNAL = (int)((1 << 0) | (1 << 1) | (1 << 3) | (1 << 5) | (1 << 6) | (1 << 7) | (1 << 8) | 0 | (1 << 17) | 0);
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_LONG_SUBCLASS = (int)(1 << 24);
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_GETPGID = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_GC = (int)0;
+	/// <i>native declaration : code.h</i>
+	public static final int CO_GENERATOR = (int)32;
 	/// <i>native declaration : object.h</i>
 	public static final int PyTrash_UNWIND_LEVEL = (int)50;
 	/// <i>native declaration : pyconfig.h</i>
@@ -416,16 +779,34 @@ public class Python27Library {
 	public static final int HAVE_STRINGS_H = (int)1;
 	/// <i>native declaration : objimpl.h</i>
 	public static final int PyGC_HEAD_SIZE = (int)0;
+	/// <i>native declaration : pythonrun.h</i>
+	public static final int PyCF_MASK = (int)(8192 | 16384 | 32768 | 65536 | 131072);
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_LSTAT = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_CURSES_RESIZETERM = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int MVWDELCH_IS_EXPRESSION = (int)1;
 	/// <i>native declaration : patchlevel.h</i>
 	public static final int PY_RELEASE_LEVEL_GAMMA = (int)12;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int _TANDEM_SOURCE = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SETEUID = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_LOG1P = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_ATANH = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_GETNAMEINFO = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int SIZEOF_SIZE_T = (int)8;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETLOGIN = (int)1;
+	/// <i>native declaration : compile.h</i>
+	public static final String FUTURE_WITH_STATEMENT = (String)"with_statement";
+	/// <i>native declaration : Python.h</i>
+	public static final int Py_single_input = (int)256;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_DUP2 = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
@@ -435,424 +816,13 @@ public class Python27Library {
 	/// <i>native declaration : code.h</i>
 	public static final int CO_NEWLOCALS = (int)2;
 	/// <i>native declaration : code.h</i>
+	public static final int CO_FUTURE_WITH_STATEMENT = (int)32768;
+	/// <i>native declaration : code.h</i>
 	public static final int CO_FUTURE_DIVISION = (int)8192;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int _BSD_TYPES = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_DECL_ISNAN = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_TERM_H = (int)1;
-	/// <i>native declaration : patchlevel.h</i>
-	public static final String PY_PATCHLEVEL_REVISION = (String)"";
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SEM_GETVALUE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SEM_UNLINK = (int)1;
-	/// <i>native declaration : patchlevel.h</i>
-	public static final int PY_VERSION_HEX = (int)((2 << 24) | (7 << 16) | (3 << 8) | (15 << 4) | (0 << 0));
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_TM_ZONE = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_READYING = (int)(1 << 13);
-	/// <i>native declaration : code.h</i>
-	public static final int CO_VARARGS = (int)4;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FORKPTY = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int _FILE_OFFSET_BITS = (int)64;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_STRUCT_STAT_ST_BLOCKS = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_CHROOT = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_BLUETOOTH_BLUETOOTH_H = (int)1;
-	/// <i>native declaration : pymath.h</i>
-	public static final double Py_MATH_E = (double)2.7182818284590452354;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_ST_BLOCKS = (int)1;
-	/// <i>native declaration : code.h</i>
-	public static final int CO_FUTURE_UNICODE_LITERALS = (int)131072;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FSTATVFS = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_RL_COMPLETION_APPEND_CHARACTER = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FPATHCONF = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final String PY_FORMAT_SIZE_T = (String)"z";
-	/// <i>native declaration : descrobject.h</i>
-	public static final int PyWrapperFlag_KEYWORDS = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_MEMMOVE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_GETRESGID = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int DOUBLE_IS_LITTLE_ENDIAN_IEEE754 = (int)1;
-	/// <i>native declaration : patchlevel.h</i>
-	public static final String PY_VERSION = (String)"2.7.3";
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int Py_USING_UNICODE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final String SHLIB_EXT = (String)".so";
-	/// <i>native declaration : pyconfig.h</i>
-	public static final String PY_FORMAT_LONG_LONG = (String)"ll";
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_RECORDS = (int)((16 | 8) | 1 | 4);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SETLOCALE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_TMPFILE = (int)1;
-	/// <i>native declaration : patchlevel.h</i>
-	public static final int PY_RELEASE_SERIAL = (int)0;
-	/// <i>native declaration : compile.h</i>
-	public static final String FUTURE_DIVISION = (String)"division";
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int WANT_SIGFPE_HANDLER = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SETGID = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_GT = (int)4;
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_WRITEABLE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SOCKADDR_STORAGE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_TEMPNAM = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_TYPE_SUBCLASS = (int)(1 << 31);
-	/// <i>native declaration : pystate.h</i>
-	public static final int PyTrace_CALL = (int)0;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_STAT_TV_NSEC = (int)1;
-	/// <i>native declaration : setobject.h</i>
-	public static final int PySet_MINSIZE = (int)8;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int SIZEOF_TIME_T = (int)8;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_LIBREADLINE = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_EQ = (int)2;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SETUID = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SYS_FILE_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SEM_OPEN = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_GE = (int)5;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_HAVE_GC = (int)(1 << 14);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_DYNAMIC_LOADING = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_HAVE_WEAKREFS = (int)(1 << 6);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FTRUNCATE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FINITE = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_LE = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_LT = (int)0;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_INITGROUPS = (int)1;
-	/// <i>native declaration : objimpl.h</i>
-	public static final int _PyGC_REFS_REACHABLE = (int)(-3);
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_HAVE_INPLACEOPS = (int)(1 << 3);
-	/// <i>native declaration : pystate.h</i>
-	public static final int PyTrace_LINE = (int)2;
-	/// <i>native declaration : code.h</i>
-	public static final int CO_FUTURE_PRINT_FUNCTION = (int)65536;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_EXECV = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_ZLIB_COPY = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FSEEKO = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int WITH_PYMALLOC = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_CONTIG = (int)(8 | 1);
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_DEFAULT_CORE = (int)(((1 << 0) | (1 << 1) | (1 << 3) | (1 << 5) | (1 << 6) | (1 << 7) | (1 << 8) | 0 | (1 << 17) | 0) | (1 << 18));
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_EPOLL = (int)1;
-	/// <i>native declaration : pythonrun.h</i>
-	public static final int PyCF_ONLY_AST = (int)1024;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_MKNOD = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SIGACTION = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_UNISTD_H = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_NE = (int)3;
-	/// <i>native declaration : floatobject.h</i>
-	public static final int PyFloat_STR_PRECISION = (int)12;
-	/// <i>native declaration : compile.h</i>
-	public static final String FUTURE_PRINT_FUNCTION = (String)"print_function";
-	/// <i>native declaration : pyport.h</i>
-	public static final int HAVE_PY_SET_53BIT_PRECISION = (int)1;
-	/// <i>native declaration : objimpl.h</i>
-	public static final int _PyGC_REFS_TENTATIVELY_UNREACHABLE = (int)(-4);
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_F_CONTIGUOUS = (int)(64 | (16 | 8));
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_C_CONTIGUOUS = (int)(32 | (16 | 8));
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_DIRENT_H = (int)1;
-	/// <i>native declaration : pyport.h</i>
-	public static final long PY_LLONG_MIN = (long)(-9223372036854775807L - 1L);
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_SHADOW = (int)1024;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int SIZEOF_OFF_T = (int)8;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int SIZEOF__BOOL = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int _ALL_SOURCE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_LINUX_TIPC_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FTELLO = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_CONFSTR = (int)1;
-	/// <i>native declaration : compile.h</i>
-	public static final String FUTURE_GENERATORS = (String)"generators";
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_HAVE_GETCHARBUFFER = (int)(1 << 0);
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_BASETYPE = (int)(1 << 10);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_CLOCK = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_CTERMID = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_STRDUP = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_MKFIFO = (int)1;
-	/// <i>native declaration : methodobject.h</i>
-	public static final int METH_CLASS = (int)16;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SYS_TIMES_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int WITH_THREAD = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_STRIDES = (int)(16 | 8);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_COPYSIGN = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_STRIDED = (int)((16 | 8) | 1);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SETREUID = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_LGAMMA = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FTIME = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_MREMAP = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_CHECKTYPES = (int)(1 << 4);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_RL_COMPLETION_DISPLAY_MATCHES_HOOK = (int)1;
-	/// <i>native declaration : pyport.h</i>
-	public static final long PY_LLONG_MAX = (long)9223372036854775807L;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FCHDIR = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SETRESUID = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_MEMORY_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_WCSCOLL = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_TMPNAM_R = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_HAVE_CLASS = (int)(1 << 8);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_RL_COMPLETION_SUPPRESS_APPEND = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_STRUCT_STAT_ST_RDEV = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_TMPNAM = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_ND = (int)8;
-	/// <i>native declaration : bytesobject.h</i>
-	public static final int Py_TPFLAGS_BYTES_SUBCLASS = (int)(1 << 27);
-	/// <i>native declaration : pystrtod.h</i>
-	public static final int Py_DTSF_ALT = (int)4;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_NETPACKET_PACKET_H = (int)1;
-	/// <i>native declaration : pythonrun.h</i>
-	public static final int PyCF_MASK_OBSOLETE = (int)(16);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SYS_POLL_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SYS_TIME_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_ALARM = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_GETPID = (int)1;
-	/**
-	 * define<br>
-	 * Conversion Error : null<br>
-	 * SKIPPED:<br>
-	 * <i>native declaration : floatobject.h</i><br>
-	 * * 0.
-	 */
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SETVBUF = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_READ = (int)256;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FCHMOD = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_CONTIG_RO = (int)(8);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_MKTIME = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int SIZEOF_FLOAT = (int)4;
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_RECORDS_RO = (int)((16 | 8) | 4);
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_DICT_SUBCLASS = (int)(1 << 29);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_GETC_UNLOCKED = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_OPENPTY = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SYS_SELECT_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SETITIMER = (int)1;
-	/// <i>native declaration : pymath.h</i>
-	public static final double Py_MATH_El = (double)2.7182818284590452353602874713526625;
-	/// <i>native declaration : methodobject.h</i>
-	public static final int METH_KEYWORDS = (int)2;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int _POSIX_PTHREAD_SEMANTICS = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int SIZEOF_LONG = (int)8;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_CURSES_RESIZE_TERM = (int)1;
-	/// <i>native declaration : pystate.h</i>
-	public static final int PyTrace_C_CALL = (int)4;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_TIMEGM = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SNPRINTF = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int VA_LIST_IS_ARRAY = (int)1;
-	/// <i>native declaration : abstract.h</i>
-	public static final int PY_ITERSEARCH_INDEX = (int)2;
-	/// <i>native declaration : patchlevel.h</i>
-	public static final int PY_RELEASE_LEVEL_BETA = (int)11;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SETGROUPS = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_LONG_DOUBLE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_GAI_STRERROR = (int)1;
-	/// <i>native declaration : pystrtod.h</i>
-	public static final int Py_DTST_NAN = (int)2;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_GCC_ASM_FOR_X87 = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int SIZEOF_DOUBLE = (int)8;
-	/// <i>native declaration : methodobject.h</i>
-	public static final int METH_VARARGS = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SYSCONF = (int)1;
-	/// <i>native declaration : pyctype.h</i>
-	public static final int PY_CTF_SPACE = (int)8;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_LCHOWN = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_GETPWENT = (int)1;
-	/// <i>native declaration : patchlevel.h</i>
-	public static final int PY_RELEASE_LEVEL_ALPHA = (int)10;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int WITH_DOC_STRINGS = (int)1;
-	/// <i>native declaration : pystrtod.h</i>
-	public static final int Py_DTSF_ADD_DOT_0 = (int)2;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int PTHREAD_SYSTEM_SCHED_SUPPORTED = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_PRINT_RAW = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_LINUX_NETLINK_H = (int)1;
-	/// <i>native declaration : pyctype.h</i>
-	public static final int PY_CTF_ALNUM = (int)((1 | 2) | 4);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_FSYNC = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_NICE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_INTTYPES_H = (int)1;
-	/// <i>native declaration : patchlevel.h</i>
-	public static final int PY_MICRO_VERSION = (int)3;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_LIBDL = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_UINTPTR_T = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_HAVE_STACKLESS_EXTENSION = (int)0;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SHADOW_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_WCHAR_H = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_HAVE_ITER = (int)(1 << 7);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int __EXTENSIONS__ = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_GETPGRP = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_PTY_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_ADDRINFO = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_UNICODE_SUBCLASS = (int)(1 << 28);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_TIMES = (int)1;
-	/// <i>native declaration : pystate.h</i>
-	public static final int PyTrace_C_RETURN = (int)6;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int _GNU_SOURCE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_PTHREAD_SIGMASK = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int PyBUF_FULL = (int)((256 | (16 | 8)) | 1 | 4);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_LINK = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_STDLIB_H = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_GETPGID = (int)1;
-	/// <i>native declaration : object.h</i>
-	public static final int Py_TPFLAGS_GC = (int)0;
-	/// <i>native declaration : code.h</i>
-	public static final int CO_GENERATOR = (int)32;
-	/// <i>native declaration : pythonrun.h</i>
-	public static final int PyCF_MASK = (int)(8192 | 16384 | 32768 | 65536 | 131072);
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int MVWDELCH_IS_EXPRESSION = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int _TANDEM_SOURCE = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SETEUID = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_LOG1P = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_GETNAMEINFO = (int)1;
-	/// <i>native declaration : pyconfig.h</i>
-	public static final int SIZEOF_SIZE_T = (int)8;
-	/// <i>native declaration : compile.h</i>
-	public static final String FUTURE_WITH_STATEMENT = (String)"with_statement";
-	/// <i>native declaration : Python.h</i>
-	public static final int Py_single_input = (int)256;
-	/// <i>native declaration : code.h</i>
-	public static final int CO_FUTURE_WITH_STATEMENT = (int)32768;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_GETPAGESIZE = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
@@ -864,7 +834,11 @@ public class Python27Library {
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SIGRELSE = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_TERM_H = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SYS_UTSNAME_H = (int)1;
+	/// <i>native declaration : patchlevel.h</i>
+	public static final String PY_PATCHLEVEL_REVISION = (String)"";
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_SETEGID = (int)1;
 	/// <i>native declaration : object.h</i>
@@ -874,29 +848,57 @@ public class Python27Library {
 	/// <i>native declaration : stringobject.h</i>
 	public static final int SSTATE_NOT_INTERNED = (int)0;
 	/// <i>native declaration : pyconfig.h</i>
-	public static final int HAVE_SELECT = (int)1;
+	public static final int HAVE_SEM_GETVALUE = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_HSTRERROR = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SELECT = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_SEM_UNLINK = (int)1;
+	/// <i>native declaration : patchlevel.h</i>
+	public static final int PY_VERSION_HEX = (int)((2 << 24) | (7 << 16) | (3 << 8) | (15 << 4) | (0 << 0));
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_VALID_VERSION_TAG = (int)(1 << 19);
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_HAVE_NEWBUFFER = (int)(1 << 21);
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_TM_ZONE = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_NCURSES_H = (int)1;
+	/// <i>native declaration : object.h</i>
+	public static final int Py_TPFLAGS_READYING = (int)(1 << 13);
 	/// <i>native declaration : methodobject.h</i>
 	public static final int METH_OLDARGS = (int)0;
+	/// <i>native declaration : code.h</i>
+	public static final int CO_VARARGS = (int)4;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_FORKPTY = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int _FILE_OFFSET_BITS = (int)64;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_STRUCT_STAT_ST_BLOCKS = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_LIBINTL_H = (int)1;
 	/// <i>native declaration : methodobject.h</i>
 	public static final int METH_STATIC = (int)32;
 	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_CHROOT = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_RL_CALLBACK = (int)1;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_BLUETOOTH_BLUETOOTH_H = (int)1;
+	/// <i>native declaration : pymath.h</i>
+	public static final double Py_MATH_E = (double)2.7182818284590452354;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_ASM_TYPES_H = (int)1;
 	/// <i>native declaration : Python.h</i>
 	public static final int Py_eval_input = (int)258;
+	/// <i>native declaration : pyconfig.h</i>
+	public static final int HAVE_ST_BLOCKS = (int)1;
 	/// <i>native declaration : pystate.h</i>
 	public static final int PyTrace_EXCEPTION = (int)1;
+	/// <i>native declaration : code.h</i>
+	public static final int CO_FUTURE_UNICODE_LITERALS = (int)131072;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_HYPOT = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
@@ -1071,7 +1073,7 @@ public class Python27Library {
 	/// <i>native declaration : object.h:135</i>
 	/// <i>native declaration : object.h:135</i>
 	public static abstract class printfunc extends Callback<printfunc > {
-		abstract public int apply(Pointer<PyObject > PyObjectPtr1, Pointer FILEPtr1, int int1);
+		abstract public int apply(Pointer<PyObject > PyObjectPtr1, Pointer<Python27Library.FILE > FILEPtr1, int int1);
 	};
 	/// <i>native declaration : object.h:136</i>
 	/// <i>native declaration : object.h:136</i>
@@ -1167,7 +1169,7 @@ public class Python27Library {
 	/// <i>native declaration : fileobject.h:71</i>
 	/// <i>native declaration : fileobject.h:71</i>
 	public static abstract class PyFile_FromFile_arg1_callback extends Callback<PyFile_FromFile_arg1_callback > {
-		abstract public int apply(Pointer FILEPtr1);
+		abstract public int apply(Pointer<Python27Library.FILE > FILEPtr1);
 	};
 	/// <i>native declaration : cobject.h:46</i>
 	/// <i>native declaration : cobject.h:46</i>
@@ -1244,7 +1246,7 @@ public class Python27Library {
 	/// <i>native declaration : pythonrun.h:180</i>
 	/// <i>native declaration : pythonrun.h:180</i>
 	public static abstract class PyOS_ReadlineFunctionPointer_callback extends Callback<PyOS_ReadlineFunctionPointer_callback > {
-		abstract public Pointer<Byte > apply(Pointer FILEPtr1, Pointer FILEPtr2, Pointer<Byte > charPtr1);
+		abstract public Pointer<Byte > apply(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Python27Library.FILE > FILEPtr2, Pointer<Byte > charPtr1);
 	};
 	/// <i>native declaration : ceval.h:80</i>
 	/// <i>native declaration : ceval.h:80</i>
@@ -1364,7 +1366,7 @@ public class Python27Library {
 	 * Original signature : <code>int PyObject_Print(PyObject*, FILE*, int)</code><br>
 	 * <i>native declaration : object.h:255</i>
 	 */
-	public static int PyObject_Print(Pointer<PyObject > PyObjectPtr1, Pointer FILEPtr1, int int1) {
+	public static int PyObject_Print(Pointer<PyObject > PyObjectPtr1, Pointer<Python27Library.FILE > FILEPtr1, int int1) {
 		return PyObject_Print(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(FILEPtr1), int1);
 	}
 	protected native static int PyObject_Print(@Ptr long PyObjectPtr1, @Ptr long FILEPtr1, int int1);
@@ -4763,7 +4765,7 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* PyFile_FromFile(FILE*, char*, char*, PyFile_FromFile_arg1_callback)</code><br>
 	 * <i>native declaration : fileobject.h:37</i>
 	 */
-	public static Pointer<PyObject > PyFile_FromFile(Pointer FILEPtr1, Pointer<Byte > charPtr1, Pointer<Byte > charPtr2, Pointer<Python27Library.PyFile_FromFile_arg1_callback > arg1) {
+	public static Pointer<PyObject > PyFile_FromFile(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Byte > charPtr1, Pointer<Byte > charPtr2, Pointer<Python27Library.PyFile_FromFile_arg1_callback > arg1) {
 		return Pointer.pointerToAddress(PyFile_FromFile(Pointer.getPeer(FILEPtr1), Pointer.getPeer(charPtr1), Pointer.getPeer(charPtr2), Pointer.getPeer(arg1)), PyObject.class);
 	}
 	@Ptr 
@@ -4772,8 +4774,8 @@ public class Python27Library {
 	 * Original signature : <code>FILE* PyFile_AsFile(PyObject*)</code><br>
 	 * <i>native declaration : fileobject.h:39</i>
 	 */
-	public static Pointer PyFile_AsFile(Pointer<PyObject > PyObjectPtr1) {
-		return Pointer.pointerToAddress(PyFile_AsFile(Pointer.getPeer(PyObjectPtr1)));
+	public static Pointer<Python27Library.FILE > PyFile_AsFile(Pointer<PyObject > PyObjectPtr1) {
+		return Pointer.pointerToAddress(PyFile_AsFile(Pointer.getPeer(PyObjectPtr1)), Python27Library.FILE.class);
 	}
 	@Ptr 
 	protected native static long PyFile_AsFile(@Ptr long PyObjectPtr1);
@@ -4847,7 +4849,7 @@ public class Python27Library {
 	 * Original signature : <code>char* Py_UniversalNewlineFgets(char*, int, FILE*, PyObject*)</code><br>
 	 * <i>native declaration : fileobject.h:62</i>
 	 */
-	public static Pointer<Byte > Py_UniversalNewlineFgets(Pointer<Byte > charPtr1, int int1, Pointer FILEPtr1, Pointer<PyObject > PyObjectPtr1) {
+	public static Pointer<Byte > Py_UniversalNewlineFgets(Pointer<Byte > charPtr1, int int1, Pointer<Python27Library.FILE > FILEPtr1, Pointer<PyObject > PyObjectPtr1) {
 		return Pointer.pointerToAddress(Py_UniversalNewlineFgets(Pointer.getPeer(charPtr1), int1, Pointer.getPeer(FILEPtr1), Pointer.getPeer(PyObjectPtr1)), Byte.class);
 	}
 	@Ptr 
@@ -4857,7 +4859,7 @@ public class Python27Library {
 	 * <i>native declaration : fileobject.h:64</i>
 	 */
 	@Ptr 
-	public static long Py_UniversalNewlineFread(Pointer<Byte > charPtr1, @Ptr long size_t1, Pointer FILEPtr1, Pointer<PyObject > PyObjectPtr1) {
+	public static long Py_UniversalNewlineFread(Pointer<Byte > charPtr1, @Ptr long size_t1, Pointer<Python27Library.FILE > FILEPtr1, Pointer<PyObject > PyObjectPtr1) {
 		return Py_UniversalNewlineFread(Pointer.getPeer(charPtr1), size_t1, Pointer.getPeer(FILEPtr1), Pointer.getPeer(PyObjectPtr1));
 	}
 	@Ptr 
@@ -6391,7 +6393,7 @@ public class Python27Library {
 	 * Original signature : <code>int PyRun_AnyFileFlags(FILE*, const char*, PyCompilerFlags*)</code><br>
 	 * <i>native declaration : pythonrun.h:25</i>
 	 */
-	public static int PyRun_AnyFileFlags(Pointer FILEPtr1, Pointer<Byte > charPtr1, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
+	public static int PyRun_AnyFileFlags(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Byte > charPtr1, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
 		return PyRun_AnyFileFlags(Pointer.getPeer(FILEPtr1), Pointer.getPeer(charPtr1), Pointer.getPeer(PyCompilerFlagsPtr1));
 	}
 	protected native static int PyRun_AnyFileFlags(@Ptr long FILEPtr1, @Ptr long charPtr1, @Ptr long PyCompilerFlagsPtr1);
@@ -6399,7 +6401,7 @@ public class Python27Library {
 	 * Original signature : <code>int PyRun_AnyFileExFlags(FILE*, const char*, int, PyCompilerFlags*)</code><br>
 	 * <i>native declaration : pythonrun.h:27</i>
 	 */
-	public static int PyRun_AnyFileExFlags(Pointer FILEPtr1, Pointer<Byte > charPtr1, int int1, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
+	public static int PyRun_AnyFileExFlags(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Byte > charPtr1, int int1, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
 		return PyRun_AnyFileExFlags(Pointer.getPeer(FILEPtr1), Pointer.getPeer(charPtr1), int1, Pointer.getPeer(PyCompilerFlagsPtr1));
 	}
 	protected native static int PyRun_AnyFileExFlags(@Ptr long FILEPtr1, @Ptr long charPtr1, int int1, @Ptr long PyCompilerFlagsPtr1);
@@ -6415,7 +6417,7 @@ public class Python27Library {
 	 * Original signature : <code>int PyRun_SimpleFileExFlags(FILE*, const char*, int, PyCompilerFlags*)</code><br>
 	 * <i>native declaration : pythonrun.h:31</i>
 	 */
-	public static int PyRun_SimpleFileExFlags(Pointer FILEPtr1, Pointer<Byte > charPtr1, int int1, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
+	public static int PyRun_SimpleFileExFlags(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Byte > charPtr1, int int1, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
 		return PyRun_SimpleFileExFlags(Pointer.getPeer(FILEPtr1), Pointer.getPeer(charPtr1), int1, Pointer.getPeer(PyCompilerFlagsPtr1));
 	}
 	protected native static int PyRun_SimpleFileExFlags(@Ptr long FILEPtr1, @Ptr long charPtr1, int int1, @Ptr long PyCompilerFlagsPtr1);
@@ -6423,7 +6425,7 @@ public class Python27Library {
 	 * Original signature : <code>int PyRun_InteractiveOneFlags(FILE*, const char*, PyCompilerFlags*)</code><br>
 	 * <i>native declaration : pythonrun.h:33</i>
 	 */
-	public static int PyRun_InteractiveOneFlags(Pointer FILEPtr1, Pointer<Byte > charPtr1, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
+	public static int PyRun_InteractiveOneFlags(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Byte > charPtr1, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
 		return PyRun_InteractiveOneFlags(Pointer.getPeer(FILEPtr1), Pointer.getPeer(charPtr1), Pointer.getPeer(PyCompilerFlagsPtr1));
 	}
 	protected native static int PyRun_InteractiveOneFlags(@Ptr long FILEPtr1, @Ptr long charPtr1, @Ptr long PyCompilerFlagsPtr1);
@@ -6431,7 +6433,7 @@ public class Python27Library {
 	 * Original signature : <code>int PyRun_InteractiveLoopFlags(FILE*, const char*, PyCompilerFlags*)</code><br>
 	 * <i>native declaration : pythonrun.h:35</i>
 	 */
-	public static int PyRun_InteractiveLoopFlags(Pointer FILEPtr1, Pointer<Byte > charPtr1, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
+	public static int PyRun_InteractiveLoopFlags(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Byte > charPtr1, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
 		return PyRun_InteractiveLoopFlags(Pointer.getPeer(FILEPtr1), Pointer.getPeer(charPtr1), Pointer.getPeer(PyCompilerFlagsPtr1));
 	}
 	protected native static int PyRun_InteractiveLoopFlags(@Ptr long FILEPtr1, @Ptr long charPtr1, @Ptr long PyCompilerFlagsPtr1);
@@ -6448,7 +6450,7 @@ public class Python27Library {
 	 * Original signature : <code>_mod* PyParser_ASTFromFile(FILE*, const char*, int, char*, char*, PyCompilerFlags*, int*, PyArena*)</code><br>
 	 * <i>native declaration : pythonrun.h:39</i>
 	 */
-	public static Pointer<Python27Library._mod > PyParser_ASTFromFile(Pointer FILEPtr1, Pointer<Byte > charPtr1, int int1, Pointer<Byte > charPtr2, Pointer<Byte > charPtr3, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1, Pointer<Integer > intPtr1, Pointer<Python27Library._arena > PyArenaPtr1) {
+	public static Pointer<Python27Library._mod > PyParser_ASTFromFile(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Byte > charPtr1, int int1, Pointer<Byte > charPtr2, Pointer<Byte > charPtr3, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1, Pointer<Integer > intPtr1, Pointer<Python27Library._arena > PyArenaPtr1) {
 		return Pointer.pointerToAddress(PyParser_ASTFromFile(Pointer.getPeer(FILEPtr1), Pointer.getPeer(charPtr1), int1, Pointer.getPeer(charPtr2), Pointer.getPeer(charPtr3), Pointer.getPeer(PyCompilerFlagsPtr1), Pointer.getPeer(intPtr1), Pointer.getPeer(PyArenaPtr1)), Python27Library._mod.class);
 	}
 	@Ptr 
@@ -6466,7 +6468,7 @@ public class Python27Library {
 	 * Original signature : <code>_node* PyParser_SimpleParseFileFlags(FILE*, const char*, int, int)</code><br>
 	 * <i>native declaration : pythonrun.h:43</i>
 	 */
-	public static Pointer<Python27Library._node > PyParser_SimpleParseFileFlags(Pointer FILEPtr1, Pointer<Byte > charPtr1, int int1, int int2) {
+	public static Pointer<Python27Library._node > PyParser_SimpleParseFileFlags(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Byte > charPtr1, int int1, int int2) {
 		return Pointer.pointerToAddress(PyParser_SimpleParseFileFlags(Pointer.getPeer(FILEPtr1), Pointer.getPeer(charPtr1), int1, int2), Python27Library._node.class);
 	}
 	@Ptr 
@@ -6484,7 +6486,7 @@ public class Python27Library {
 	 * Original signature : <code>PyObject* PyRun_FileExFlags(FILE*, const char*, int, PyObject*, PyObject*, int, PyCompilerFlags*)</code><br>
 	 * <i>native declaration : pythonrun.h:47</i>
 	 */
-	public static Pointer<PyObject > PyRun_FileExFlags(Pointer FILEPtr1, Pointer<Byte > charPtr1, int int1, Pointer<PyObject > PyObjectPtr1, Pointer<PyObject > PyObjectPtr2, int int2, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
+	public static Pointer<PyObject > PyRun_FileExFlags(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Byte > charPtr1, int int1, Pointer<PyObject > PyObjectPtr1, Pointer<PyObject > PyObjectPtr2, int int2, Pointer<PyCompilerFlags > PyCompilerFlagsPtr1) {
 		return Pointer.pointerToAddress(PyRun_FileExFlags(Pointer.getPeer(FILEPtr1), Pointer.getPeer(charPtr1), int1, Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(PyObjectPtr2), int2, Pointer.getPeer(PyCompilerFlagsPtr1)), PyObject.class);
 	}
 	@Ptr 
@@ -6542,7 +6544,7 @@ public class Python27Library {
 	 * Original signature : <code>int Py_FdIsInteractive(FILE*, const char*)</code><br>
 	 * <i>native declaration : pythonrun.h:63</i>
 	 */
-	public static int Py_FdIsInteractive(Pointer FILEPtr1, Pointer<Byte > charPtr1) {
+	public static int Py_FdIsInteractive(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Byte > charPtr1) {
 		return Py_FdIsInteractive(Pointer.getPeer(FILEPtr1), Pointer.getPeer(charPtr1));
 	}
 	protected native static int Py_FdIsInteractive(@Ptr long FILEPtr1, @Ptr long charPtr1);
@@ -6839,7 +6841,7 @@ public class Python27Library {
 	 * Original signature : <code>char* PyOS_Readline(FILE*, FILE*, char*)</code><br>
 	 * <i>native declaration : pythonrun.h:163</i>
 	 */
-	public static Pointer<Byte > PyOS_Readline(Pointer FILEPtr1, Pointer FILEPtr2, Pointer<Byte > charPtr1) {
+	public static Pointer<Byte > PyOS_Readline(Pointer<Python27Library.FILE > FILEPtr1, Pointer<Python27Library.FILE > FILEPtr2, Pointer<Byte > charPtr1) {
 		return Pointer.pointerToAddress(PyOS_Readline(Pointer.getPeer(FILEPtr1), Pointer.getPeer(FILEPtr2), Pointer.getPeer(charPtr1)), Byte.class);
 	}
 	@Ptr 
@@ -7141,8 +7143,8 @@ public class Python27Library {
 	 * Original signature : <code>FILE* PySys_GetFile(char*, FILE*)</code><br>
 	 * <i>native declaration : sysmodule.h:6</i>
 	 */
-	public static Pointer PySys_GetFile(Pointer<Byte > charPtr1, Pointer FILEPtr1) {
-		return Pointer.pointerToAddress(PySys_GetFile(Pointer.getPeer(charPtr1), Pointer.getPeer(FILEPtr1)));
+	public static Pointer<Python27Library.FILE > PySys_GetFile(Pointer<Byte > charPtr1, Pointer<Python27Library.FILE > FILEPtr1) {
+		return Pointer.pointerToAddress(PySys_GetFile(Pointer.getPeer(charPtr1), Pointer.getPeer(FILEPtr1)), Python27Library.FILE.class);
 	}
 	@Ptr 
 	protected native static long PySys_GetFile(@Ptr long charPtr1, @Ptr long FILEPtr1);
@@ -7343,7 +7345,7 @@ public class Python27Library {
 	 * Original signature : <code>filedescr* _PyImport_FindModule(const char*, PyObject*, char*, size_t, FILE**, PyObject**)</code><br>
 	 * <i>native declaration : import.h:32</i>
 	 */
-	public static Pointer<Python27Library.filedescr > _PyImport_FindModule(Pointer<Byte > charPtr1, Pointer<PyObject > PyObjectPtr1, Pointer<Byte > charPtr2, @Ptr long size_t1, Pointer<Pointer > FILEPtrPtr1, Pointer<Pointer<PyObject > > PyObjectPtrPtr1) {
+	public static Pointer<Python27Library.filedescr > _PyImport_FindModule(Pointer<Byte > charPtr1, Pointer<PyObject > PyObjectPtr1, Pointer<Byte > charPtr2, @Ptr long size_t1, Pointer<Pointer<Python27Library.FILE > > FILEPtrPtr1, Pointer<Pointer<PyObject > > PyObjectPtrPtr1) {
 		return Pointer.pointerToAddress(_PyImport_FindModule(Pointer.getPeer(charPtr1), Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(charPtr2), size_t1, Pointer.getPeer(FILEPtrPtr1), Pointer.getPeer(PyObjectPtrPtr1)), Python27Library.filedescr.class);
 	}
 	@Ptr 
@@ -11547,15 +11549,6 @@ public class Python27Library {
 			throw new RuntimeException($ex$);
 		}
 	}
-	/// C type : extern jmp_buf
-	@Array({1}) 
-	public Python27Library.jmp_buf PyFPE_jbuf() {
-		try {
-			return (Python27Library.jmp_buf)BridJ.getNativeLibrary("python27").getSymbolPointer("PyFPE_jbuf").as(Python27Library.jmp_buf.class).get();
-		}catch (Throwable $ex$) {
-			throw new RuntimeException($ex$);
-		}
-	}
 	public int PyFPE_counter() {
 		try {
 			return (int)BridJ.getNativeLibrary("python27").getSymbolPointer("PyFPE_counter").as(int.class).get();
@@ -11573,22 +11566,6 @@ public class Python27Library {
 			throw new RuntimeException($ex$);
 		}
 	}
-	public static class jmp_buf extends TypedPointer {
-		public jmp_buf(long address) {
-			super(address);
-		}
-		public jmp_buf(Pointer address) {
-			super(address);
-		}
-	};
-	public static class FILE extends TypedPointer {
-		public FILE(long address) {
-			super(address);
-		}
-		public FILE(Pointer address) {
-			super(address);
-		}
-	};
 	public static class PyLongObject extends TypedPointer {
 		public PyLongObject(long address) {
 			super(address);
@@ -11612,12 +11589,22 @@ public class Python27Library {
 	};
 	/// Undefined type
 	/// Undefined type
+	public static interface jmp_buf {
+		
+	};
+	/// Undefined type
+	/// Undefined type
 	public static interface _node {
 		
 	};
 	/// Undefined type
 	/// Undefined type
 	public static interface __gnuc_va_list {
+		
+	};
+	/// Undefined type
+	/// Undefined type
+	public static interface FILE {
 		
 	};
 	/// Undefined type
