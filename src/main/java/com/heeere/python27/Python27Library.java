@@ -4440,7 +4440,7 @@ public class Python27Library {
 	 * <i>native declaration : methodobject.h:6</i>
 	 */
 	public static Pointer<Python27Library.PyCFunction > PyCFunction_GetFunction(Pointer<PyObject > PyObjectPtr1) {
-		return Pointer.pointerToAddress(PyCFunction_GetFunction(Pointer.getPeer(PyObjectPtr1)));
+		return (Pointer<Python27Library.PyCFunction >) Pointer.pointerToAddress(PyCFunction_GetFunction(Pointer.getPeer(PyObjectPtr1)));
 	}
 	@Ptr 
 	protected native static long PyCFunction_GetFunction(@Ptr long PyObjectPtr1);
@@ -4962,7 +4962,7 @@ public class Python27Library {
 	 * <i>native declaration : pycapsule.h:8</i>
 	 */
 	public static Pointer<Python27Library.PyCapsule_Destructor > PyCapsule_GetDestructor(Pointer<PyObject > capsule) {
-		return Pointer.pointerToAddress(PyCapsule_GetDestructor(Pointer.getPeer(capsule)));
+		return (Pointer<Python27Library.PyCapsule_Destructor >) Pointer.pointerToAddress(PyCapsule_GetDestructor(Pointer.getPeer(capsule)));
 	}
 	@Ptr 
 	protected native static long PyCapsule_GetDestructor(@Ptr long capsule);
@@ -5901,9 +5901,9 @@ public class Python27Library {
 	 * Original signature : <code>int PyOS_vsnprintf(char*, size_t, const char*, va_list)</code><br>
 	 * <i>native declaration : pyerrors.h:3</i>
 	 */
-	public static int PyOS_vsnprintf(Pointer<Byte > str, @Ptr long size, Pointer<Byte > format, Python27Library.__gnuc_va_list va) {
-		return PyOS_vsnprintf(Pointer.getPeer(str), size, Pointer.getPeer(format), Pointer.getPeer(va));
-	}
+//	public static int PyOS_vsnprintf(Pointer<Byte > str, @Ptr long size, Pointer<Byte > format, Python27Library.__gnuc_va_list va) {
+//		return PyOS_vsnprintf(Pointer.getPeer(str), size, Pointer.getPeer(format), Pointer.getPeer(va));
+//	}
 	protected native static int PyOS_vsnprintf(@Ptr long str, @Ptr long size, @Ptr long format, @Ptr long va);
 	/**
 	 * Original signature : <code>PyInterpreterState* PyInterpreterState_New()</code><br>
@@ -6851,7 +6851,7 @@ public class Python27Library {
 	 * <i>native declaration : pythonrun.h:170</i>
 	 */
 	public static Pointer<Python27Library.PyOS_sighandler_t > PyOS_getsig(int int1) {
-		return Pointer.pointerToAddress(PyOS_getsig$2(int1));
+		return (Pointer<Python27Library.PyOS_sighandler_t >) Pointer.pointerToAddress(PyOS_getsig$2(int1));
 	}
 	@Ptr 
 	@Name("PyOS_getsig") 
@@ -6861,7 +6861,7 @@ public class Python27Library {
 	 * <i>native declaration : pythonrun.h:172</i>
 	 */
 	public static Pointer<Python27Library.PyOS_sighandler_t > PyOS_setsig(int int1, Pointer<Python27Library.PyOS_sighandler_t > PyOS_sighandler_t1) {
-		return Pointer.pointerToAddress(PyOS_setsig(int1, Pointer.getPeer(PyOS_sighandler_t1)));
+		return (Pointer<Python27Library.PyOS_sighandler_t >) Pointer.pointerToAddress(PyOS_setsig(int1, Pointer.getPeer(PyOS_sighandler_t1)));
 	}
 	@Ptr 
 	protected native static long PyOS_setsig(int int1, @Ptr long PyOS_sighandler_t1);
