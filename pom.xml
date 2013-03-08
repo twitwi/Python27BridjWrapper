@@ -7,7 +7,7 @@
     <name>Python27</name>
     <description>Java bindings for the Python 2.7 library</description>
     <url>http://heeere.com</url>
-    <version>0.5-SNAPSHOT</version>
+    <version>0.5</version>
     <packaging>jar</packaging>
   
     <dependencies>
@@ -56,6 +56,21 @@
 		
         </plugins>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>gh-repo</id>
+            <!--url>http://twitwi.github.com/maven-repo/releases</url-->
+            <url>file:../maven-repo/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>gh-snap-repo</id>
+            <!--url>http://twitwi.github.com/maven-repo/snapshots</url-->
+            <url>file:../maven-repo/snapshots</url>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
+
 </project>
 
 
