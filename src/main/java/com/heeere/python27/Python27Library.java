@@ -4440,7 +4440,7 @@ public class Python27Library {
 	 * <i>native declaration : methodobject.h:6</i>
 	 */
 	public static Pointer<Python27Library.PyCFunction > PyCFunction_GetFunction(Pointer<PyObject > PyObjectPtr1) {
-		return (Pointer<Python27Library.PyCFunction >) Pointer.pointerToAddress(PyCFunction_GetFunction(Pointer.getPeer(PyObjectPtr1)));
+		return Pointer.pointerToAddress(PyCFunction_GetFunction(Pointer.getPeer(PyObjectPtr1)), Python27Library.PyCFunction.class);
 	}
 	@Ptr 
 	protected native static long PyCFunction_GetFunction(@Ptr long PyObjectPtr1);
@@ -4962,7 +4962,7 @@ public class Python27Library {
 	 * <i>native declaration : pycapsule.h:8</i>
 	 */
 	public static Pointer<Python27Library.PyCapsule_Destructor > PyCapsule_GetDestructor(Pointer<PyObject > capsule) {
-		return (Pointer<Python27Library.PyCapsule_Destructor >) Pointer.pointerToAddress(PyCapsule_GetDestructor(Pointer.getPeer(capsule)));
+		return Pointer.pointerToAddress(PyCapsule_GetDestructor(Pointer.getPeer(capsule)), Python27Library.PyCapsule_Destructor.class);
 	}
 	@Ptr 
 	protected native static long PyCapsule_GetDestructor(@Ptr long capsule);
@@ -6851,7 +6851,7 @@ public class Python27Library {
 	 * <i>native declaration : pythonrun.h:170</i>
 	 */
 	public static Pointer<Python27Library.PyOS_sighandler_t > PyOS_getsig(int int1) {
-		return (Pointer<Python27Library.PyOS_sighandler_t >) Pointer.pointerToAddress(PyOS_getsig$2(int1));
+		return Pointer.pointerToAddress(PyOS_getsig$2(int1), Python27Library.PyOS_sighandler_t.class);
 	}
 	@Ptr 
 	@Name("PyOS_getsig") 
