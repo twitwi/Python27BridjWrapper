@@ -1989,7 +1989,7 @@ public class Python27Library {
 	 * <i>native declaration : unicodeobject.h:70</i>
 	 */
 	public static Pointer<PyObject > PyUnicodeUCS4_FromFormat(Pointer<Byte > charPtr1, Object... varargs) {
-		return Pointer.pointerToAddress(PyUnicodeUCS4_FromFormat(Pointer.getPeer(charPtr1)), PyObject.class);
+		return Pointer.pointerToAddress(PyUnicodeUCS4_FromFormat(Pointer.getPeer(charPtr1), varargs), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyUnicodeUCS4_FromFormat(@Ptr long charPtr1, Object... varargs);
@@ -3582,7 +3582,7 @@ public class Python27Library {
 	 * <i>native declaration : stringobject.h:17</i>
 	 */
 	public static Pointer<PyObject > PyString_FromFormat(Pointer<Byte > charPtr1, Object... varargs) {
-		return Pointer.pointerToAddress(PyString_FromFormat(Pointer.getPeer(charPtr1)), PyObject.class);
+		return Pointer.pointerToAddress(PyString_FromFormat(Pointer.getPeer(charPtr1), varargs), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyString_FromFormat(@Ptr long charPtr1, Object... varargs);
@@ -4023,7 +4023,7 @@ public class Python27Library {
 	 * <i>native declaration : tupleobject.h:21</i>
 	 */
 	public static Pointer<PyObject > PyTuple_Pack(@Ptr long Py_ssize_t1, Object... varargs) {
-		return Pointer.pointerToAddress(PyTuple_Pack$2(Py_ssize_t1), PyObject.class);
+		return Pointer.pointerToAddress(PyTuple_Pack$2(Py_ssize_t1, varargs), PyObject.class);
 	}
 	@Ptr 
 	@Name("PyTuple_Pack") 
@@ -5574,7 +5574,7 @@ public class Python27Library {
 	 * <i>native declaration : pyerrors.h:135</i>
 	 */
 	public static Pointer<PyObject > PyErr_Format(Pointer<PyObject > PyObjectPtr1, Pointer<Byte > charPtr1, Object... varargs) {
-		return Pointer.pointerToAddress(PyErr_Format(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(charPtr1)), PyObject.class);
+		return Pointer.pointerToAddress(PyErr_Format(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(charPtr1), varargs), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyErr_Format(@Ptr long PyObjectPtr1, @Ptr long charPtr1, Object... varargs);
@@ -5894,7 +5894,7 @@ public class Python27Library {
 	 * <i>native declaration : pyerrors.h:1</i>
 	 */
 	public static int PyOS_snprintf(Pointer<Byte > str, @Ptr long size, Pointer<Byte > format, Object... varargs) {
-		return PyOS_snprintf(Pointer.getPeer(str), size, Pointer.getPeer(format));
+		return PyOS_snprintf(Pointer.getPeer(str), size, Pointer.getPeer(format), varargs);
 	}
 	protected native static int PyOS_snprintf(@Ptr long str, @Ptr long size, @Ptr long format, Object... varargs);
 	/**
@@ -6204,7 +6204,7 @@ public class Python27Library {
 	 * <i>native declaration : modsupport.h:3</i>
 	 */
 	public static int PyArg_Parse(Pointer<PyObject > PyObjectPtr1, Pointer<Byte > charPtr1, Object... varargs) {
-		return PyArg_Parse(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(charPtr1));
+		return PyArg_Parse(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(charPtr1), varargs);
 	}
 	protected native static int PyArg_Parse(@Ptr long PyObjectPtr1, @Ptr long charPtr1, Object... varargs);
 	/**
@@ -6212,7 +6212,7 @@ public class Python27Library {
 	 * <i>native declaration : modsupport.h:5</i>
 	 */
 	public static int PyArg_ParseTuple(Pointer<PyObject > PyObjectPtr1, Pointer<Byte > charPtr1, Object... varargs) {
-		return PyArg_ParseTuple(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(charPtr1));
+		return PyArg_ParseTuple(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(charPtr1), varargs);
 	}
 	protected native static int PyArg_ParseTuple(@Ptr long PyObjectPtr1, @Ptr long charPtr1, Object... varargs);
 	/**
@@ -6220,7 +6220,7 @@ public class Python27Library {
 	 * <i>native declaration : modsupport.h:7</i>
 	 */
 	public static int PyArg_ParseTupleAndKeywords(Pointer<PyObject > PyObjectPtr1, Pointer<PyObject > PyObjectPtr2, Pointer<Byte > charPtr1, Pointer<Pointer<Byte > > charPtrPtr1, Object... varargs) {
-		return PyArg_ParseTupleAndKeywords(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(PyObjectPtr2), Pointer.getPeer(charPtr1), Pointer.getPeer(charPtrPtr1));
+		return PyArg_ParseTupleAndKeywords(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(PyObjectPtr2), Pointer.getPeer(charPtr1), Pointer.getPeer(charPtrPtr1), varargs);
 	}
 	protected native static int PyArg_ParseTupleAndKeywords(@Ptr long PyObjectPtr1, @Ptr long PyObjectPtr2, @Ptr long charPtr1, @Ptr long charPtrPtr1, Object... varargs);
 	/**
@@ -6228,7 +6228,7 @@ public class Python27Library {
 	 * <i>native declaration : modsupport.h:9</i>
 	 */
 	public static int PyArg_UnpackTuple(Pointer<PyObject > PyObjectPtr1, Pointer<Byte > charPtr1, @Ptr long Py_ssize_t1, @Ptr long Py_ssize_t2, Object... varargs) {
-		return PyArg_UnpackTuple(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(charPtr1), Py_ssize_t1, Py_ssize_t2);
+		return PyArg_UnpackTuple(Pointer.getPeer(PyObjectPtr1), Pointer.getPeer(charPtr1), Py_ssize_t1, Py_ssize_t2, varargs);
 	}
 	protected native static int PyArg_UnpackTuple(@Ptr long PyObjectPtr1, @Ptr long charPtr1, @Ptr long Py_ssize_t1, @Ptr long Py_ssize_t2, Object... varargs);
 	/**
@@ -6236,7 +6236,7 @@ public class Python27Library {
 	 * <i>native declaration : modsupport.h:11</i>
 	 */
 	public static Pointer<PyObject > Py_BuildValue(Pointer<Byte > charPtr1, Object... varargs) {
-		return Pointer.pointerToAddress(Py_BuildValue(Pointer.getPeer(charPtr1)), PyObject.class);
+		return Pointer.pointerToAddress(Py_BuildValue(Pointer.getPeer(charPtr1), varargs), PyObject.class);
 	}
 	@Ptr 
 	protected native static long Py_BuildValue(@Ptr long charPtr1, Object... varargs);
@@ -6245,7 +6245,7 @@ public class Python27Library {
 	 * <i>native declaration : modsupport.h:13</i>
 	 */
 	public static Pointer<PyObject > _Py_BuildValue_SizeT(Pointer<Byte > charPtr1, Object... varargs) {
-		return Pointer.pointerToAddress(_Py_BuildValue_SizeT(Pointer.getPeer(charPtr1)), PyObject.class);
+		return Pointer.pointerToAddress(_Py_BuildValue_SizeT(Pointer.getPeer(charPtr1), varargs), PyObject.class);
 	}
 	@Ptr 
 	protected native static long _Py_BuildValue_SizeT(@Ptr long charPtr1, Object... varargs);
@@ -6888,7 +6888,7 @@ public class Python27Library {
 	 * <i>native declaration : ceval.h:4</i>
 	 */
 	public static Pointer<PyObject > PyEval_CallFunction(Pointer<PyObject > obj, Pointer<Byte > format, Object... varargs) {
-		return Pointer.pointerToAddress(PyEval_CallFunction(Pointer.getPeer(obj), Pointer.getPeer(format)), PyObject.class);
+		return Pointer.pointerToAddress(PyEval_CallFunction(Pointer.getPeer(obj), Pointer.getPeer(format), varargs), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyEval_CallFunction(@Ptr long obj, @Ptr long format, Object... varargs);
@@ -6897,7 +6897,7 @@ public class Python27Library {
 	 * <i>native declaration : ceval.h:6</i>
 	 */
 	public static Pointer<PyObject > PyEval_CallMethod(Pointer<PyObject > obj, Pointer<Byte > methodname, Pointer<Byte > format, Object... varargs) {
-		return Pointer.pointerToAddress(PyEval_CallMethod(Pointer.getPeer(obj), Pointer.getPeer(methodname), Pointer.getPeer(format)), PyObject.class);
+		return Pointer.pointerToAddress(PyEval_CallMethod(Pointer.getPeer(obj), Pointer.getPeer(methodname), Pointer.getPeer(format), varargs), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyEval_CallMethod(@Ptr long obj, @Ptr long methodname, @Ptr long format, Object... varargs);
@@ -7177,7 +7177,7 @@ public class Python27Library {
 	 * <i>native declaration : sysmodule.h:14</i>
 	 */
 	public static void PySys_WriteStdout(Pointer<Byte > format, Object... varargs) {
-		PySys_WriteStdout(Pointer.getPeer(format));
+		PySys_WriteStdout(Pointer.getPeer(format), varargs);
 	}
 	protected native static void PySys_WriteStdout(@Ptr long format, Object... varargs);
 	/**
@@ -7185,7 +7185,7 @@ public class Python27Library {
 	 * <i>native declaration : sysmodule.h:16</i>
 	 */
 	public static void PySys_WriteStderr(Pointer<Byte > format, Object... varargs) {
-		PySys_WriteStderr(Pointer.getPeer(format));
+		PySys_WriteStderr(Pointer.getPeer(format), varargs);
 	}
 	protected native static void PySys_WriteStderr(@Ptr long format, Object... varargs);
 	/**
@@ -7428,7 +7428,7 @@ public class Python27Library {
 	 * <i>native declaration : abstract.h:8</i>
 	 */
 	public static Pointer<PyObject > PyObject_CallFunction(Pointer<PyObject > callable_object, Pointer<Byte > format, Object... varargs) {
-		return Pointer.pointerToAddress(PyObject_CallFunction(Pointer.getPeer(callable_object), Pointer.getPeer(format)), PyObject.class);
+		return Pointer.pointerToAddress(PyObject_CallFunction(Pointer.getPeer(callable_object), Pointer.getPeer(format), varargs), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyObject_CallFunction(@Ptr long callable_object, @Ptr long format, Object... varargs);
@@ -7437,7 +7437,7 @@ public class Python27Library {
 	 * <i>native declaration : abstract.h:10</i>
 	 */
 	public static Pointer<PyObject > PyObject_CallMethod(Pointer<PyObject > o, Pointer<Byte > m, Pointer<Byte > format, Object... varargs) {
-		return Pointer.pointerToAddress(PyObject_CallMethod(Pointer.getPeer(o), Pointer.getPeer(m), Pointer.getPeer(format)), PyObject.class);
+		return Pointer.pointerToAddress(PyObject_CallMethod(Pointer.getPeer(o), Pointer.getPeer(m), Pointer.getPeer(format), varargs), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyObject_CallMethod(@Ptr long o, @Ptr long m, @Ptr long format, Object... varargs);
@@ -7446,7 +7446,7 @@ public class Python27Library {
 	 * <i>native declaration : abstract.h:12</i>
 	 */
 	public static Pointer<PyObject > _PyObject_CallFunction_SizeT(Pointer<PyObject > callable, Pointer<Byte > format, Object... varargs) {
-		return Pointer.pointerToAddress(_PyObject_CallFunction_SizeT(Pointer.getPeer(callable), Pointer.getPeer(format)), PyObject.class);
+		return Pointer.pointerToAddress(_PyObject_CallFunction_SizeT(Pointer.getPeer(callable), Pointer.getPeer(format), varargs), PyObject.class);
 	}
 	@Ptr 
 	protected native static long _PyObject_CallFunction_SizeT(@Ptr long callable, @Ptr long format, Object... varargs);
@@ -7455,7 +7455,7 @@ public class Python27Library {
 	 * <i>native declaration : abstract.h:14</i>
 	 */
 	public static Pointer<PyObject > _PyObject_CallMethod_SizeT(Pointer<PyObject > o, Pointer<Byte > name, Pointer<Byte > format, Object... varargs) {
-		return Pointer.pointerToAddress(_PyObject_CallMethod_SizeT(Pointer.getPeer(o), Pointer.getPeer(name), Pointer.getPeer(format)), PyObject.class);
+		return Pointer.pointerToAddress(_PyObject_CallMethod_SizeT(Pointer.getPeer(o), Pointer.getPeer(name), Pointer.getPeer(format), varargs), PyObject.class);
 	}
 	@Ptr 
 	protected native static long _PyObject_CallMethod_SizeT(@Ptr long o, @Ptr long name, @Ptr long format, Object... varargs);
@@ -7464,7 +7464,7 @@ public class Python27Library {
 	 * <i>native declaration : abstract.h:16</i>
 	 */
 	public static Pointer<PyObject > PyObject_CallFunctionObjArgs(Pointer<PyObject > callable, Object... varargs) {
-		return Pointer.pointerToAddress(PyObject_CallFunctionObjArgs(Pointer.getPeer(callable)), PyObject.class);
+		return Pointer.pointerToAddress(PyObject_CallFunctionObjArgs(Pointer.getPeer(callable), varargs), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyObject_CallFunctionObjArgs(@Ptr long callable, Object... varargs);
@@ -7473,7 +7473,7 @@ public class Python27Library {
 	 * <i>native declaration : abstract.h:18</i>
 	 */
 	public static Pointer<PyObject > PyObject_CallMethodObjArgs(Pointer<PyObject > o, Pointer<PyObject > m, Object... varargs) {
-		return Pointer.pointerToAddress(PyObject_CallMethodObjArgs(Pointer.getPeer(o), Pointer.getPeer(m)), PyObject.class);
+		return Pointer.pointerToAddress(PyObject_CallMethodObjArgs(Pointer.getPeer(o), Pointer.getPeer(m), varargs), PyObject.class);
 	}
 	@Ptr 
 	protected native static long PyObject_CallMethodObjArgs(@Ptr long o, @Ptr long m, Object... varargs);
