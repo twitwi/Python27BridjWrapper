@@ -379,7 +379,7 @@ public class Python27Library {
 	/// <i>native declaration : object.h</i>
 	public static final int Py_TPFLAGS_CHECKTYPES = (int)(1 << 4);
 	/// <i>native declaration : pyport.h</i>
-	public static final int PY_ULLONG_MAX = (int)-1;
+	public static final long PY_ULLONG_MAX = (long)-1L;
 	/// <i>native declaration : pyconfig.h</i>
 	public static final int HAVE_RL_COMPLETION_DISPLAY_MATCHES_HOOK = (int)1;
 	/// <i>native declaration : pyconfig.h</i>
@@ -5901,9 +5901,9 @@ public class Python27Library {
 	 * Original signature : <code>int PyOS_vsnprintf(char*, size_t, const char*, va_list)</code><br>
 	 * <i>native declaration : pyerrors.h:3</i>
 	 */
-//	public static int PyOS_vsnprintf(Pointer<Byte > str, @Ptr long size, Pointer<Byte > format, Python27Library.__gnuc_va_list va) {
-//		return PyOS_vsnprintf(Pointer.getPeer(str), size, Pointer.getPeer(format), Pointer.getPeer(va));
-//	}
+	public static int PyOS_vsnprintf(Pointer<Byte > str, @Ptr long size, Pointer<Byte > format, Python27Library.__gnuc_va_list va) {
+		return PyOS_vsnprintf(Pointer.getPeer(str), size, Pointer.getPeer(format), Pointer.getPeer(va));
+	}
 	protected native static int PyOS_vsnprintf(@Ptr long str, @Ptr long size, @Ptr long format, @Ptr long va);
 	/**
 	 * Original signature : <code>PyInterpreterState* PyInterpreterState_New()</code><br>
@@ -6861,7 +6861,7 @@ public class Python27Library {
 	 * <i>native declaration : pythonrun.h:172</i>
 	 */
 	public static Pointer<Python27Library.PyOS_sighandler_t > PyOS_setsig(int int1, Pointer<Python27Library.PyOS_sighandler_t > PyOS_sighandler_t1) {
-		return (Pointer<Python27Library.PyOS_sighandler_t >) Pointer.pointerToAddress(PyOS_setsig(int1, Pointer.getPeer(PyOS_sighandler_t1)));
+		return Pointer.pointerToAddress(PyOS_setsig(int1, Pointer.getPeer(PyOS_sighandler_t1)), Python27Library.PyOS_sighandler_t.class);
 	}
 	@Ptr 
 	protected native static long PyOS_setsig(int int1, @Ptr long PyOS_sighandler_t1);
@@ -11566,6 +11566,14 @@ public class Python27Library {
 			throw new RuntimeException($ex$);
 		}
 	}
+	public static class __gnuc_va_list extends TypedPointer {
+		public __gnuc_va_list(long address) {
+			super(address);
+		}
+		public __gnuc_va_list(Pointer address) {
+			super(address);
+		}
+	};
 	public static class PyLongObject extends TypedPointer {
 		public PyLongObject(long address) {
 			super(address);
@@ -11595,11 +11603,6 @@ public class Python27Library {
 	/// Undefined type
 	/// Undefined type
 	public static interface _node {
-		
-	};
-	/// Undefined type
-	/// Undefined type
-	public static interface __gnuc_va_list {
 		
 	};
 	/// Undefined type

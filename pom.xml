@@ -7,7 +7,7 @@
     <name>Python27</name>
     <description>Java bindings for the Python 2.7 library</description>
     <url>http://heeere.com</url>
-    <version>0.5</version>
+    <version>0.6-SNAPSHOT</version>
     <packaging>jar</packaging>
   
     <dependencies>
@@ -48,7 +48,7 @@
             <plugin>
                 <groupId>com.nativelibs4java</groupId>
                 <artifactId>maven-jnaerator-plugin</artifactId>
-                <version>0.11</version>
+                <version>0.12-SNAPSHOT</version>
                 <configuration>
                     <javaOutputDirectory>src/main/java</javaOutputDirectory>
                 </configuration>
