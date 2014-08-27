@@ -10,7 +10,7 @@
 -TPy_ssize_t=size_t
 -T__gnuc_va_list=__builtin_va_list
 
--parseChunks
+// -parseChunks
 
 -Iinclude-link
 
