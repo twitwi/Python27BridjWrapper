@@ -2,8 +2,14 @@
 -package com.heeere.python27
 -runtime BridJ
 
+// We can decomment the two lines below and run jnaerator without maven with:
+//    java -jar ~/.m2/repository/com/nativelibs4java/jnaerator/0.12-SNAPSHOT/jnaerator-0.12-SNAPSHOT-shaded.jar src/main/jnaerator/config.jnaerator
+
+// /usr/lib/x86_64-linux-gnu/libpython2.7.so
+// -mode StandaloneJar -jar mywrapper.jar
+
 -v
-//-preferJavac
+// -preferJavac
 
 
 // help jnaerator a little
@@ -15,3 +21,4 @@
 -Iinclude-link
 
 include-link/Python.h
+
